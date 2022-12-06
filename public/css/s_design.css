@@ -1,0 +1,82 @@
+.container {
+  padding-top: 100px;
+}
+
+.teksts {
+  padding-top: 100px;
+  text-align: center;
+  color: white;
+}
+
+#collapse {
+  background-color: transparent;
+}
+
+.balts {
+  color: white;
+}
+
+.lielis {
+  width: 35%;
+  display: inline-block;
+}
+
+.form-control {
+  margin: auto;
+}
+
+.nav-toggle3 {
+  border: none;
+  background: none;
+  color: white;
+}
+
+.lieliss {
+  padding-top: 50px;
+  width: 15%;
+  display: inline-block;
+}
+
+#yess {
+  padding-left: 100px;
+  padding-top: 150px;
+  color: white;
+}
+
+.conv {
+  display: none;
+  padding-left: 100px;
+  font-size: 16px;
+  padding-top: 100px;
+  color: white;
+}
+
+#inputFeet {
+  border-radius: 7px;
+}
+
+#inputPounds {
+  border-radius: 7px;
+}
+
+.convv {
+  text-align: left;
+  color: white;
+}
+
+.form-group {
+  margin: auto;
+  padding-bottom: 25px;
+  padding-top: 40px;
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 35px;
+}
+
+.gradient-custom {
+  background: #A71D31;
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  background: linear-gradient(to right, #000000, #00A2FF)
+}
