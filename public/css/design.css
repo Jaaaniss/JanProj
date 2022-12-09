@@ -1,0 +1,132 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group1 {
+
+    padding-top: 50px;
+
+}
+
+.form-group2 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.uuu {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#i111 {
+
+    justify-content: center;
+
+}
+
+.btt {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#melns {
+    background-color: black;
+}
+
+#gradient-custom {
+
+    background: #A71D31;
+
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+    background: linear-gradient(to right, #000000, #00A2FF, #000000)
+}
+
+.btn {
+    background-color: #000000 !important;
+}
+
+#kk {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lala {
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+.lala1 {
+
+    text-align: center;
+}
+
+.lala2 {
+
+    text-align: center;
+}
+
+.lielss {
+    color: white;
+    padding-top: 50px;
+}
+
+.liels1 {
+
+    padding-bottom: 2px;
+}
+
+.liels2 {
+
+    padding-bottom: 2px;
+}
+
+
+
+.nav-toggle {
+    width: 290px;
+    height: 290px;
+}
+
+.nav-toggle2 {
+    width: 290px;
+    height: 290px;
+}
+
+.nav-toggle3 {
+    width: 290px;
+    height: 290px;
+}
+
+#collapse {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#collapse2 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#collapse3 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.container {
+    padding-top: 50px;
+
+}
+
+#virsraksts {
+    color: white;
+    font-size: 50px;
+}
+
+#bb {
+    float: left;
+}

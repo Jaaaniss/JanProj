@@ -1,0 +1,183 @@
+#rod2 {
+  width: 120px;
+  height: 120px;
+  filter: brightness(0) invert(1);
+}
+.uu1 {
+  padding-bottom: 19px;
+  padding-top: 12px;
+}
+
+#vajg1 {
+  padding-top: 3px;
+}
+
+#vajg2 {
+  padding-top: 3px;
+}
+.uu2 {
+  padding-top: 12px;
+}
+
+body {
+  background: white;
+}
+
+#ir2 {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 250px;
+  float: left;
+  border: 1.5px solid;
+  border-top: 0;
+  border-bottom: 0;
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(226, 226, 226, 1) 50%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1;
+}
+
+#rod1 {
+  width: 95px;
+  height: 95px;
+  filter: brightness(0) invert(1);
+}
+
+#rod3 {
+  width: 135x;
+  height: 135px;
+  filter: brightness(0) invert(1);
+}
+
+#ir1 {
+  padding-top: 7px;
+  padding-right: 50px;
+}
+
+.container {
+  padding-top: 130px;
+}
+
+#ir3 {
+  padding-left: 50px;
+}
+
+.containerr {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.vl {
+  border-left: 1px solid;
+  height: 70px;
+	    background-image: -webkit-linear-gradient(top, #fff, #000, #fff);
+      background-image: -moz-linear-gradient(top, #fff, #000, #fff);
+      background-image: -ms-linear-gradient(top, #fff, #000, #fff);
+      background-image: -o-linear-gradient(top, #fff, #000, #fff);
+      background-image: linear-gradient(top, #fff, #000, #fff);
+}
+
+.vl1 {
+  border-left: 1px solid;
+  height: 70px;
+	    background-image: -webkit-linear-gradient(top, #fff, #000, #fff);
+      background-image: -moz-linear-gradient(top, #fff, #000, #fff);
+      background-image: -ms-linear-gradient(top, #fff, #000, #fff);
+      background-image: -o-linear-gradient(top, #fff, #000, #fff);
+      background-image: linear-gradient(top, #fff, #000, #fff);
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 95%;                
+  background-color:#ffffff;
+  height: 1px;
+}
+
+#collapse3 {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.teksts {
+  padding-top: 70px;
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
+}
+
+#collapse {
+  background-color: transparent;
+}
+
+.balts {
+  color: white;
+}
+
+.lielis {
+  width: 35%;
+  display: inline-block;
+}
+
+.form-control {
+  margin: auto;
+}
+
+.nav-toggle3 {
+  border: none;
+  background: none;
+  color: white;
+}
+
+.lieliss {
+  padding-top: 50px;
+  width: 15%;
+  display: inline-block;
+}
+
+#yess {
+  padding-left: 100px;
+  padding-top: 150px;
+  color: white;
+}
+
+.conv {
+  display: none;
+  padding-left: 100px;
+  font-size: 16px;
+  padding-top: 100px;
+  color: white;
+}
+
+#inputFeet {
+  border-radius: 7px;
+}
+
+#inputPounds {
+  border-radius: 7px;
+}
+
+.convv {
+  text-align: left;
+  color: white;
+}
+
+.form-group {
+  display:flex;
+  margin: auto;
+  padding-bottom: 25px;
+  padding-top: 40px;
+  color: white;
+  justify-content: space-evenly;
+}
+
+.navbar-brand {
+  font-size: 35px;
+}
+
+.gradient-custom {
+  background: #A71D31;
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  background: linear-gradient(to right, #000000, #00A2FF)
+}
