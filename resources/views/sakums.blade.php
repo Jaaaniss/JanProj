@@ -21,7 +21,9 @@
 
 <body class="gradient-custom">
 
-
+<div class="pluses">
+  
+</div>
 
     <nav class="navbar navbar-expand-sm navbar-dark ">
         <a class="navbar-brand" href="#">CONV</a>
@@ -57,37 +59,66 @@
         <h2> Do you know how long is your feet in centimeters? </h2>
         <div class="container">
             <div class="row">
-                <div class="col-sm">
-                    <h4>1.<br> If you do know, then click "next" to select a brand </h4>
+                <div id="ir1" class="col-sm">
+                    <div class="uu1">
+                        <img id="rod1" src="https://instantpot.com/wp-content/uploads/2017/07/Thumbs-Up-Icon-red.png"/> 
+                    </div>
+                    <div id="vajg1" class="col-sm">
+                        <h4>1.<br> If you do know, then click "next" to select a brand </h4>
+                    </div> 
                 </div>
-                <div class="col-sm">
-                    <h4>2.<br> If you dont know, you can easly measure its lenght (Preferably in cm) </h4>
+                <div id="ir2" class="col-sm">
+                    <div class="uu2">
+                        <img id="rod2" src="https://run-of.com/wp-content/uploads/2022/03/foot-measure.png"/>
+                    </div>
+                    <div id="vajg2" class="col-sm">
+                        <h4>2.<br> If you dont know, you can easly measure its lenght (Preferably in cm) </h4>
+                    </div>
                 </div>
-                <div class="col-sm">
-                    <h4>3.<br> In case you cant measure it in cm, there is converter at the top </h4>
+                <div id="ir3" class="col-sm">
+                    <div class="uu3">
+                        <img id="rod3" src="https://icons.veryicon.com/png/o/education-technology/ecology/vice-versa.png"/>
+                    </div>
+                    <div class="col-sm">
+                        <h4>3.<br> In case you cant measure it in cm, there is converter at the top </h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <div class="form-group col-sm-4" id="collapse3" style="display:none">
-        <p>
+      
+<div class="converter" id="collapse3" style="display:none">
+<hr /> 
+    <div class="form-group col-sm-4">
+         
+        <div class="de">
             <label>Inches: </label>
-            <input class="form-control" id="inputFeet" type="number" placeholder="Inches"
-                oninput="lengthConverter(this.value)" onchange="lengthConverter(this.value)">
-        </p>
-        <p>cm: <span id="outputMeters"></span></p>
+            <input id="inputInches" class="form-control" type="number" placeholder="Inches"
+                oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        </div>
+        <div class="sk">
+            <label>Cm: </label>
+            <input id="inputcm" class="form-control" type="number" placeholder="Cm"
+                oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+        </div>
 
         <script>
-        function lengthConverter(valNum) {
-            document.getElementById("outputMeters").innerHTML = valNum * 2.54;
+        function lengthConverter(source, valNum) {
+            valNum = parseFloat(valNum);
+            var inputInches = document.getElementById("inputInches");
+            var inputcm = document.getElementById("inputcm");
+            if (source == "inputInches") {
+                inputcm.value = (valNum / 0.39370).toFixed(2);
+            }
+            if (source == "inputcm") {
+                inputInches.value = (valNum * 0.39370).toFixed(2);
+            }
         }
         </script>
-        
     </div>
+</div>
 
-    <div class="container text-center">
+    <div class="containerr">
         <a id="nulll" href="/next.php" class="btn btn-info" role="button">Next</a>
     </div>
 
@@ -109,4 +140,5 @@
     </script>
 
 </body>
+
 </html>
