@@ -31,7 +31,7 @@
                     <div class="col-md-3" id="kk">
                         <label for="usr">Your foot size (cm):</label>
                         <input type="number" class="form-control " id="usr">
-                        <input class="btn btn-info" id="bb" type="button" value="Notīrīt" onClick="Clean()" />
+                        <input class="btn btn-info" id="bb" type="button" value="Clear" onClick="Clean()" />
                     </div>               
                     <div class="uuu">
                         <div class="uuu1">

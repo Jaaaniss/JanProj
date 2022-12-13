@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarsExample03">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Sākums <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a href="#collapse3" class="nav-link" id="toggle">Get converter</a>
@@ -119,7 +119,7 @@
 </div>
 
     <div class="containerr">
-        <a id="nulll" href="/next.php" class="btn btn-info" role="button">Next</a>
+        <a id="nulll" href="/next.php" class="btn btn-dark" role="button">Next</a>
     </div>
 
     <script>

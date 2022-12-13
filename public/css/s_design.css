@@ -23,6 +23,12 @@ body {
   background: white;
 }
 
+.btn-info {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
 #ir2 {
   padding-left: 50px;
   padding-right: 50px;
@@ -179,5 +185,5 @@ hr {
 .gradient-custom {
   background: #A71D31;
   background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
-  background: linear-gradient(to right, #000000, #00A2FF)
+  background: linear-gradient(to right, #000000, #c2c2c2)
 }
