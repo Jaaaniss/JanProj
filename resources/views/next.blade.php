@@ -7,16 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/design.css') }}" >
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/design.css') }}">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Document</title>
 </head>
+
+
+<!-- Visi zīmoli -->
+
 
 <body id="gradient-custom" class="no-chat-button gl-modal-open" style="overflow-y: scroll;" data-padding-right="85"
     img="https://jooinn.com/images/cloth-background-5.png">
 
 
-<!-- Visi zīmoli -->
+<!-- VANS bilde un informācija -->
 
 
     <div class=lielss>
@@ -27,15 +31,25 @@
                     src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnv9ij36ZmZzFbQ3agBIbpsB-sXXJkqqTEGMP3KKyqgNEfgLKS" />
             </div>
             <div id="collapse" style="display:none">
+
+
+<!-- Izmēra ievade un poga -->
+
+
                 <div class="form-group ">
                     <div class="col-md-3" id="kk">
                         <label for="usr">Your foot size (cm):</label>
                         <input type="number" class="form-control " id="usr">
                         <input class="btn btn-info" id="bb" type="button" value="Clear" onClick="Clean()" />
-                    </div>               
+                    </div>
+
+
+<!-- Izmēru izvade -->
+
+
                     <div class="uuu">
                         <div class="uuu1">
-                        <span id="h1"></span>
+                            <span id="h1"></span>
                             <h1>EU - </h1>
                             <h1>UK - </h1>
                             <h1>US M - </h1>
@@ -46,6 +60,10 @@
                         </div>
                     </div>
                 </div>
+
+
+<!-- Visu izmēru masīvs un tā funkcijas -->
+
 
                 <script>
                 window.onload = function() {
@@ -208,6 +226,8 @@
                     ]
 
 
+// - Izmēru funkcija - EU
+
 
                     function findEuroSizeByCm(inputCm) {
                         var result = shoeSizeMap.find(function(shoeSize) {
@@ -239,7 +259,7 @@
                     })();
 
 
-
+// - Izmēru funkcija - UK
 
 
                     function findUkSizeByCm(inputCm) {
@@ -254,10 +274,7 @@
                         if (size) console.log(size.ukSize);
                     }
 
-                
                     usr.addEventListener("input", getSize1);
-                    
-
 
                     (function() {
                         var old = console.log;
@@ -275,7 +292,7 @@
                     })();
 
 
-
+// - Izmēru funkcija - US M
 
 
                     function findUsmSizeByCm(inputCm) {
@@ -290,10 +307,7 @@
                         if (size) console.log(size.usmSize);
                     }
 
-                
                     usr.addEventListener("input", getSize2);
-                    
-
 
                     (function() {
                         var old = console.log;
@@ -311,6 +325,7 @@
                     })();
 
 
+// - Izmēru funkcija - US W
 
 
                     function findUswSizeByCm(inputCm) {
@@ -325,10 +340,7 @@
                         if (size) console.log(size.uswSize);
                     }
 
-                
                     usr.addEventListener("input", getSize3);
-                    
-
 
                     (function() {
                         var old = console.log;
@@ -344,119 +356,52 @@
                             }
                         }
                     })();
-
+                    
                 }
 
 
+// - Pogas funkcija lai notīrītu izvadīto
 
-                // $('#h1').html(findEuroSizeByCm().ukSize); 
 
                 function Clean() {
                     document.getElementById('log1').innerHTML = '';
                 }
-
-                
                 </script>
             </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Funkcijas, lai informācija būtu paslēpta/parādīta -->
 
 
             <script>
-            $(document).ready(function() {
-                $('.nav-toggle').click(function() {
-                    var collapse_content_selector = $(this).attr('href');
-                    var toggle_switch = $(this);
-                    $(collapse_content_selector).toggle(function() {
-                        if ($(this).css('display') == 'none') {
-                            toggle_switch.html('Show');
-                        } else {
-                            toggle_switch.html('Hide');
-                        }
+                $(document).ready(function() {
+                    $('.nav-toggle').click(function() {
+                        var collapse_content_selector = $(this).attr('href');
+                        var toggle_switch = $(this);
+                        $(collapse_content_selector).toggle(function() {
+                            if ($(this).css('display') == 'none') {
+                                toggle_switch.html('Show');
+                            } else {
+                                toggle_switch.html('Hide');
+                            }
+                        });
                     });
                 });
-            });
-            </script>
 
-            <div class="liels2">
-                <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
-                <div class="lala1">
-                    <img href="#collapse2" class="nav-toggle2"
-                        src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png" />
-                </div>
-                <div id="collapse2" style="display:none">  
-                <center> Available soon!</center>
-        </div>
-<script>
-$(document).ready(function() {
-$('.nav-toggle2').click(function() {
-    var collapse2_content_selector = $(this).attr('href');
-    var toggle_switch = $(this);
-    $(collapse2_content_selector).toggle(function() {
-        if ($(this).css('display') == 'none') {
-            toggle_switch.html('Show');
-        } else {
-            toggle_switch.html('Hide');
-        }
-    });
-});
-});
-</script>
-            </div>
+                $(document).ready(function() {
+                    $('.nav-toggle2').click(function() {
+                        var collapse2_content_selector = $(this).attr('href');
+                        var toggle_switch = $(this);
+                        $(collapse2_content_selector).toggle(function() {
+                            if ($(this).css('display') == 'none') {
+                                toggle_switch.html('Show');
+                            } else {
+                                toggle_switch.html('Hide');
+                            }
+                        });
+                    });
+                });
 
-
-            <div class="liels3">
-                <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
-                <div class="lala2">
-                    <img href="#collapse3" class="nav-toggle3"
-                        src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1" />
-                </div>
-                <div id="collapse3" style="display:none">
-
-
-
-            
-
-
-               <center> Available soon!</center>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </div>
-
-                <script>
                 $(document).ready(function() {
                     $('.nav-toggle3').click(function() {
                         var collapse3_content_selector = $(this).attr('href');
@@ -470,7 +415,36 @@ $('.nav-toggle2').click(function() {
                         });
                     });
                 });
-                </script>
+            </script>
+
+
+<!-- ADIDAS bilde un informācija -->
+
+
+            <div class="liels2">
+                <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+                <div class="lala1">
+                    <img href="#collapse2" class="nav-toggle2"
+                        src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png" />
+                </div>
+                <div id="collapse2" style="display:none">
+                    <center> Available soon!</center>
+                </div>
+            </div>
+
+
+<!-- NIKE bilde un informācija -->
+
+
+            <div class="liels3">
+                <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+                <div class="lala2">
+                    <img href="#collapse3" class="nav-toggle3"
+                        src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1" />
+                </div>
+                <div id="collapse3" style="display:none">
+                    <center> Available soon!</center>
+                </div>
             </div>
         </div>
 </body>
