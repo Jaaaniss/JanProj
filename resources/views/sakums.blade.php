@@ -149,10 +149,9 @@
 <!-- Poga -->
 
 
-    <div class="containerr">
-        <a id="nulll" href="/next.php" class="btn btn-dark" role="button">Next</a>
+    <div class="box-1">
+        <a id="nulll" href="/next.php" class="btn btn-one" role="button"><span>Next</span></a>
     </div>
 
 </body>
-
 </html>

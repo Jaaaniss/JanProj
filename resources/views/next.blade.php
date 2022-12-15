@@ -156,7 +156,7 @@
                             cm: '27.5',
                             euroSize: '42,5',
                             ukSize: '8,5',
-                            usmSize: '9,5',
+                            usmSize: '9,5', 
                             uswSize: '11'
                         },
                         {
@@ -226,7 +226,7 @@
                     ]
 
 
-// - Izmēru funkcija - EU
+// - Izmēru funkcijas - EU
 
 
                     function findEuroSizeByCm(inputCm) {
@@ -259,7 +259,7 @@
                     })();
 
 
-// - Izmēru funkcija - UK
+// - Izmēru funkcijas - UK
 
 
                     function findUkSizeByCm(inputCm) {
@@ -292,7 +292,7 @@
                     })();
 
 
-// - Izmēru funkcija - US M
+// - Izmēru funkcijas - US M
 
 
                     function findUsmSizeByCm(inputCm) {
@@ -325,7 +325,7 @@
                     })();
 
 
-// - Izmēru funkcija - US W
+// - Izmēru funkcijas - US W
 
 
                     function findUswSizeByCm(inputCm) {
@@ -367,6 +367,16 @@
                     document.getElementById('log1').innerHTML = '';
                 }
                 </script>
+
+
+<!-- Funkcijas, lai informācija būtu paslēpta/parādīta -->
+
+
+        <div class="bak">
+        <hr>
+            <a id="nulll" href="/" class="btn btn-info" id="bb" type="button" value="Back to Home">Back to Home</a>
+        </div>
+
             </div>
 
 
