@@ -373,7 +373,6 @@
 
 
         <div class="bak">
-        <hr>
             <a id="nulll" href="/" class="btn btn-info" id="bb" type="button" value="Back to Home">Back to Home</a>
         </div>
 
