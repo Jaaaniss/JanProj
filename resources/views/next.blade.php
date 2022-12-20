@@ -369,7 +369,7 @@
                 </script>
 
 
-<!-- Funkcijas, lai informācija būtu paslēpta/parādīta -->
+<!-- Poga "Back to Home" -->
 
 
         <div class="bak">
