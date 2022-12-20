@@ -6,9 +6,7 @@
 }
 
 .form-group1 {
-
     padding-top: 50px;
-
 }
 
 .form-group2 {
@@ -44,9 +42,7 @@
 }
 
 #i111 {
-
     justify-content: center;
-
 }
 
 .btt {
@@ -68,11 +64,6 @@ label {
 }
 
 #gradient-custom {
-
-    background: #A71D31;
-
-    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
-
     background: linear-gradient(to right, #000000, #ffffff, #000000)
 }
 
@@ -99,12 +90,10 @@ label {
 }
 
 .lala1 {
-
     text-align: center;
 }
 
 .lala2 {
-
     text-align: center;
 }
 
@@ -114,16 +103,12 @@ label {
 }
 
 .liels1 {
-
     padding-bottom: 2px;
 }
 
 .liels2 {
-
     padding-bottom: 2px;
 }
-
-
 
 .nav-toggle {
     width: 290px;
@@ -161,9 +146,7 @@ label {
 
 .container {
     padding-top: 50px;
-
 }
-
 
 #virsraksts {
     color: white;

@@ -178,13 +178,8 @@ hr {
 }
 
 .gradient-custom {
-  background: #A71D31;
-  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
   background: linear-gradient(to right, #000000, #c2c2c2)
 }
-
-
-
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
@@ -210,19 +205,16 @@ div[class*=box] {
   cursor: pointer;
 }
 
-/* 
-========================
-      BUTTON ONE
-========================
-*/
 .btn-one {
   color: #FFF;
   transition: all 0.3s;
   position: relative;
 }
+
 .btn-one span {
   transition: all 0.3s;
 }
+
 .btn-one::before {
   content: '';
   position: absolute;
@@ -241,13 +233,16 @@ div[class*=box] {
   border-bottom-color: rgba(255,255,255,0.5);
   transform: scale(0.1, 1);
 }
+
 .btn-one:hover span {
   letter-spacing: 2px;
 }
+
 .btn-one:hover::before {
   opacity: 1; 
   transform: scale(1, 1); 
 }
+
 .btn-one::after {
   content: '';
   position: absolute;
