@@ -427,32 +427,32 @@
             </script>
 
 
-<!-- ADIDAS bilde un informācija -->
+<!-- NIKE bilde un informācija -->
 
 
             <div class="liels2">
                 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
                 <div class="lala1">
                     <img href="#collapse2" class="nav-toggle2"
-                        src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png" />
+                        src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1" />
                 </div>
                 <div id="collapse2" style="display:none">
-                    <center> Available soon!</center>
+                    <center><h1> Available soon!</h1></center>
                 </div>
             </div>
 
 
-<!-- NIKE bilde un informācija -->
+<!-- ADIDAS bilde un informācija -->
 
 
             <div class="liels3">
                 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
                 <div class="lala2">
                     <img href="#collapse3" class="nav-toggle3"
-                        src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1" />
+                        src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png" />
                 </div>
                 <div id="collapse3" style="display:none">
-                    <center> Available soon!</center>
+                    <center><h1> Available soon!</h1></center>
                 </div>
             </div>
         </div>
