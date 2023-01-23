@@ -24,12 +24,20 @@
 }
 
 .deda {
+  padding-top: 10px;
   display: flex;
+  float: right;
 }
 .ded {
-  padding-top: 10px;
+
+  
   display:flex;
 }
+
+#navbarsExample03 {
+  overflow:auto;
+}
+
 label {
   width:80px;
   height:40px;
@@ -177,7 +185,10 @@ hr {
 }
 
 .form-control {
+  border: 1px solid #000000;
+  background-color: #000;
   margin: auto;
+  color: #ffffff;
 }
 
 .nav-toggle3 {
@@ -220,6 +231,7 @@ hr {
 }
 
 .form-group {
+  display: flex;
   margin: auto;
   padding-bottom: 25px;
   padding-top: 40px;

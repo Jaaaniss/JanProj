@@ -40,18 +40,8 @@
                 <li class="nav-item active">
                     <a href="#collapse3" class="nav-link" id="toggle">Get converter</a>
                 </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Brands</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown03">
-                        <a class="dropdown-item" href="https://www.adidas.com/us">Adidas</a>
-                        <a class="dropdown-item" href="https://www.vans.com/en-us">Vans</a>
-                        <a class="dropdown-item" href="https://www.nike.com/">Nike</a>
-                    </div>
-                </li>
-                <li class="ded">
-                    <div class="deda">
+            </ul>
+            <div class="deda">
                         <input onclick="myFunction31()" type="checkbox" id="darkmode-toggle"/>
                         <label for="darkmode-toggle">
                         <script>
@@ -61,8 +51,6 @@
                             }
                         </script>
                     </div>
-                </li>
-            </ul>
         </div>
     </nav>
 
@@ -112,7 +100,7 @@
         <div class="form-group col-sm-4">
 
             <div class="de">
-                <p>Inches: </p>
+                <a>Inches: </a>
                 <input id="inputInches" class="form-control" type="number" placeholder="Inches"
                     oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
             </div>
