@@ -19,14 +19,14 @@
     <title>Document</title>
 </head>
 
-<body class="gradient-custom">
+<body>
 
 
 <!-- Augšā navbars -->
 
 
-    <nav class="navbar navbar-expand-sm navbar-dark ">
-        <a class="navbar-brand" href="#">CONV</a>
+    <nav id= "dedd" class="navbar navbar-expand-sm navbar-dark ">
+        <a class="navbar-brand" href="#">CNV</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
             aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,6 +48,18 @@
                         <a class="dropdown-item" href="https://www.adidas.com/us">Adidas</a>
                         <a class="dropdown-item" href="https://www.vans.com/en-us">Vans</a>
                         <a class="dropdown-item" href="https://www.nike.com/">Nike</a>
+                    </div>
+                </li>
+                <li class="ded">
+                    <div class="deda">
+                        <input onclick="myFunction31()" type="checkbox" id="darkmode-toggle"/>
+                        <label for="darkmode-toggle">
+                        <script>
+                            function myFunction31() {
+                                var element = document.body;
+                                element.classList.toggle("invert");
+                            }
+                        </script>
                     </div>
                 </li>
             </ul>
@@ -100,12 +112,12 @@
         <div class="form-group col-sm-4">
 
             <div class="de">
-                <label>Inches: </label>
+                <p>Inches: </p>
                 <input id="inputInches" class="form-control" type="number" placeholder="Inches"
                     oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
             </div>
             <div class="sk">
-                <label>Cm: </label>
+                <a>Cm: </a>
                 <input id="inputcm" class="form-control" type="number" placeholder="Cm"
                     oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
             </div>

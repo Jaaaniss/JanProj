@@ -8,6 +8,10 @@
   padding-top: 12px;
 }
 
+.de {
+  padding-bottom: 10px;
+}
+
 #vajg1 {
   padding-top: 3px;
 }
@@ -19,8 +23,60 @@
   padding-top: 12px;
 }
 
+.deda {
+  display: flex;
+}
+.ded {
+  padding-top: 10px;
+  display:flex;
+}
+label {
+  width:80px;
+  height:40px;
+  position: relative;
+  display: block;
+  background: #000000;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+  cursor: pointer;
+}
+
+label:after {
+  content: "";
+  width:20px;
+  height: 20px;
+  position: absolute;
+  top:10px;
+  left:10px;
+  background: linear-gradient(180deg,#0e01ff,#00d1f3);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+input {
+  width: 0;
+  height: 0;
+}
+input:checked + label {
+  background: #000000;
+}
+input:checked + label:after {
+  left:70px;
+  transform: translateX(-100%);
+  
+}
+label, label:after {
+  transition: 0.3s
+}
+
 body {
-  background: white;
+  color: white;
+  background: linear-gradient(to right, #000000, #575757)
+}
+
+.invert {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to right, #ffffff, #8b8b8b);
+  filter: invert(100%);
 }
 
 .btn-info {
@@ -104,7 +160,6 @@ hr {
 .teksts {
   padding-top: 70px;
   text-align: center;
-  color: white;
   padding-bottom: 10px;
 }
 
@@ -165,7 +220,6 @@ hr {
 }
 
 .form-group {
-  display:flex;
   margin: auto;
   padding-bottom: 25px;
   padding-top: 40px;
@@ -177,9 +231,14 @@ hr {
   font-size: 35px;
 }
 
-.gradient-custom {
-  background: linear-gradient(to right, #000000, #c2c2c2)
+.navbar-nav {
+  display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
 }
+
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
