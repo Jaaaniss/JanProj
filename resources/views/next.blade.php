@@ -82,6 +82,10 @@
                             usmSize: '4',
                             uswSize: '5,5'
                         },
+                        // make db migrations and migration tables
+                        // make controllers and select the data needed
+                        // pass needed controller via api routes
+                        // send controller output to blade.php
                         {
                             cm: '22.5',
                             euroSize: '36',
