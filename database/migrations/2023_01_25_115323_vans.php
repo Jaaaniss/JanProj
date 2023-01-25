@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('vans', function (Blueprint $table) {
             $table->id("v_cm");
-            $table->int("v_eu");
-            $table->int("v_uk");
-            $table->int("v_usm");
-            $table->int("v_usw");
+            $table->integer("v_eu");
+            $table->integer("v_uk");
+            $table->integer("v_usm");
+            $table->integer("v_usw");
         });
     }
 
