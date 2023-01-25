@@ -1,7 +1,7 @@
 #rod2 {
   width: 120px;
   height: 120px;
-  filter: brightness(0) invert(1);
+  filter: brightness(0) invert(0);
 }
 .uu1 {
   padding-bottom: 19px;
@@ -44,23 +44,49 @@
   width: 100%;
   height: 100%;
   background: transparent;
-  box-shadow: 0 3px 4px rgba(255, 255, 255, 0.352);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.352);
 }
 #dedd {
   
   padding-left: 5%;
   padding-right: 5%;
 }
+
+
 #navbarsExample03 {
   overflow:auto;
 }
 
+label svg {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 10px;
+  z-index: 100;
+}
+label svg.sun {
+  left: 12px;
+  fill: #fff;
+  transition: 0.3s;
+}
+label svg.moon {
+  left: 61px;
+  fill: #7e7e7e;
+  transition: 0.3s;
+}
+input:checked + label svg.sun {
+  fill:#7e7e7e;
+}
+input:checked + label svg.moon {
+  fill:#fff;
+}
+
 label {
-  width:80px;
-  height:40px;
+  width:100px;
+  height:50px;
   position: relative;
   display: block;
-  background: #000000;
+  background: #ebebeb;
   border-radius: 200px;
   box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
   cursor: pointer;
@@ -68,41 +94,42 @@ label {
 
 label:after {
   content: "";
-  width:20px;
-  height: 20px;
+  width: 33px;
+  height: 33px;
   position: absolute;
-  top:10px;
-  left:10px;
-  background: linear-gradient(180deg,#0e01ff,#00d1f3);
+  top: 7px;
+  left: 8px;
+  background: linear-gradient(180deg,#ffcc89,#d8860b);
   border-radius: 180px;
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 10px rgb(0 0 0 / 20%);
 }
 input {
   width: 0;
   height: 0;
 }
 input:checked + label {
-  background: #000000;
+  background: #242424;
 }
 input:checked + label:after {
-  left:70px;
+  left: 90px;
   transform: translateX(-100%);
-  
+  background: linear-gradient(180deg,#777,#3a3a3a);
 }
 label, label:after {
   transition: 0.3s
 }
 
-body {
-  color: white;
-  background: linear-gradient(to right, #000000, #575757)
+svg {
+  fill: none;
 }
 
-.invert {
-  color: rgb(255, 255, 255);
-  background: linear-gradient(to right, #aeaeae, #ffffff);
-  filter: invert(100%);
+body {
+  color: rgb(0, 0, 0);
+  background: linear-gradient(to right, #ffffff, #cacaca)
 }
+
+
+
 
 .btn-info {
   color: #fff;
@@ -118,20 +145,20 @@ body {
   border: 1.5px solid;
   border-top: 0;
   border-bottom: 0;
-  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(226, 226, 226, 1) 50%, rgba(255, 255, 255, 0) 100%);
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
   border-image-slice: 1;
 }
 
 #rod1 {
   width: 95px;
   height: 95px;
-  filter: brightness(0) invert(1);
+  filter: brightness(0) invert(0);
 }
 
 #rod3 {
   width: 135x;
   height: 135px;
-  filter: brightness(0) invert(1);
+  filter: brightness(0);
 }
 
 #ir1 {
@@ -171,8 +198,9 @@ hr {
   border: 0;
   clear:both;
   display:block;
-  width: 95%;                
-  background-color:#ffffff;
+  width: 95%;
+  background-color: #000000;
+             
   height: 1px;
 }
 
@@ -203,7 +231,6 @@ hr {
 
 .form-control {
   border: 1px solid #000000;
-  background-color: #000;
   margin: auto;
   color: #ffffff;
 }
@@ -252,7 +279,7 @@ hr {
   margin: auto;
   padding-bottom: 25px;
   padding-top: 40px;
-  color: white;
+  color: rgb(0, 0, 0);
   justify-content: space-evenly;
 }
 
@@ -294,7 +321,7 @@ div[class*=box] {
 }
 
 .btn-one {
-  color: #FFF;
+  color: rgb(0, 0, 0);
   transition: all 0.3s;
   position: relative;
 }
@@ -317,8 +344,8 @@ div[class*=box] {
   border-bottom-width: 1px;
   border-top-style: solid;
   border-bottom-style: solid;
-  border-top-color: rgba(255,255,255,0.5);
-  border-bottom-color: rgba(255,255,255,0.5);
+  border-top-color: rgba(0, 0, 0, 0.5);
+  border-bottom-color: rgba(0, 0, 0, 0.5);
   transform: scale(0.1, 1);
 }
 
@@ -340,15 +367,173 @@ div[class*=box] {
   height: 100%;
   z-index: 1;
   transition: all 0.3s;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
 
 .btn-one:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}
+
+.navbar-dark .navbar-brand {
+  color: rgb(0, 0, 0);
+}
+
+#dark1 {
+  color: #000;
+}
+
+#dark2 {
+  color: #000;
+}
+
+/* Dark mode styles */
+
+.invert {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to right, #181818, #363636);
+}
+
+.invert #dedd {
+  width: 100%;
+  height: 100%;
+  color: #000;
+  background: transparent;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.352);
+}
+
+.invert #navbarsExample03 {
+  color: rgb(255, 255, 255);
+}
+
+.invert #rod1 {
+  filter: brightness(0) invert(1);
+}
+
+.invert #rod2 {
+  filter: brightness(0) invert(1);
+}
+
+.invert #rod3 {
+  filter: brightness(0) invert(1);
+}
+
+
+.invert .navbar-brand {
+  color: rgb(255, 255, 255);
+}
+
+.invert #dark2 {
+  color: rgb(255, 255, 255);
+  filter: contrast(100%);
+}
+
+.invert #dark1 {
+  color: rgb(255, 255, 255);
+  filter: contrast(100%);
+}
+
+.invert #ir2 {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 250px;
+  float: left;
+  border: 1.5px solid;
+  border-top: 0;
+  border-bottom: 0;
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1;
+}
+
+.invert .form-group {
+  display: flex;
+  margin: auto;
+  padding-bottom: 25px;
+  padding-top: 40px;
+  color: rgb(255, 255, 255);
+  justify-content: space-evenly;
+}
+
+.invert hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 95%;                
+  background-color:#ffffff;
+  height: 1px;
+}
+
+
+
+.invert .btn {
+  line-height: 35px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+}
+
+.invert .btn-one {
+  color: #FFF;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.invert .btn-one span {
+  transition: all 0.3s;
+}
+
+.invert .btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+
+.invert .btn-one:hover span {
+  letter-spacing: 2px;
+}
+
+.invert .btn-one:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+
+.invert .btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.invert .btn:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.invert .btn-one:hover::after {
   opacity: 0; 
   transform: scale(0.1, 1);
 }
