@@ -1,3 +1,18 @@
+
+<div class="flex flex-col py-1 ">
+    <div class="rounded-lg border-4 border-gray-500/50">
+        
+
+        <select name="" id="">
+            @foreach($vans as $value)
+            <option class="px-2" style="color: #000">{{ $value->v_eu }}</option>
+            @endforeach
+        </select>
+
+    </div>
+</div>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,7 +76,7 @@
                     </div>
                 </div>
 
-
+                
 <!-- Visu izmēru masīvs un tā funkcijas -->
 
 

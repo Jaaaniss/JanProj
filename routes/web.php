@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\VansController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,9 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('sakums');
 });
+Route::get('/next.php',[VansController::class,'vans']);
 
-Route::get('/next.php', function () {
-    return view('next');
-});
+// Route::get('/next.php', function () {
+//     return view('next');
+// });
 
 
