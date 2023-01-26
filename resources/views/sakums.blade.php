@@ -27,7 +27,7 @@
 
 
     <nav id= "dedd" class="navbar navbar-expand-sm navbar-dark ">
-        <a class="navbar-brand" href="#">CNV</a>
+        <img src="{{asset('/image/LOGO.png')}}" alt="Girl in a jacket" width="65" height="65">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
             aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

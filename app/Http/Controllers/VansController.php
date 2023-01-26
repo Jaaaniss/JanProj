@@ -50,9 +50,12 @@ class VansController extends Controller
      * @param  \App\Models\Vans  $vans
      * @return \Illuminate\Http\Response
      */
-    public function show(Vans $vans)
+    public function show($v_cm)
     {
-        //
+        $record= DB::table('vans')->where('v_cm', $v_cm);
+        return response()->json(array('v_uk' => $v_uk->get()));
+
+    
     }
 
     /**
