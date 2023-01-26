@@ -5,7 +5,7 @@
 
         <select name="" id="">
             @foreach($vans as $value)
-            <option class="px-2" style="color: #000">{{ $value->v_eu }}</option>
+            <option class="px-2" style="color: #000">{{ $value->v_cm }}</option>
             @endforeach
         </select>
 
