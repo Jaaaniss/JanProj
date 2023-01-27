@@ -27,7 +27,7 @@
 
 
     <nav id= "dedd" class="navbar navbar-expand-sm navbar-dark ">
-        <img src="{{asset('/image/LOGO.png')}}" alt="Girl in a jacket" width="65" height="65">
+        <img id="imgg" src="{{asset('/image/LOGO.png')}}" alt="Girl in a jacket" width="65" height="40" class="saturate">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
             aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@
                 <li class="nav-item active" id="esteicu">
                     <a id="dark2" href="#collapse3" class="nav-link" id="toggle">Get converter</a>
                 </li>
-                <img src="{{asset('/image/LOGO2.png')}}" ID="imggg" alt="Girl in a jacket" width="300" height="70">
+                <img src="{{asset('/image/LOGO2.png')}}" ID="imggg" alt="Girl in a jacket" width="300" height="70" class="saturates">
             </ul>
 
             <div class="deda">

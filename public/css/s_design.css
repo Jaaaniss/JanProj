@@ -394,6 +394,20 @@ div[class*=box] {
   color: #000;
 }
 
+#imgg {
+  color: red;
+  transform: scale(-1, 1);
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+}
+
+#imggg {
+filter: saturate(255); 
+}
+
 /* Dark mode styles */
 
 .invert {
@@ -539,3 +553,16 @@ div[class*=box] {
   opacity: 0; 
   transform: scale(0.1, 1);
 }
+
+/* .invert #imggg {
+  filter: invert(100%);
+}
+
+.invert #imgg {
+        filter: invert(100%);
+} */
+
+.saturate { filter: saturate(255); }
+
+.invert .saturate { filter: saturate(255); }
+
