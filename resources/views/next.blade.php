@@ -5,10 +5,34 @@
 
         <select name="" id="">
             @foreach($vans as $value)
-            <option class="px-2" style="color: #000">{{ $value->v_cm }}</option>
+                <option class="px-2" style="color: #000">{{ $value->v_cm }}</option>
             @endforeach
         </select>
 
+
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Cm</th>
+                <th scope="col">EU</th>
+                <th scope="col">UK</th>
+                <th scope="col">US M</th>
+                <th scope="col">US W</th>
+              </tr>
+            </thead>
+                <tbody>
+                    @foreach($vans as $value)
+                    <tr>    
+                        <th>{{$value->v_cm}}</th>
+                        <th>{{$value->v_eu}}</th>
+                        <th>{{$value->v_uk}}</th>
+                        <th>{{$value->v_usm}}</th>
+                        <th>{{$value->v_usw}}</th>                 
+                      </tr>
+            @endforeach
+            </tbody>
+          </table>
     </div>
 </div>
 

@@ -38,10 +38,12 @@
                 <li class="nav-item active">
                     <a id="dark1" class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item active" id="esteicu">
                     <a id="dark2" href="#collapse3" class="nav-link" id="toggle">Get converter</a>
                 </li>
+                <img src="{{asset('/image/LOGO2.png')}}" ID="imggg" alt="Girl in a jacket" width="300" height="70">
             </ul>
+
             <div class="deda">
                         <input onclick="myFunction31()" type="checkbox" id="darkmode-toggle"/>
                         <label for="darkmode-toggle">
@@ -159,7 +161,7 @@
 
 
     <div class="box-1">
-        <a id="nulll" href="/next.php" class="btn btn-one" role="button"><span>Next</span></a>
+        <a id="nulll" href="/next" class="btn btn-one" role="button"><span>Next</span></a>
     </div>
 
 </body>

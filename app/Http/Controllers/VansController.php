@@ -1,27 +1,26 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use App\Models\Vans;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+class VansController extends Controller {
 
-class VansController extends Controller
-{
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
-    }
-
-    public function vans()
-    {
         $vans = Vans::all();
+        // $vans = DB::select('select v_cm from vans');
         return view('next',['vans'=>$vans]);
     }
+    
+
+    // public function vans()
+    // {
+    //     $vans = DB::all();
+    //     return view('next',['vans'=>$value]);
+    // }
 
     /**
      * Show the form for creating a new resource.
@@ -52,10 +51,14 @@ class VansController extends Controller
      */
     public function show($v_cm)
     {
-        $record= DB::table('vans')->where('v_cm', $v_cm);
-        return response()->json(array('v_uk' => $v_uk->get()));
+        // $record= DB::table('vans')->where('v_cm', $v_cm);
+        // return response()->json(array('v_uk' => $v_uk->get()));
 
-    
+        $vans = Vans::select('v_cm')
+                           ->where('v_cm', '=', $v_cm)
+                           ->get();
+
+
     }
 
     /**
