@@ -1,11 +1,33 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/design.css') }}">
+    <script src="{{ asset("js/ajax.js")}}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+
+<!-- Visi zīmoli -->
+
+
+<body id="gradient-custom" class="no-chat-button gl-modal-open" style="overflow-y: scroll;" data-padding-right="85"
+img="https://jooinn.com/images/cloth-background-5.png">
+
 <div class="flex flex-col py-1 ">
     <div class="rounded-lg border-4 border-gray-500/50">
         
 
-        <select name="" id="">
+        <select id="123">
             @foreach($vans as $value)
-                <option class="px-2" style="color: #000">{{ $value->v_cm }}</option>
+                <option id="123" value="{{$value->v_cm}}" class="px-2" style="color: #000">{{ $value->v_cm }}</option>
             @endforeach
         </select>
 
@@ -22,41 +44,12 @@
               </tr>
             </thead>
                 <tbody>
-                    @foreach($vans as $value)
-                    <tr>    
-                        <th>{{$value->v_cm}}</th>
-                        <th>{{$value->v_eu}}</th>
-                        <th>{{$value->v_uk}}</th>
-                        <th>{{$value->v_usm}}</th>
-                        <th>{{$value->v_usw}}</th>                 
-                      </tr>
-            @endforeach
+                    <tr id="data">                     
+                    </tr>
             </tbody>
           </table>
     </div>
 </div>
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/design.css') }}">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Document</title>
-</head>
-
-
-<!-- Visi zīmoli -->
-
-
-<body id="gradient-custom" class="no-chat-button gl-modal-open" style="overflow-y: scroll;" data-padding-right="85"
-    img="https://jooinn.com/images/cloth-background-5.png">
 
 
 <!-- VANS bilde un informācija -->

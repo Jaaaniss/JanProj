@@ -8,19 +8,24 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 class VansController extends Controller {
 
-    public function index()
+    public function index($size)
     {
-        $vans = Vans::all();
-        // $vans = DB::select('select v_cm from vans');
-        return view('next',['vans'=>$vans]);
+        $time = DB::table("vans")
+            ->where("v_cm",$size);
+        return response()->json(array('data' => $time->get()));
     }
     
-
-    // public function vans()
-    // {
-    //     $vans = DB::all();
-    //     return view('next',['vans'=>$value]);
+    // public function index1(){
+    //     $vans=
+    //     return view('next');
     // }
+    
+
+    public function vans()
+    {
+        $vans = vans::all();
+        return view('next',['vans'=>$vans]);
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -53,10 +58,6 @@ class VansController extends Controller {
     {
         // $record= DB::table('vans')->where('v_cm', $v_cm);
         // return response()->json(array('v_uk' => $v_uk->get()));
-
-        $vans = Vans::select('v_cm')
-                           ->where('v_cm', '=', $v_cm)
-                           ->get();
 
 
     }

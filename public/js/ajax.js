@@ -1,11 +1,12 @@
-$("#table").change(function(){
-    var table = $(this).find(":selected").val();
+$("#123").change(function(){
+    var table = $("#123").find(":selected").val();
+    console.log(table)
     $.ajax({
         type: "GET",
-        url: "/api//"+table,
+        url: "/api/getsize/"+table,
         dataType: "json",   //expect html to be returned
         success: function(data){
-        
+            console.log(data)
        },
         error: function(jqXhr, textStatus, errorMessage){
             console.log(errorMessage)

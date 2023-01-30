@@ -16,7 +16,7 @@ Route::get('/', function () {
     return view('sakums');
 });
 
-Route::get('/next',[VansController::class,'index']);
+Route::get('/next',[VansController::class,'vans']);
 
 
 

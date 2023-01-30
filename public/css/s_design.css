@@ -554,15 +554,15 @@ filter: saturate(255);
   transform: scale(0.1, 1);
 }
 
-/* .invert #imggg {
+.invert #imggg {
   filter: invert(100%);
 }
 
 .invert #imgg {
         filter: invert(100%);
-} */
+}
 
-.saturate { filter: saturate(255); }
+/* .saturate { filter: saturate(255); }
 
-.invert .saturate { filter: saturate(255); }
+.invert .saturate { filter: saturate(255); } */
 
