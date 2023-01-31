@@ -190,13 +190,10 @@ body {
 }
 
 hr {
-  border: 0;
-  clear:both;
-  display:block;
-  width: 95%;
-  background-color: #000000;
-             
-  height: 1px;
+  background-image: linear-gradient(90deg,transparent, rgb(0, 0, 0), transparent);  height: 1px;
+  margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
 }
 
 #collapse3 {
@@ -271,7 +268,7 @@ hr {
   display: flex;
   margin: auto;
   padding-bottom: 25px;
-  padding-top: 40px;
+  padding-top: 38px;
   color: rgb(0, 0, 0);
   justify-content: space-evenly;
 }
@@ -483,12 +480,11 @@ filter: saturate(255);
 }
 
 .invert hr {
-  border: 0;
-  clear:both;
-  display:block;
-  width: 95%;                
-  background-color:#ffffff;
-  height: 1px;
+  
+  margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;                
+  background-image: linear-gradient(90deg,transparent, rgb(255, 255, 255), transparent);  height: 1px;
 }
 
 
