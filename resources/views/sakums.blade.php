@@ -32,16 +32,11 @@
             aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExample03">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a id="dark1" class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active" id="esteicu">
-                    <a id="dark2" href="#collapse3" class="nav-link" id="toggle">Get converter</a>
-                </li>
-                <img src="{{asset('/image/LOGO2.png')}}" ID="imggg" alt="Girl in a jacket" width="300" height="70" class="saturates">
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <div class="imager">
+                            <img src="{{asset('/image/LOGO2.png')}}" ID="imggg" alt="Girl in a jacket" width="300" height="70" class="saturates">
+                </div>
+            </div>
             </ul>
 
             <div class="deda">
@@ -95,7 +90,7 @@
                             src="https://icons.veryicon.com/png/o/education-technology/ecology/vice-versa.png" />
                     </div>
                     <div class="col-sm">
-                        <h4>3.<br> In case you cant measure it in cm, there is converter at the top </h4>
+                        <h4>3.<br> In case you cant measure it in cm, there is converter at the bottom </h4>
                     </div>
                 </div>
             </div>
@@ -105,9 +100,9 @@
 
 <!-- Converter -->
 
+<hr />
 
     <div class="converter" id="collapse3" style="display:none">
-        <hr />
         <div class="form-group col-sm-4">
 
             <div class="de">
@@ -158,10 +153,11 @@
 
 
 <!-- Poga -->
-
-
-    <div class="box-1">
-        <a id="nulll" href="/next" class="btn btn-one" role="button"><span>Next</span></a>
+    <div class="d-flex align-items-center justify-content-center">
+        <div class="box-1">
+            <a id="nulll" href="/next" class="btn btn-one" role="button"><span>Next</span></a>
+        </div>
+        <a id="dark2" href="#collapse3" class="nav-link" id="toggle">Get converter</a>
     </div>
 
 </body>

@@ -23,9 +23,6 @@
   padding-top: 12px;
 }
 
-#esteicu {
-  padding-right: 300px;
-}
 .deda {
   padding-top: 10px;
   display: flex;
@@ -53,11 +50,6 @@
   
   padding-left: 5%;
   padding-right: 5%;
-}
-
-
-#navbarsExample03 {
-  overflow:auto;
 }
 
 label svg {
@@ -208,7 +200,6 @@ hr {
 }
 
 #collapse3 {
-  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -309,7 +300,7 @@ div[class*=box] {
 }
 
 .box-1 {
-  padding-top: 80px;
+  padding-top: 40px;
   text-align: center; 
   background-color: #ff666600; 
 }
@@ -394,6 +385,16 @@ div[class*=box] {
   color: #000;
 }
 
+.navbar-expand-sm .navbar-collapse {
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    justify-content: center;
+}
+
+
+
 #imgg {
   color: red;
   transform: scale(-1, 1);
@@ -402,6 +403,12 @@ div[class*=box] {
         -o-transform: scale(-1, 1);
         -ms-transform: scale(-1, 1);
         transform: scale(-1, 1);
+}
+
+.d-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
+  flex-direction: column;
 }
 
 #imggg {
