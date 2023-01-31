@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/design.css') }}">
     <script src="{{ asset("js/ajax.js")}}"></script>
@@ -24,14 +25,11 @@ img="https://jooinn.com/images/cloth-background-5.png">
 <div class="flex flex-col py-1 ">
     <div class="rounded-lg border-4 border-gray-500/50">
         
-
         <select id="ident">
             @foreach($vans as $value)
                 <option id="ident" value="{{$value->v_cm}}" class="px-2" style="color: #000">{{ $value->v_cm }}</option>
             @endforeach
         </select>
-
-
 
         <table class="table">
             <thead>
@@ -57,7 +55,6 @@ img="https://jooinn.com/images/cloth-background-5.png">
 
     <div class=lielss>
         <div class="liels1">
-            <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
             <div class="lala">
                 <img href="#collapse" class="nav-toggle"
                     src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnv9ij36ZmZzFbQ3agBIbpsB-sXXJkqqTEGMP3KKyqgNEfgLKS" />
@@ -156,7 +153,6 @@ img="https://jooinn.com/images/cloth-background-5.png">
 
 
             <div class="liels2">
-                <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
                 <div class="lala1">
                     <img href="#collapse2" class="nav-toggle2"
                         src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1" />
@@ -171,7 +167,6 @@ img="https://jooinn.com/images/cloth-background-5.png">
 
 
             <div class="liels3">
-                <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
                 <div class="lala2">
                     <img href="#collapse3" class="nav-toggle3"
                         src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png" />
