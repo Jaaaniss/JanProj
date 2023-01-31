@@ -10,7 +10,7 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/design.css') }}">
-    <script src="{{ asset("js/ajax.js")}}"></script>
+    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Document</title>
 </head>
@@ -25,6 +25,11 @@ img="https://jooinn.com/images/cloth-background-5.png">
 <div class="flex flex-col py-1 ">
     <div class="rounded-lg border-4 border-gray-500/50">
         
+
+    
+
+    
+
         <select id="ident">
             @foreach($vans as $value)
                 <option id="ident" value="{{$value->v_cm}}" class="px-2" style="color: #000">{{ $value->v_cm }}</option>
@@ -176,5 +181,6 @@ img="https://jooinn.com/images/cloth-background-5.png">
                 </div>
             </div>
         </div>
+        <script src="{{ asset("js/ajax.js")}}"></script>
 </body>
 </html>
