@@ -26,6 +26,9 @@
 <!-- Augšā navbars -->
 
 
+
+
+
     <nav id= "dedd" class="navbar navbar-expand-sm navbar-dark ">
         <img id="imgg" src="{{asset('/image/LOGO.png')}}" alt="Girl in a jacket" width="65" height="40" class="saturate">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"

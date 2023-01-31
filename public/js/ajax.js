@@ -1,5 +1,11 @@
-$("#123").change(function(){
-    var table = $("#123").find(":selected").val();
+
+    setTimeout(function() {
+console.log('e');
+}, 500);
+
+
+$("#ident").change(function(){
+    var table = $("#ident").find(":selected").val();
     console.log(table)
     $.ajax({
         type: "GET",

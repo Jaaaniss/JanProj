@@ -10,13 +10,13 @@ class Vans extends Model
     protected $table = 'vans';
     public $incrementing = false;
     public $timestamp = false;
-    // protected $fillable =
-    // [
-    // 'v_cm',
-    // 'v_eu',
-    // 'v_uk',
-    // 'v_usm',
-    // 'v_usw'
-    // ];
+    protected $fillable =
+    [
+    'v_cm',
+    'v_eu',
+    'v_uk',
+    'v_usm',
+    'v_usw'
+    ];
     use HasFactory;
 }
