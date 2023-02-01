@@ -168,7 +168,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border-radius: .375rem;
+    border-radius: 25px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
@@ -222,7 +222,7 @@ label {
 }
 
 #gradient-custom {
-    background: linear-gradient(to right, #000000, #ffffff, #000000)
+    background: linear-gradient(to right, #000000,#cacaca, #cacaca, #cacaca, #000000);
 }
 
 .btn {
@@ -414,8 +414,8 @@ label {
     height: 100%;
     z-index: 1;
     transition: all 0.3s;
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+    background-color: rgb(0 0 0 / 17%);
+}
   
   .btn:hover {
     color: #000000;
@@ -440,6 +440,17 @@ label {
     justify-content: center;
 }
 
+.card-title {
+    margin-bottom: var(--bs-card-title-spacer-y);
+    font-weight: 900;
+    text-align: center;
+}
+
+a1 {
+    color: #000000;
+    text-decoration: underline;
+}
+
 #textt {
     color: #fff;
     background-color: #00000058;
@@ -448,6 +459,7 @@ label {
     padding-bottom: 5px;
     padding-right: 20px;
     padding-left: 20px;
+    box-shadow: 0 7px 5px rgb(0 0 0 / 60%);
 }
 
 .viskopa {
@@ -456,6 +468,26 @@ label {
     padding-top: 30px;
     flex-direction: column;
     align-items: center;
+}
+
+.zimoli {
+    display: flex;
+    padding-top: 20px;
+}
+
+.nikee {
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.adidass {
+    padding-right: 20px;
+}
+
+
+
+.vanss {
+    padding-left: 20px;
 }
 
 .augsatext {

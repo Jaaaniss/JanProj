@@ -26,12 +26,32 @@ img="https://jooinn.com/images/cloth-background-5.png">
 <div class="viskopa">
     <div class="augsatext">
         <h4 id="textt">   Please select your size below (in centimeters...)   </h4>
-        <select id="ident" class="form-control1">
-            @foreach($vans as $value)
-                <option value="" disabled selected>---</option>
-                <option id="ident" value="{{$value->v_cm}}" >{{ $value->v_cm }}</option>
-            @endforeach
-        </select>
+        <div class="zimoli">
+            <div class="vanss">
+                <select id="ident" class="form-control1">
+                    @foreach($vans as $value)
+                        <option value="" disabled selected hidden>Vans:</option>
+                        <option id="ident" value="{{$value->v_cm}}" >{{ $value->v_cm }}</option>
+                    @endforeach
+                </select>
+            </div>
+            <div class="nikee"> 
+                <select id="ident2" class="form-control1">
+                    @foreach($vans as $value)
+                        <option value="" disabled selected hidden>Nike:</option>
+                        <option id="ident2" value="{{$value->v_cm}}" >{{ $value->v_cm }}</option>
+                    @endforeach
+                </select>
+            </div>
+            <div class="adidass">
+                <select id="ident3" class="form-control1">
+                    @foreach($vans as $value)
+                        <option value="" disabled selected hidden>Adidas:</option>
+                        <option id="ident3" value="{{$value->v_cm}}" >{{ $value->v_cm }}</option>
+                    @endforeach
+                </select>
+            </div>
+        </div>
     </div>
 </div>
 <!-- VANS bilde un informācija -->
@@ -47,7 +67,7 @@ img="https://jooinn.com/images/cloth-background-5.png">
             <div class=lielaiss>
                 <div class="row1">
                     <div class="col3">
-                        <div class="card" style="width: 16rem; height: 34rem;">
+                        <div class="card" style="width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
                             <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnv9ij36ZmZzFbQ3agBIbpsB-sXXJkqqTEGMP3KKyqgNEfgLKS" class="card-img-top" alt="...">
                             <div class="card1-body">
                               <h4 class="card-title">Vans footwear</h4>
@@ -60,7 +80,7 @@ img="https://jooinn.com/images/cloth-background-5.png">
                               <li class="list-group-item">
                                 <div class="lala1">
                                     <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
-                                    <a href="#collapse" class="nav-toggle">More info</a>
+                                    <a1 href="#collapse" class="nav-toggle">More info</a1>
                                 </div>
                                 <div id="collapse" style="display:none">
                                     <p1>Size conversions are approximate. Shoes should be tried on for proper fit.</p1>
@@ -70,7 +90,7 @@ img="https://jooinn.com/images/cloth-background-5.png">
                           </div>
                     </div>
                     <div class="col3">
-                        <div class="card" style="width: 16rem; height: 34rem;">
+                        <div class="card" style="width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
                             <img src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1" class="card-img-top" alt="...">
                             <div class="card1-body">
                               <h4 class="card-title">Nike footwear</h4>
@@ -83,7 +103,7 @@ img="https://jooinn.com/images/cloth-background-5.png">
                               <li class="list-group-item">
                                 <div class="lala1">
                                     <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
-                                    <a href="#collapse2" class="nav-toggle2">More info</a>
+                                    <a1 href="#collapse2" class="nav-toggle2">More info</a1>
                                 </div>
                                 <div id="collapse2" style="display:none">
                                     <p1>Nike shoes fit slightly narrow at true to size, generally speaking.</p1>
@@ -93,7 +113,7 @@ img="https://jooinn.com/images/cloth-background-5.png">
                           </div>
                     </div>
                     <div class="col3">
-                        <div class="card" style="width: 16rem; height: 34rem;">
+                        <div class="card" style="width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);" >
                             <img src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png" class="card-img-top" alt="...">
                             <div class="card1-body">
                               <h4 class="card-title">Adidas footwear</h4>
@@ -106,7 +126,7 @@ img="https://jooinn.com/images/cloth-background-5.png">
                               <li class="list-group-item">
                                 <div class="lala1">
                                     <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
-                                    <a href="#collapse3" class="nav-toggle3">More info</a>
+                                    <a1 href="#collapse3" class="nav-toggle3">More info</a1>
                                 </div>
                                 <div id="collapse3" style="display:none">
                                     <p1>For tight fit, go one size down. For loose fit, go one size up.</p1>
