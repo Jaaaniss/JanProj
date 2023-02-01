@@ -31,6 +31,7 @@ img="https://jooinn.com/images/cloth-background-5.png">
     <h4 id="textt">   Please enter your size below (in centimeters...)   </h4>
     <select id="ident" class="form-control1">
         @foreach($vans as $value)
+            <option value="" disabled selected>---</option>
             <option id="ident" value="{{$value->v_cm}}" >{{ $value->v_cm }}</option>
         @endforeach
     </select>
@@ -48,59 +49,74 @@ img="https://jooinn.com/images/cloth-background-5.png">
             <div id="collapse" style="display:none"> --}}
             <div class=lielaiss>
                 <div class="row1">
-                    <div class="col">
+                    <div class="col3">
                         <div class="card" style="width: 16rem; height: 34rem;">
                             <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnv9ij36ZmZzFbQ3agBIbpsB-sXXJkqqTEGMP3KKyqgNEfgLKS" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card1-body">
                               <h4 class="card-title">Vans footwear</h4>
                               <p class="card-text"></p>
                             </div>
                             <ul class="list-group list-group-flush">
-                              <li class="list-group-item">Tavs EU izmers ir <span id="size1"></span></li>
-                              <li class="list-group-item">Tavs UK izmers ir <span id="size2"></span></li>
-                              <li class="list-group-item">Tavs US M izmers ir <span id="size3"></span></li>
-                              <li class="list-group-item">Tavs US W izmers ir <span id="size4"></span></li>
+                              <li class="list-group-item">Your EU size is <span id="size1"></span></li>
+                              <li class="list-group-item">Your UK size is <span id="size2"></span></li>
+                              <li class="list-group-item">Your US M size is <span id="size3"></span></li>
+                              <li class="list-group-item">Your US W size is <span id="size4"></span></li>
+                              <li class="list-group-item">
+                                <div class="lala1">
+                                    <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a>
+                                    <a href="#collapse" class="nav-toggle">More info</a>
+                                </div>
+                                <div id="collapse" style="display:none">
+                                    <p> TEXT 1</p>
+                                </div>
+                              </li>
                             </ul>
-                            <div class="card-body">
-                              <a href="#" class="card-link">Shop</a>
-                              <a href="#" class="card-link">More info</a>
-                            </div>
                           </div>
                     </div>
-                    <div class="col">
+                    <div class="col3">
                         <div class="card" style="width: 16rem; height: 34rem;">
                             <img src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card1-body">
                               <h4 class="card-title">Nike footwear</h4>
                             </div>
                             <ul class="list-group list-group-flush">
-                              <li class="list-group-item">Tavs EU izmers ir <span id="size1"></span></li>
-                              <li class="list-group-item">Tavs UK izmers ir <span id="size2"></span></li>
-                              <li class="list-group-item">Tavs US M izmers ir <span id="size3"></span></li>
-                              <li class="list-group-item">Tavs US W izmers ir <span id="size4"></span></li>
+                                <li class="list-group-item">Your EU size is <span id="size1"></span></li>
+                                <li class="list-group-item">Your UK size is <span id="size2"></span></li>
+                                <li class="list-group-item">Your US M size is <span id="size3"></span></li>
+                                <li class="list-group-item">Your US W size is <span id="size4"></span></li>
+                              <li class="list-group-item">
+                                <div class="lala1">
+                                    <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a>
+                                    <a href="#collapse2" class="nav-toggle2">More info</a>
+                                </div>
+                                <div id="collapse2" style="display:none">
+                                    <p> TEXT 2</p>
+                                </div>
+                              </li>
                             </ul>
-                            <div class="card-body">
-                              <a href="#" class="card-link">Shop</a>
-                              <a href="#" class="card-link">More info</a>
-                            </div>
                           </div>
                     </div>
-                    <div class="col">
+                    <div class="col3">
                         <div class="card" style="width: 16rem; height: 34rem;">
                             <img src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card1-body">
                               <h4 class="card-title">Adidas footwear</h4>
                             </div>
                             <ul class="list-group list-group-flush">
-                              <li class="list-group-item">Tavs EU izmers ir <span id="size1"></span></li>
-                              <li class="list-group-item">Tavs UK izmers ir <span id="size2"></span></li>
-                              <li class="list-group-item">Tavs US M izmers ir <span id="size3"></span></li>
-                              <li class="list-group-item">Tavs US W izmers ir <span id="size4"></span></li>
+                                <li class="list-group-item">Your EU size is <span id="size1"></span></li>
+                                <li class="list-group-item">Your UK size is <span id="size2"></span></li>
+                                <li class="list-group-item">Your US M size is <span id="size3"></span></li>
+                                <li class="list-group-item">Your US W size is <span id="size4"></span></li>
+                              <li class="list-group-item">
+                                <div class="lala1">
+                                    <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a>
+                                    <a href="#collapse3" class="nav-toggle3">More info</a>
+                                </div>
+                                <div id="collapse3" style="display:none">
+                                    <p> TEXT 3</p>
+                                </div>
+                              </li>
                             </ul>
-                            <div class="card-body">
-                              <a href="#" class="card-link">Shop</a>
-                              <a href="#" class="card-link">More info</a>
-                            </div>
                           </div>
                     </div>
                 </div>
@@ -141,7 +157,7 @@ img="https://jooinn.com/images/cloth-background-5.png">
 
         <div class="bak">
             <div class="box-1">
-                <a id="nulll" href="/next" class="btn btn-one" role="button"><span>Back Home</span></a>
+                <a id="nulll" href="/" class="btn2 btn-one" role="button"><span>Back Home</span></a>
             </div>
         </div>
 
@@ -152,14 +168,14 @@ img="https://jooinn.com/images/cloth-background-5.png">
 <!-- Funkcijas, lai informācija būtu paslēpta/parādīta -->
 
 
-            {{-- <script>
+            <script>
                 $(document).ready(function() {
                     $('.nav-toggle').click(function() {
                         var collapse_content_selector = $(this).attr('href');
                         var toggle_switch = $(this);
                         $(collapse_content_selector).toggle(function() {
                             if ($(this).css('display') == 'none') {
-                                toggle_switch.html('Show');
+                                toggle_switch.html('More info');
                             } else {
                                 toggle_switch.html('Hide');
                             }
@@ -167,34 +183,35 @@ img="https://jooinn.com/images/cloth-background-5.png">
                     });
                 });
 
-                $(document).ready(function() {
-                    $('.nav-toggle2').click(function() {
-                        var collapse2_content_selector = $(this).attr('href');
-                        var toggle_switch = $(this);
-                        $(collapse2_content_selector).toggle(function() {
-                            if ($(this).css('display') == 'none') {
-                                toggle_switch.html('Show');
-                            } else {
-                                toggle_switch.html('Hide');
-                            }
-                        });
-                    });
-                });
+                 $(document).ready(function() {
+                     $('.nav-toggle2').click(function() {
+                         var collapse2_content_selector = $(this).attr('href');
+                         var toggle_switch = $(this);
+                         $(collapse2_content_selector).toggle(function() {
+                             if ($(this).css('display') == 'none') {
+                                 toggle_switch.html('More info');
+                             } else {
+                                 toggle_switch.html('Hide');
+                             }
+                         });
+                     });
+                 });
 
-                $(document).ready(function() {
-                    $('.nav-toggle3').click(function() {
-                        var collapse3_content_selector = $(this).attr('href');
-                        var toggle_switch = $(this);
-                        $(collapse3_content_selector).toggle(function() {
-                            if ($(this).css('display') == 'none') {
-                                toggle_switch.html('Show');
-                            } else {
-                                toggle_switch.html('Hide');
-                            }
-                        });
-                    });
-                });
-            </script> --}}
+                 $(document).ready(function() {
+                     $('.nav-toggle3').click(function() {
+                         var collapse3_content_selector = $(this).attr('href');
+                         var toggle_switch = $(this);
+                         $(collapse3_content_selector).toggle(function() {
+                             if ($(this).css('display') == 'none') {
+                                 toggle_switch.html('More info');
+                             } else {
+                                 toggle_switch.html('Hide');
+                             }
+                         });
+                     });
+                 });
+</script>
+             
 
 
 <!-- NIKE bilde un informācija -->
@@ -205,9 +222,7 @@ img="https://jooinn.com/images/cloth-background-5.png">
                     <img href="#collapse2" class="nav-toggle2"
                         src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1" />
                 </div>
-                <div id="collapse2" style="display:none">
-                    <center><h1> Available soon!</h1></center>
-                </div>
+                
             </div> --}}
 
 
