@@ -162,12 +162,13 @@ body {
 }
 
 .container {
-  padding-top: 130px;
+  padding-top: 90px;
 }
 
 #ir3 {
   padding-left: 50px;
 }
+
 
 .vl {
   border-left: 1px solid;
@@ -202,7 +203,7 @@ hr {
 }
 
 .teksts {
-  padding-top: 70px;
+  padding-top: 90px;
   text-align: center;
   padding-bottom: 10px;
 }

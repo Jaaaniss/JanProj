@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Converter</title>
 </head>
 
 
@@ -25,64 +25,103 @@ img="https://jooinn.com/images/cloth-background-5.png">
 <div class="flex flex-col py-1 ">
     <div class="rounded-lg border-4 border-gray-500/50">
         
-
-    
-
-    
-
-        <select id="ident">
-            @foreach($vans as $value)
-                <option id="ident" value="{{$value->v_cm}}" class="px-2" style="color: #000">{{ $value->v_cm }}</option>
-            @endforeach
-        </select>
-        <div class="card" style="width: 18rem;">
-            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnv9ij36ZmZzFbQ3agBIbpsB-sXXJkqqTEGMP3KKyqgNEfgLKS" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Vans footwear</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Tavs EU izmers ir <span id="size1"></span></li>
-              <li class="list-group-item">Tavs UK izmers ir <span id="size2"></span></li>
-              <li class="list-group-item">Tavs US M izmers ir <span id="size3"></span></li>
-              <li class="list-group-item">Tavs US W izmers ir <span id="size4"></span></li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Shop</a>
-              <a href="#" class="card-link">More info</a>
-            </div>
-          </div>
     </div>
 </div>
-
+<div class="augsatext">
+    <h4 id="textt">   Please enter your size below (in centimeters...)   </h4>
+    <select id="ident" class="form-control1">
+        @foreach($vans as $value)
+            <option id="ident" value="{{$value->v_cm}}" >{{ $value->v_cm }}</option>
+        @endforeach
+    </select>
+</div>
 
 <!-- VANS bilde un informācija -->
 
 
-    <div class=lielss>
+    {{-- <div class=lielss>
         <div class="liels1">
             <div class="lala">
                 <img href="#collapse" class="nav-toggle"
                     src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnv9ij36ZmZzFbQ3agBIbpsB-sXXJkqqTEGMP3KKyqgNEfgLKS" />
             </div>
-            <div id="collapse" style="display:none">
-
+            <div id="collapse" style="display:none"> --}}
+            <div class=lielaiss>
+                <div class="row1">
+                    <div class="col">
+                        <div class="card" style="width: 16rem; height: 34rem;">
+                            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnv9ij36ZmZzFbQ3agBIbpsB-sXXJkqqTEGMP3KKyqgNEfgLKS" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h4 class="card-title">Vans footwear</h4>
+                              <p class="card-text"></p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Tavs EU izmers ir <span id="size1"></span></li>
+                              <li class="list-group-item">Tavs UK izmers ir <span id="size2"></span></li>
+                              <li class="list-group-item">Tavs US M izmers ir <span id="size3"></span></li>
+                              <li class="list-group-item">Tavs US W izmers ir <span id="size4"></span></li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Shop</a>
+                              <a href="#" class="card-link">More info</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 16rem; height: 34rem;">
+                            <img src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h4 class="card-title">Nike footwear</h4>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Tavs EU izmers ir <span id="size1"></span></li>
+                              <li class="list-group-item">Tavs UK izmers ir <span id="size2"></span></li>
+                              <li class="list-group-item">Tavs US M izmers ir <span id="size3"></span></li>
+                              <li class="list-group-item">Tavs US W izmers ir <span id="size4"></span></li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Shop</a>
+                              <a href="#" class="card-link">More info</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 16rem; height: 34rem;">
+                            <img src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h4 class="card-title">Adidas footwear</h4>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Tavs EU izmers ir <span id="size1"></span></li>
+                              <li class="list-group-item">Tavs UK izmers ir <span id="size2"></span></li>
+                              <li class="list-group-item">Tavs US M izmers ir <span id="size3"></span></li>
+                              <li class="list-group-item">Tavs US W izmers ir <span id="size4"></span></li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Shop</a>
+                              <a href="#" class="card-link">More info</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+              
 
 <!-- Izmēra ievade un poga -->
 
 
-                <div class="form-group ">
+                {{-- <div class="form-group ">
                     <div class="col-md-3" id="kk">
                         <label for="usr">Your foot size (cm):</label>
                         <input type="number" class="form-control " id="usr">
                         <input class="btn btn-info" id="bb" type="button" value="Clear" onClick="Clean()" />
-                    </div>
+                    </div> --}}
 
 
 <!-- Izmēru izvade -->
 
 
-                    <div class="uuu">
+                    {{-- <div class="uuu">
                         <div class="uuu1">
                             <span id="h1"></span>
                             <h1>EU - </h1>
@@ -94,23 +133,26 @@ img="https://jooinn.com/images/cloth-background-5.png">
                             <h1 style="float:center;" id="log1"></h1>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
 
 <!-- Poga "Back to Home" -->
 
 
         <div class="bak">
-            <a id="nulll" href="/" class="btn btn-info" id="bb" type="button" value="Back to Home">Back to Home</a>
+            <div class="box-1">
+                <a id="nulll" href="/next" class="btn btn-one" role="button"><span>Back Home</span></a>
+            </div>
         </div>
 
-            </div>
+{{-- 
+            </div> --}}
 
 
 <!-- Funkcijas, lai informācija būtu paslēpta/parādīta -->
 
 
-            <script>
+            {{-- <script>
                 $(document).ready(function() {
                     $('.nav-toggle').click(function() {
                         var collapse_content_selector = $(this).attr('href');
@@ -152,13 +194,13 @@ img="https://jooinn.com/images/cloth-background-5.png">
                         });
                     });
                 });
-            </script>
+            </script> --}}
 
 
 <!-- NIKE bilde un informācija -->
 
 
-            <div class="liels2">
+            {{-- <div class="liels2">
                 <div class="lala1">
                     <img href="#collapse2" class="nav-toggle2"
                         src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1" />
@@ -166,13 +208,13 @@ img="https://jooinn.com/images/cloth-background-5.png">
                 <div id="collapse2" style="display:none">
                     <center><h1> Available soon!</h1></center>
                 </div>
-            </div>
+            </div> --}}
 
 
 <!-- ADIDAS bilde un informācija -->
 
 
-            <div class="liels3">
+            {{-- <div class="liels3">
                 <div class="lala2">
                     <img href="#collapse3" class="nav-toggle3"
                         src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png" />
@@ -180,7 +222,7 @@ img="https://jooinn.com/images/cloth-background-5.png">
                 <div id="collapse3" style="display:none">
                     <center><h1> Available soon!</h1></center>
                 </div>
-            </div>
+            </div> --}}
         </div>
         <script src="{{ asset("js/ajax.js")}}"></script>
 </body>

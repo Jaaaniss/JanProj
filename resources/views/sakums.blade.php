@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/s_design.css') }}">
     <meta name="color-scheme" content="dark light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Convert</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
 
 
     <nav id= "dedd" class="navbar navbar-expand-sm navbar-dark ">
-        <img id="imgg" src="{{asset('/image/LOGO.png')}}" alt="Girl in a jacket" width="65" height="40" class="saturate">
+        <img id="imgg" src="{{asset('/image/LOGO.png')}}" alt="Girl in a jacket" width="100" height="50" class="saturate">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
             aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
