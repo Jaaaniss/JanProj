@@ -22,21 +22,18 @@
 <body id="gradient-custom" class="no-chat-button gl-modal-open" style="overflow-y: scroll;" data-padding-right="85"
 img="https://jooinn.com/images/cloth-background-5.png">
 
-<div class="flex flex-col py-1 ">
-    <div class="rounded-lg border-4 border-gray-500/50">
-        
+
+<div class="viskopa">
+    <div class="augsatext">
+        <h4 id="textt">   Please select your size below (in centimeters...)   </h4>
+        <select id="ident" class="form-control1">
+            @foreach($vans as $value)
+                <option value="" disabled selected>---</option>
+                <option id="ident" value="{{$value->v_cm}}" >{{ $value->v_cm }}</option>
+            @endforeach
+        </select>
     </div>
 </div>
-<div class="augsatext">
-    <h4 id="textt">   Please enter your size below (in centimeters...)   </h4>
-    <select id="ident" class="form-control1">
-        @foreach($vans as $value)
-            <option value="" disabled selected>---</option>
-            <option id="ident" value="{{$value->v_cm}}" >{{ $value->v_cm }}</option>
-        @endforeach
-    </select>
-</div>
-
 <!-- VANS bilde un informācija -->
 
 
@@ -54,20 +51,19 @@ img="https://jooinn.com/images/cloth-background-5.png">
                             <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnv9ij36ZmZzFbQ3agBIbpsB-sXXJkqqTEGMP3KKyqgNEfgLKS" class="card-img-top" alt="...">
                             <div class="card1-body">
                               <h4 class="card-title">Vans footwear</h4>
-                              <p class="card-text"></p>
                             </div>
                             <ul class="list-group list-group-flush">
-                              <li class="list-group-item">Your EU size is <span id="size1"></span></li>
-                              <li class="list-group-item">Your UK size is <span id="size2"></span></li>
-                              <li class="list-group-item">Your US M size is <span id="size3"></span></li>
-                              <li class="list-group-item">Your US W size is <span id="size4"></span></li>
+                              <li class="list-group-item">Your EU size is --><span id="size1"></span></li>
+                              <li class="list-group-item">Your UK size is --><span id="size2"></span></li>
+                              <li class="list-group-item">Your US M size is --><span id="size3"></span></li>
+                              <li class="list-group-item">Your US W size is --><span id="size4"></span></li>
                               <li class="list-group-item">
                                 <div class="lala1">
-                                    <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a>
+                                    <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
                                     <a href="#collapse" class="nav-toggle">More info</a>
                                 </div>
                                 <div id="collapse" style="display:none">
-                                    <p> TEXT 1</p>
+                                    <p1>Size conversions are approximate. Shoes should be tried on for proper fit.</p1>
                                 </div>
                               </li>
                             </ul>
@@ -80,17 +76,17 @@ img="https://jooinn.com/images/cloth-background-5.png">
                               <h4 class="card-title">Nike footwear</h4>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Your EU size is <span id="size1"></span></li>
-                                <li class="list-group-item">Your UK size is <span id="size2"></span></li>
-                                <li class="list-group-item">Your US M size is <span id="size3"></span></li>
-                                <li class="list-group-item">Your US W size is <span id="size4"></span></li>
+                                <li class="list-group-item">Your EU size is --><span id="size5"></span></li>
+                                <li class="list-group-item">Your UK size is --><span id="size6"></span></li>
+                                <li class="list-group-item">Your US M size is --><span id="size7"></span></li>
+                                <li class="list-group-item">Your US W size is --><span id="size8"></span></li>
                               <li class="list-group-item">
                                 <div class="lala1">
-                                    <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a>
+                                    <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
                                     <a href="#collapse2" class="nav-toggle2">More info</a>
                                 </div>
                                 <div id="collapse2" style="display:none">
-                                    <p> TEXT 2</p>
+                                    <p1>Nike shoes fit slightly narrow at true to size, generally speaking.</p1>
                                 </div>
                               </li>
                             </ul>
@@ -103,17 +99,17 @@ img="https://jooinn.com/images/cloth-background-5.png">
                               <h4 class="card-title">Adidas footwear</h4>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Your EU size is <span id="size1"></span></li>
-                                <li class="list-group-item">Your UK size is <span id="size2"></span></li>
-                                <li class="list-group-item">Your US M size is <span id="size3"></span></li>
-                                <li class="list-group-item">Your US W size is <span id="size4"></span></li>
+                                <li class="list-group-item">Your EU size is --><span id="size9"></span></li>
+                                <li class="list-group-item">Your UK size is --><span id="size10"></span></li>
+                                <li class="list-group-item">Your US M size is --><span id="size11"></span></li>
+                                <li class="list-group-item">Your US W size is --><span id="size12"></span></li>
                               <li class="list-group-item">
                                 <div class="lala1">
-                                    <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a>
+                                    <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
                                     <a href="#collapse3" class="nav-toggle3">More info</a>
                                 </div>
                                 <div id="collapse3" style="display:none">
-                                    <p> TEXT 3</p>
+                                    <p1>For tight fit, go one size down. For loose fit, go one size up.</p1>
                                 </div>
                               </li>
                             </ul>
