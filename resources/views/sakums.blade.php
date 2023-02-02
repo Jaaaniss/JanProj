@@ -41,8 +41,8 @@
         </div>
         </ul>
         <div class="deda">
-            <input onclick="myFunction31()" type="checkbox" id="darkmode-toggle" />
-            <label for="darkmode-toggle">
+            <input onclick="myFunction31()" class="dark-mode-toggle" type="checkbox" id="toggle-btn" />
+            <label for="toggle-btn">
                 <svg class="moon" version="1.0" width="26px" height="26px" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
