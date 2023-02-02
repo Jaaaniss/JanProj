@@ -48,3 +48,32 @@
                 ['a_cm' => '33', 'v_eu' => '49', 'v_uk' => '14', 'v_usm' => '15', 'v_usw' => '15.5'],
                 ['a_cm' => '34', 'v_eu' => '50', 'v_uk' => '15', 'v_usm' => '16', 'v_usw' => '16.5']
 -----
+
+
+
+
+
+<!-- NIKE bilde un informācija -->
+
+
+            {{-- <div class="liels2">
+                <div class="lala1">
+                    <img href="#collapse2" class="nav-toggle2"
+                        src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1" />
+                </div>
+                
+            </div> --}}
+
+
+<!-- ADIDAS bilde un informācija -->
+
+
+            {{-- <div class="liels3">
+                <div class="lala2">
+                    <img href="#collapse3" class="nav-toggle3"
+                        src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png" />
+                </div>
+                <div id="collapse3" style="display:none">
+                    <center><h1> Available soon!</h1></center>
+                </div>
+            </div> --}}

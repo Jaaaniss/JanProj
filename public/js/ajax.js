@@ -1,17 +1,11 @@
 
-//     setTimeout(function() {
-// console.log('e');
-// }, 500);
-
-
-
 $("#ident").on('change', function(){
     var table = $("#ident").find(":selected").val();
     console.log(table);
     $.ajax({
         type: "GET",
         url: "/api/getsize/"+table,
-        dataType: "json",   //expect html to be returned
+        dataType: "json",
         success: function(data){
                 $.each(data.data, function(key,val) {
                     uk=val.v_uk
@@ -23,7 +17,6 @@ $("#ident").on('change', function(){
                 document.getElementById("size2").innerHTML = val.v_uk;
                 document.getElementById("size3").innerHTML = val.v_usm;
                 document.getElementById("size4").innerHTML = val.v_usw;
-// display variables in view
                 });
        },
         error: function(jqXhr, textStatus, errorMessage){
@@ -31,5 +24,4 @@ $("#ident").on('change', function(){
        }
    })
 });
-
 
