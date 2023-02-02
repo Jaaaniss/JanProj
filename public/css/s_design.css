@@ -133,21 +133,24 @@ body {
 }
 
 #ir2 {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-bottom: 20px;
   width: 250px;
   float: left;
   border: 1.5px solid;
-  border-top: 0;
-  border-bottom: 0;
-  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
-  border-image-slice: 1;
+  /* border-top: 0;
+  border-bottom: 0; */
+  /* border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1; */
+  box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);
+  margin: 20px;
+  border-radius: 25px;
 }
 
 #rod1 {
   width: 95px;
   height: 95px;
   filter: brightness(0) invert(0);
+  
 }
 
 #rod3 {
@@ -157,18 +160,49 @@ body {
 }
 
 #ir1 {
+  border-radius: 25px;
   padding-top: 7px;
-  padding-right: 50px;
+  box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);
+  margin: 20px;
+  border: 1.5px solid;
+  /* border-top: 0;
+  border-bottom: 0; */
+  /* border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1; */
+  box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);
 }
 
-.container {
-  padding-top: 90px;
-}
 
 #ir3 {
-  padding-left: 50px;
+  box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);
+  margin: 20px;
+  border: 1.5px solid;
+  /* border-top: 0;
+  border-bottom: 0; */
+  /* border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1; */
+  box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);
+  border-radius: 25px;
+
 }
 
+.row1 {
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  --bs-gutter-y: 0;
+  display: flex;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+  flex-direction: row;
+  /* padding-bottom: 20px; */
+}
+
+.col3 {
+  margin: 20px;
+}
 
 .vl {
   border-left: 1px solid;
@@ -203,7 +237,7 @@ hr {
 }
 
 .teksts {
-  padding-top: 90px;
+  padding-top: 45px;
   text-align: center;
   padding-bottom: 10px;
 }
@@ -460,15 +494,21 @@ filter: saturate(255);
 }
 
 .invert #ir2 {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-bottom: 20px;
   width: 250px;
   float: left;
   border: 1.5px solid;
-  border-top: 0;
-  border-bottom: 0;
-  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
-  border-image-slice: 1;
+  /* border-top: 0;
+  border-bottom: 0; */
+  /* border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1; */
+  box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);
+  margin: 20px;
+  border-radius: 25px;
+}
+
+.mainit {
+  padding-bottom: 90px;
 }
 
 .invert .form-group {

@@ -68,9 +68,17 @@
 
 
     <div class="teksts">
-        <h2> Do you know how long is your feet in centimeters? </h2>
+        <div class="mainit">
+            <h2> Do you know how long is your feet in centimeters? </h2>
+        </div>
+    <hr />
+        
+
+
+        
         <div class="container">
-            <div class="row" id="inv">
+    
+            <div class="row1" id="inv">
                 <div id="ir1" class="col-sm">
                     <div class="uu1">
                         <img id="rod1"

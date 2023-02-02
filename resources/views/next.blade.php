@@ -55,9 +55,9 @@
         <div class="row1">
             <div class="col3">
                 <div class="card"
-                    style="width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
+                    style="border-radius: 25px; width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
                     <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnv9ij36ZmZzFbQ3agBIbpsB-sXXJkqqTEGMP3KKyqgNEfgLKS"
-                        class="card-img-top" alt="...">
+                        class="cardimg" alt="...">
                     <div class="card1-body">
                         <h4 class="card-title">Vans footwear</h4>
                     </div>
@@ -66,7 +66,7 @@
                         <li class="list-group-item">Your UK size is --><span id="size2"></span></li>
                         <li class="list-group-item">Your US M size is --><span id="size3"></span></li>
                         <li class="list-group-item">Your US W size is --><span id="size4"></span></li>
-                        <li class="list-group-item">
+                        <li class="list-group-item1">
                             <div class="lala1">
                                 <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
                                 <a1 href="#collapse" class="nav-toggle">More info</a1>
@@ -80,9 +80,9 @@
             </div>
             <div class="col3">
                 <div class="card"
-                    style="width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
+                    style="border-radius: 25px; width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
                     <img src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1"
-                        class="card-img-top" alt="...">
+                        class="cardimg" alt="...">
                     <div class="card1-body">
                         <h4 class="card-title">Nike footwear</h4>
                     </div>
@@ -91,7 +91,7 @@
                         <li class="list-group-item">Your UK size is --><span id="size6"></span></li>
                         <li class="list-group-item">Your US M size is --><span id="size7"></span></li>
                         <li class="list-group-item">Your US W size is --><span id="size8"></span></li>
-                        <li class="list-group-item">
+                        <li class="list-group-item1">
                             <div class="lala1">
                                 <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
                                 <a1 href="#collapse2" class="nav-toggle2">More info</a1>
@@ -105,9 +105,9 @@
             </div>
             <div class="col3">
                 <div class="card"
-                    style="width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
+                    style="border-radius: 25px; width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
                     <img src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png"
-                        class="card-img-top" alt="...">
+                        class="cardimg" alt="...">
                     <div class="card1-body">
                         <h4 class="card-title">Adidas footwear</h4>
                     </div>
@@ -116,7 +116,7 @@
                         <li class="list-group-item">Your UK size is --><span id="size10"></span></li>
                         <li class="list-group-item">Your US M size is --><span id="size11"></span></li>
                         <li class="list-group-item">Your US W size is --><span id="size12"></span></li>
-                        <li class="list-group-item">
+                        <li class="list-group-item1">
                             <div class="lala1">
                                 <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
                                 <a1 href="#collapse3" class="nav-toggle3">More info</a1>
