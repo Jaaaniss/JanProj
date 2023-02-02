@@ -1,7 +1,28 @@
+<?php
 
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
------ Adidas
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('adidas', function (Blueprint $table) {
+            $table->float("a_cm");
+            $table->float("a_eu");
+            $table->float("a_uk");
+            $table->float("a_usm");
+            $table->float("a_usw");
+        });
 
+        DB::table('adidas')->insert(
+            array(
                 ['a_cm' => '21.5', 'a_eu' => '34.5', 'a_uk' => '2.5', 'a_usm' => '3.5', 'a_usw' => '5'],
                 ['a_cm' => '22', 'a_eu' => '35', 'a_uk' => '3', 'a_usm' => '4', 'a_usw' => '5'],
                 ['a_cm' => '22.5', 'a_eu' => '36', 'a_uk' => '3.5', 'a_usm' => '4.5', 'a_usw' => '6'],
@@ -24,33 +45,17 @@
                 ['a_cm' => '32', 'a_eu' => '48', 'a_uk' => '13', 'a_usm' => '14', 'a_usw' => '14.5'],
                 ['a_cm' => '33', 'a_eu' => '49', 'a_uk' => '14', 'a_usm' => '15', 'a_usw' => '15.5'],
                 ['a_cm' => '34', 'a_eu' => '50', 'a_uk' => '15', 'a_usm' => '16', 'a_usw' => '16.5']
------
+            )
+        );
+    }
 
-
-
-
-
-<!-- NIKE bilde un informācija -->
-
-
-            {{-- <div class="liels2">
-                <div class="lala1">
-                    <img href="#collapse2" class="nav-toggle2"
-                        src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1" />
-                </div>
-                
-            </div> --}}
-
-
-<!-- ADIDAS bilde un informācija -->
-
-
-            {{-- <div class="liels3">
-                <div class="lala2">
-                    <img href="#collapse3" class="nav-toggle3"
-                        src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png" />
-                </div>
-                <div id="collapse3" style="display:none">
-                    <center><h1> Available soon!</h1></center>
-                </div>
-            </div> --}}
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('adidas');
+    }
+};

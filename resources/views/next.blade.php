@@ -34,17 +34,17 @@
                 </div>
                 <div class="nikee">
                     <select id="ident2" class="form-control1">
-                        @foreach ($vans as $value)
+                        @foreach ($nike as $value)
                             <option value="" disabled selected hidden>Nike:</option>
-                            <option id="ident2" value="{{ $value->v_cm }}">{{ $value->v_cm }}</option>
+                            <option id="ident2" value="{{ $value->n_cm }}">{{ $value->n_cm }}</option>
                         @endforeach
                     </select>
                 </div>
                 <div class="adidass">
                     <select id="ident3" class="form-control1">
-                        @foreach ($vans as $value)
+                        @foreach ($adidas as $value)
                             <option value="" disabled selected hidden>Adidas:</option>
-                            <option id="ident3" value="{{ $value->v_cm }}">{{ $value->v_cm }}</option>
+                            <option id="ident3" value="{{ $value->a_cm }}">{{ $value->a_cm }}</option>
                         @endforeach
                     </select>
                 </div>

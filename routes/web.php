@@ -1,5 +1,7 @@
 <?php
 use App\Http\Controllers\VansController;
+use App\Http\Controllers\NikeController;
+use App\Http\Controllers\AdidasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/next',[VansController::class,'vans']);
+
 
 
 

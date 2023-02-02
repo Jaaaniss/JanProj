@@ -2,33 +2,28 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
-use App\Models\Vans;
+use App\Models\Adidas;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Models\Nike;
-use App\Models\Adidas;
 use Illuminate\Http\Request;
-class VansController extends Controller {
-//  sooner or latewr this project will be 50% done by uvis
+class AdidasController extends Controller {
+
     public function index($size)
     {
-        $time = DB::table("vans")
-            ->where("v_cm",$size);
+        $time = DB::table("adidas")
+            ->where("a_cm",$size);
         return response()->json(array('data' => $time->get()));
     }
     
     // public function index1(){
-    //     $vans=
+    //     $adidas=
     //     return view('next');
     // }
     
 
-    public function vans()
+    public function adidas()
     {
-        $vans = vans::all();
-        $nike = nike::all();
-        $adidas = adidas::all();
-        return view('next',['vans'=>$vans,'nike'=>$nike,'adidas'=>$adidas]);
+
     }
 
     /**
@@ -55,12 +50,12 @@ class VansController extends Controller {
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Vans  $vans
+     * @param  \App\Models\Adidas  $adidas
      * @return \Illuminate\Http\Response
      */
     public function show($v_cm)
     {
-        // $record= DB::table('vans')->where('v_cm', $v_cm);
+        // $record= DB::table('adidas')->where('v_cm', $v_cm);
         // return response()->json(array('v_uk' => $v_uk->get()));
 
 
@@ -69,10 +64,10 @@ class VansController extends Controller {
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Vans  $vans
+     * @param  \App\Models\Adidas  $adidas
      * @return \Illuminate\Http\Response
      */
-    public function edit(Vans $vans)
+    public function edit(Adidas $adidas)
     {
         //
     }
@@ -81,10 +76,10 @@ class VansController extends Controller {
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Vans  $vans
+     * @param  \App\Models\Adidas  $adidas
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Vans $vans)
+    public function update(Request $request, Adidas $adidas)
     {
         //
     }
@@ -92,10 +87,10 @@ class VansController extends Controller {
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Vans  $vans
+     * @param  \App\Models\Adidas  $adidas
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Vans $vans)
+    public function destroy(Adidas $adidas)
     {
         //
     }
