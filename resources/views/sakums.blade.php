@@ -66,15 +66,12 @@
 
     <!-- Sākuma teksts -->
 
-
+<img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="550px">
     <div class="teksts">
-        <div class="mainit">
+        {{-- <div class="mainit">
             <h2 id="virsr"> Do you know how long is your feet in centimeters? </h2>
-        </div>
-    <hr />
-        
-
-
+        </div> --}}
+    {{-- <hr /> --}}
         
         <div class="container">
     
@@ -113,33 +110,33 @@
     <!-- Converter -->
 
 
-    <hr />
-    <div class="converter" id="collapse3" style="display:none">
-        <div class="form-group col-sm-4">
+    {{-- <hr /> --}}
+            <div class="converter" id="collapse3" style="display:none">
+                <div class="form-group col-sm-4">
 
-            <div class="de">
-                <a>Inches: </a>
-                <input id="inputInches" class="form-control" type="number" placeholder="Inches"
-                    oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+                    <div class="de">
+                        <a>Inches: </a>
+                        <input id="inputInches" class="form-control" type="number" placeholder="Inches"
+                            oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+                    </div>
+                    <div class="sk">
+                        <a>Cm: </a>
+                        <input id="inputcm" class="form-control" type="number" placeholder="Cm"
+                            oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+                    </div>
+                </div>
             </div>
-            <div class="sk">
-                <a>Cm: </a>
-                <input id="inputcm" class="form-control" type="number" placeholder="Cm"
-                    oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
-            </div>
-        </div>
-    </div>
 
 
     <!-- Poga -->
 
 
-    <div class="d-flex align-items-center justify-content-center">
-        <div class="box-1">
-            <a id="nulll" href="/next" class="btn btn-one" role="button"><span>Next</span></a>
-        </div>
-        <a id="dark2" href="#collapse3" class="nav-link" id="toggle">Get converter</a>
-    </div>
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="box-1">
+                    <a id="nulll" href="/next" class="btn btn-one" role="button"><span>Next</span></a>
+                </div>
+                <a id="dark2" href="#collapse3" class="nav-link" id="toggle">Get converter</a>
+            </div>
 
     <script src="{{ asset('js/darkmode.js') }}"></script>
     <script src="{{ asset('js/converter.js') }}"></script>
