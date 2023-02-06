@@ -55,7 +55,7 @@
         <div class="row1">
             <div class="col3">
                 <div class="card"
-                    style="border-radius: 25px; width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
+                    style=" width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
                     <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnv9ij36ZmZzFbQ3agBIbpsB-sXXJkqqTEGMP3KKyqgNEfgLKS"
                         class="cardimg" alt="...">
                     <div class="card1-body">
@@ -80,7 +80,7 @@
             </div>
             <div class="col3">
                 <div class="card"
-                    style="border-radius: 25px; width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
+                    style=" width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
                     <img src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1"
                         class="cardimg" alt="...">
                     <div class="card1-body">
@@ -105,7 +105,7 @@
             </div>
             <div class="col3">
                 <div class="card"
-                    style="border-radius: 25px; width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
+                    style=" width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
                     <img src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png"
                         class="cardimg" alt="...">
                     <div class="card1-body">

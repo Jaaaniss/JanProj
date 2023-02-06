@@ -549,18 +549,11 @@ a1 {
     /* padding-bottom: 20px; */
   }
 
-  .card-img, .card-img-top {
-    border-radius: 25px;
-    /* border-top-left-radius: var(--bs-card-inner-border-radius); */
-    /* border-top-right-radius: var(--bs-card-inner-border-radius); */
-    border-bottom-left-radius: var(--bs-card-inner-border-radius);
-    border-bottom-right-radius: var(--bs-card-inner-border-radius);
-}
 
 .list-group-item1 {
-    border-radius: 25px;
+    /* border-radius: 25px;
     border-top-left-radius: var(--bs-card-inner-border-radius);
-    border-top-right-radius: var(--bs-card-inner-border-radius);
+    border-top-right-radius: var(--bs-card-inner-border-radius); */
     --bs-card-inner-border-radius: calc(0.375rem - );
     position: relative;
     display: block;
@@ -584,11 +577,6 @@ a1 {
     border-image-slice: 1;
   }
 
-  .cardimg {
-    border-radius: 25px;
-    border-bottom-left-radius: var(--bs-card-inner-border-radius);
-    border-bottom-right-radius: var(--bs-card-inner-border-radius);
-  }
   
   .col {
     flex: 1 0 0%;
@@ -604,7 +592,7 @@ a1 {
     --bs-card-border-color: var(--bs-border-color-translucent);
     --bs-card-border-radius: 0.375rem;
     --bs-card-box-shadow: ;
-    --bs-card-inner-border-radius: calc(0.375rem - 1px);
+    /* --bs-card-inner-border-radius: calc(0.375rem - 1px); */
     --bs-card-cap-padding-y: 0.5rem;
     --bs-card-cap-padding-x: 1rem;
     --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
@@ -622,6 +610,6 @@ a1 {
     background-color: var(--bs-card-bg);
     background-clip: border-box;
     border: var(--bs-card-border-width) solid var(--bs-card-border-color);
-    border-radius: var(--bs-card-border-radius);
+    /* border-radius: var(--bs-card-border-radius); */
     flex-direction: column;
 }

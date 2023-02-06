@@ -217,7 +217,7 @@ body {
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 100%;
+  width: 80%;
   --bs-gutter-y: 0;
   display: flex;
   margin-top: calc(-1 * var(--bs-gutter-y));
@@ -274,7 +274,7 @@ hr {
 
 #virsr {
   color: #000;
-  background: linear-gradient(to right, #cacaca, #ffffff);  border-radius: 25px;
+  background: transparent;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-right: 20px;
@@ -317,6 +317,8 @@ hr {
 .container {
   padding-top: 350px;
   width: 100%;
+  display: flex;
+  justify-content: center;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -552,11 +554,8 @@ filter: saturate(255);
   /* border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
   border-image-slice: 1; */
   box-shadow: 0px 0px 20px 3px rgb(0 0 0 / 90%);
-  margin: 20px;
 
-  /* margin-right: 60px;
-  margin-left: 60px;
-  margin-top: 20px;
+  /* margin-top: 20px;
   margin-bottom: 20px; */
 
 
@@ -565,6 +564,7 @@ filter: saturate(255);
 .invert #ir1 {
   background-color: #555555;
   padding-top: 7px;
+
   /* border-top: 0;
   border-bottom: 0; */
   /* border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
@@ -574,6 +574,7 @@ filter: saturate(255);
 
 .invert #ir3 {
   background-color: #555555;
+
   /* border-top: 0;
   border-bottom: 0; */
   /* border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
@@ -582,6 +583,7 @@ filter: saturate(255);
 }
 
 .mainit {
+  padding-top: 190px;
   margin: 0;
   text-align: center;
   display: flex;
