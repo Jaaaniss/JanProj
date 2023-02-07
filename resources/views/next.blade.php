@@ -17,55 +17,61 @@
     <title>Converter</title>
 </head>
 
-<body id="gradient-custom" class="no-chat-button gl-modal-open" style="overflow-y: scroll;" data-padding-right="85"
+<body class="no-chat-button gl-modal-open" style="overflow-y: scroll;" data-padding-right="85"
     img="https://jooinn.com/images/cloth-background-5.png">
 
-    <div class="viskopa">
-        <div class="augsatext">
-            <h4 id="textt"> Please select your size below (in centimeters...) </h4>
-            <div class="zimoli">
-                <div class="vanss">
-                    <select id="ident" class="form-control1">
-                        @foreach ($vans as $value)
-                            <option value="" disabled selected hidden>Vans:</option>
-                            <option id="ident" value="{{ $value->v_cm }}">{{ $value->v_cm }}</option>
-                        @endforeach
-                    </select>
-                </div>
-                <div class="nikee">
-                    <select id="ident2" class="form-control1">
-                        @foreach ($nike as $value)
-                            <option value="" disabled selected hidden>Nike:</option>
-                            <option id="ident2" value="{{ $value->n_cm }}">{{ $value->n_cm }}</option>
-                        @endforeach
-                    </select>
-                </div>
-                <div class="adidass">
-                    <select id="ident3" class="form-control1">
-                        @foreach ($adidas as $value)
-                            <option value="" disabled selected hidden>Adidas:</option>
-                            <option id="ident3" value="{{ $value->a_cm }}">{{ $value->a_cm }}</option>
-                        @endforeach
-                    </select>
-                </div>
-            </div>
+    <nav id="dedd" class="navbar navbar-expand-sm navbar-dark ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample03">
         </div>
-    </div>
+        </ul>
+        <div class="deda">
+            <input onclick="myFunction31()" class="dark-mode-toggle" type="checkbox" id="toggle-btn" />
+            <label for="toggle-btn">
+                <svg class="moon" version="1.0" width="26px" height="26px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2.02911 12.42C2.38911 17.57 6.75911 21.76 11.9891 21.99C15.6791 22.15 18.9791 20.43 20.9591 17.72C21.7791 16.61 21.3391 15.87 19.9691 16.12C19.2991 16.24 18.6091 16.29 17.8891 16.26C12.9991 16.06 8.99911 11.97 8.97911 7.13996C8.96911 5.83996 9.23911 4.60996 9.72911 3.48996C10.2691 2.24996 9.61911 1.65996 8.36911 2.18996C4.40911 3.85996 1.69911 7.84996 2.02911 12.42Z"
+                        stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="sun" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 18.5C15.5899 18.5 18.5 15.5899 18.5 12C18.5 8.41015 15.5899 5.5 12 5.5C8.41015 5.5 5.5 8.41015 5.5 12C5.5 15.5899 8.41015 18.5 12 18.5Z"
+                        stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M19.14 19.14L19.01 19.01M19.01 4.99L19.14 4.86L19.01 4.99ZM4.86 19.14L4.99 19.01L4.86 19.14ZM12 2.08V2V2.08ZM12 22V21.92V22ZM2.08 12H2H2.08ZM22 12H21.92H22ZM4.99 4.99L4.86 4.86L4.99 4.99Z"
+                        stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </label>
+        </div>
+        </div>
+    </nav>
+
     <div class=lielaiss>
+        <img class="imagew" src="{{ asset('/image/wallpaper1.jpg') }}" alt="" width="100%" height="718px">
         <div class="row1">
             <div class="col3">
-                <div class="card"
-                    style=" width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
+                <div class="card" id="cardd1">
                     <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnv9ij36ZmZzFbQ3agBIbpsB-sXXJkqqTEGMP3KKyqgNEfgLKS"
                         class="cardimg" alt="...">
                     <div class="card1-body">
                         <h4 class="card-title">Vans footwear</h4>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Your EU size is --><span id="size1"></span></li>
-                        <li class="list-group-item">Your UK size is --><span id="size2"></span></li>
-                        <li class="list-group-item">Your US M size is --><span id="size3"></span></li>
-                        <li class="list-group-item">Your US W size is --><span id="size4"></span></li>
+                            <select id="ident" class="form-control1">
+                                @foreach ($vans as $value)
+                                    <option value="" disabled selected hidden>--> Select yours <--</option>
+                                    <option id="ident" value="{{ $value->v_cm }}">{{ $value->v_cm }}</option>
+                                @endforeach
+                            </select>
+                        <li class="listt">Your EU size is --><span id="size1"></span></li>
+                        <li class="listt">Your UK size is --><span id="size2"></span></li>
+                        <li class="listt">Your US M size is --><span id="size3"></span></li>
+                        <li class="listt">Your US W size is --><span id="size4"></span></li>
                         <li class="list-group-item1">
                             <div class="lala1">
                                 <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
@@ -79,18 +85,23 @@
                 </div>
             </div>
             <div class="col3">
-                <div class="card"
-                    style=" width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
+                <div class="card" id="cardd2">
                     <img src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1"
                         class="cardimg" alt="...">
                     <div class="card1-body">
                         <h4 class="card-title">Nike footwear</h4>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Your EU size is --><span id="size5"></span></li>
-                        <li class="list-group-item">Your UK size is --><span id="size6"></span></li>
-                        <li class="list-group-item">Your US M size is --><span id="size7"></span></li>
-                        <li class="list-group-item">Your US W size is --><span id="size8"></span></li>
+                        <select id="ident2" class="form-control1">
+                            @foreach ($nike as $value)
+                                <option value="" disabled selected hidden>--> Select yours <--</option>
+                                <option id="ident2" value="{{ $value->n_cm }}">{{ $value->n_cm }}</option>
+                            @endforeach
+                        </select>
+                        <li class="listt">Your EU size is --><span id="size5"></span></li>
+                        <li class="listt">Your UK size is --><span id="size6"></span></li>
+                        <li class="listt">Your US M size is --><span id="size7"></span></li>
+                        <li class="listt">Your US W size is --><span id="size8"></span></li>
                         <li class="list-group-item1">
                             <div class="lala1">
                                 <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
@@ -104,18 +115,23 @@
                 </div>
             </div>
             <div class="col3">
-                <div class="card"
-                    style=" width: 16rem; height: 34rem;     --bs-card-bg: #646464; box-shadow: -25px 30px 25px rgb(0 0 0 / 90%);">
+                <div class="card" id="cardd3">
                     <img src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png"
                         class="cardimg" alt="...">
                     <div class="card1-body">
                         <h4 class="card-title">Adidas footwear</h4>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Your EU size is --><span id="size9"></span></li>
-                        <li class="list-group-item">Your UK size is --><span id="size10"></span></li>
-                        <li class="list-group-item">Your US M size is --><span id="size11"></span></li>
-                        <li class="list-group-item">Your US W size is --><span id="size12"></span></li>
+                        <select id="ident3" class="form-control1">
+                            @foreach ($adidas as $value)
+                                <option value="" disabled selected hidden>--> Select yours <--</option>
+                                <option id="ident3" value="{{ $value->a_cm }}">{{ $value->a_cm }}</option>
+                            @endforeach
+                        </select>
+                        <li class="listt">Your EU size is --><span id="size9"></span></li>
+                        <li class="listt">Your UK size is --><span id="size10"></span></li>
+                        <li class="listt">Your US M size is --><span id="size11"></span></li>
+                        <li class="listt">Your US W size is --><span id="size12"></span></li>
                         <li class="list-group-item1">
                             <div class="lala1">
                                 <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
@@ -138,6 +154,7 @@
     </div>
     <script src="{{ asset('js/ajax.js') }}"></script>
     <script src="{{ asset('js/show-hide.js') }}"></script>
+    <script src="{{ asset('js/darkmode.js') }}"></script>
 </body>
 
 </html>

@@ -27,22 +27,21 @@
 
 
     <nav id="dedd" class="navbar navbar-expand-sm navbar-dark ">
-        <img id="imgg" src="{{ asset('/image/LOGO.png') }}" alt="Girl in a jacket" width="100" height="50"
-            class="saturate">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
             aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarsExample03">
-            <div class="imager">
-                <img src="{{ asset('/image/LOGO2.png') }}" ID="imggg" alt="Girl in a jacket" width="300"
-                    height="70" class="saturates">
-            </div>
         </div>
         </ul>
+
+
+
         <div class="deda">
             <input onclick="myFunction31()" class="dark-mode-toggle" type="checkbox" id="toggle-btn" />
             <label for="toggle-btn">
+
+
                 <svg class="moon" version="1.0" width="26px" height="26px" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -58,6 +57,8 @@
                         d="M19.14 19.14L19.01 19.01M19.01 4.99L19.14 4.86L19.01 4.99ZM4.86 19.14L4.99 19.01L4.86 19.14ZM12 2.08V2V2.08ZM12 22V21.92V22ZM2.08 12H2H2.08ZM22 12H21.92H22ZM4.99 4.99L4.86 4.86L4.99 4.99Z"
                         stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
+
+                
             </label>
         </div>
         </div>
@@ -66,11 +67,13 @@
 
     <!-- Sākuma teksts -->
 
-<img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="550px">
+<img class="imagew" src="{{ asset('/image/wallpaper1.jpg') }}" alt="" width="100%" height="550px">
     <div class="teksts">
-        {{-- <div class="mainit">
-            <h2 id="virsr"> Do you know how long is your feet in centimeters? </h2>
-        </div> --}}
+        <div class="mainit">
+            <img id="imgg" src="{{ asset('/image/LOGO.png') }}" alt="Girl in a jacket" width="100" height="50"
+            class="saturate">
+            <h4 id="virsr"> Do you know how long is your feet in centimeters? </h4>
+        </div>
     {{-- <hr /> --}}
         
         <div class="container">
@@ -131,7 +134,7 @@
     <!-- Poga -->
 
 
-            <div class="d-flex align-items-center justify-content-center">
+            <div class="beigaas">
                 <div class="box-1">
                     <a id="nulll" href="/next" class="btn btn-one" role="button"><span>Next</span></a>
                 </div>

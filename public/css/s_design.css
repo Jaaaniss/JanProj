@@ -48,15 +48,18 @@
 }
 #dedd {
   
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 189px;
+  padding-right: 180px;
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 label svg {
   position: absolute;
-  width: 26px;
-  height: 26px;
-  top: 10px;
+  width: 19px;
+  height: 27px;
+  top: 7px;
   z-index: 100;
 }
 label svg.sun {
@@ -65,7 +68,7 @@ label svg.sun {
   transition: 0.3s;
 }
 label svg.moon {
-  left: 61px;
+  left: 55px;
   fill: #7e7e7e;
   transition: 0.3s;
 }
@@ -77,23 +80,23 @@ input:checked + label svg.moon {
 }
 
 label {
-  width:100px;
-  height:50px;
+  width: 85px;
+  height: 40px;
   position: relative;
   display: block;
   background: #ebebeb;
-  border-radius: 200px;
-  box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+  border-radius: 201px;
+  box-shadow: inset 0px 5px 15px rgb(0 0 0 / 40%), inset 0px -5px 15px rgb(255 255 255 / 40%);
   cursor: pointer;
 }
 
 label:after {
   content: "";
-  width: 33px;
-  height: 33px;
+  width: 25px;
+  height: 25px;
   position: absolute;
-  top: 7px;
-  left: 8px;
+  top: 8px;
+  left: 9px;
   background: linear-gradient(180deg,#ffcc89,#d8860b);
   border-radius: 180px;
   box-shadow: 0px 5px 10px rgb(0 0 0 / 20%);
@@ -102,11 +105,20 @@ input {
   width: 0;
   height: 0;
 }
+
+.beigaas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
 input:checked + label {
   background: #242424;
 }
 input:checked + label:after {
-  left: 90px;
+  left: 76px;
   transform: translateX(-100%);
   background: linear-gradient(180deg,#777,#3a3a3a);
 }
@@ -175,6 +187,7 @@ body {
 
 #ir1 {
   background-color: #e4e4e4;
+
   padding-top: 7px;
   margin: 20px;
 
@@ -217,7 +230,6 @@ body {
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 80%;
   --bs-gutter-y: 0;
   display: flex;
   margin-top: calc(-1 * var(--bs-gutter-y));
@@ -273,13 +285,13 @@ hr {
 }
 
 #virsr {
-  color: #000;
-  background: transparent;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 20px;
-  padding-left: 20px;
-  box-shadow: 0 7px 5px rgb(0 0 0 / 60%);
+  color: #fff;
+    /* background: transparent; */
+    padding-top: 39px;
+    padding-bottom: 5px;
+    /* padding-right: 20px; */
+    /* padding-left: 20px; */
+    /* box-shadow: 0 7px 5px rgb(0 0 0 / 60%);
 }
 
 .balts {
@@ -315,7 +327,7 @@ hr {
 }
 
 .container {
-  padding-top: 350px;
+  /* padding-top: 350px; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -379,7 +391,6 @@ div[class*=box] {
 }
 
 .box-1 {
-  padding-top: 60px;
   text-align: center; 
   background-color: #ff666600; 
 }
@@ -475,7 +486,9 @@ div[class*=box] {
 
 
 #imgg {
-  color: red;
+  width: 160px;
+  height: 90px;
+  filter: invert(100%);
   transform: scale(-1, 1);
         -moz-transform: scale(-1, 1);
         -webkit-transform: scale(-1, 1);
@@ -583,13 +596,14 @@ filter: saturate(255);
 }
 
 .mainit {
-  padding-top: 190px;
+  padding-top: 120px;
   margin: 0;
   text-align: center;
   display: flex;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   /* width: 80%; */
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .invert .form-group {
@@ -683,23 +697,18 @@ filter: saturate(255);
   filter: invert(100%);
 }
 
-.invert #imgg {
-        filter: invert(100%);
-}
-
 .invert #virsr {
-  color: rgb(251, 251, 251);
-  background: linear-gradient(to right, #555555, #333333);
-
-  border-radius: 25px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 20px;
-  padding-left: 20px;
-  box-shadow: 0 7px 5px rgb(0 0 0 / 60%);
+    /* color: #000; */
+    /* background: transparent; */
+    padding-top: 39px;
+    padding-bottom: 5px;
+    /* padding-right: 20px; */
+    /* padding-left: 20px; */
+    /* box-shadow: 0 7px 5px rgb(0 0 0 / 60%);
 }
 
 /* .saturate { filter: saturate(255); }
 
 .invert .saturate { filter: saturate(255); } */
 
+}
