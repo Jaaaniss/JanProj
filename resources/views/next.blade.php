@@ -18,8 +18,7 @@
     <title>Converter</title>
 </head>
 
-<body class="no-chat-button gl-modal-open" style="overflow-y: scroll;" data-padding-right="85"
-    img="https://jooinn.com/images/cloth-background-5.png">
+<body>
 
     <nav id="dedd" class="navbar navbar-expand-sm navbar-dark ">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
@@ -60,15 +59,14 @@
                     <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnv9ij36ZmZzFbQ3agBIbpsB-sXXJkqqTEGMP3KKyqgNEfgLKS"
                         class="cardimg" alt="...">
                     <div class="card1-body">
-                        <h4 class="card-title">Vans footwear</h4>
+                        <select id="ident" class="form-control1">
+                            @foreach ($vans as $value)
+                                <option value="" disabled selected hidden>--> Click here to select <--</option>
+                                <option id="ident" value="{{ $value->v_cm }}">{{ $value->v_cm }}</option>
+                            @endforeach
+                        </select>
                     </div>
                     <ul class="list-group list-group-flush">
-                            <select id="ident" class="form-control1">
-                                @foreach ($vans as $value)
-                                    <option value="" disabled selected hidden>--> Select yours <--</option>
-                                    <option id="ident" value="{{ $value->v_cm }}">{{ $value->v_cm }}</option>
-                                @endforeach
-                            </select>
                         <li class="listt">Your EU size is --><span id="size1"></span></li>
                         <li class="listt">Your UK size is --><span id="size2"></span></li>
                         <li class="listt">Your US M size is --><span id="size3"></span></li>
@@ -90,15 +88,14 @@
                     <img src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1"
                         class="cardimg" alt="...">
                     <div class="card1-body">
-                        <h4 class="card-title">Nike footwear</h4>
-                    </div>
-                    <ul class="list-group list-group-flush">
                         <select id="ident2" class="form-control1">
                             @foreach ($nike as $value)
-                                <option value="" disabled selected hidden>--> Select yours <--</option>
+                                <option value="" disabled selected hidden>--> Click here to select <--</option>
                                 <option id="ident2" value="{{ $value->n_cm }}">{{ $value->n_cm }}</option>
                             @endforeach
                         </select>
+                    </div>
+                    <ul class="list-group list-group-flush">
                         <li class="listt">Your EU size is --><span id="size5"></span></li>
                         <li class="listt">Your UK size is --><span id="size6"></span></li>
                         <li class="listt">Your US M size is --><span id="size7"></span></li>
@@ -120,15 +117,14 @@
                     <img src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png"
                         class="cardimg" alt="...">
                     <div class="card1-body">
-                        <h4 class="card-title">Adidas footwear</h4>
-                    </div>
-                    <ul class="list-group list-group-flush">
                         <select id="ident3" class="form-control1">
                             @foreach ($adidas as $value)
-                                <option value="" disabled selected hidden>--> Select yours <--</option>
+                                <option value="" disabled selected hidden>--> Click here to select <--</option>
                                 <option id="ident3" value="{{ $value->a_cm }}">{{ $value->a_cm }}</option>
                             @endforeach
                         </select>
+                    </div>
+                    <ul class="list-group list-group-flush">
                         <li class="listt">Your EU size is --><span id="size9"></span></li>
                         <li class="listt">Your UK size is --><span id="size10"></span></li>
                         <li class="listt">Your US M size is --><span id="size11"></span></li>
