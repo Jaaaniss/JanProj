@@ -15,6 +15,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/s_design.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/darkmode.css') }}">
     <meta name="color-scheme" content="dark light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convert</title>
