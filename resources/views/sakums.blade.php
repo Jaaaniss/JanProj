@@ -73,7 +73,8 @@
         <div class="mainit">
             <img id="imgg" src="{{ asset('/image/LOGO.png') }}" alt="Girl in a jacket" width="100" height="50"
             class="saturate">
-            <h4 id="virsr"> Do you know how long is your feet in centimeters? </h4>
+            <h3 id="virsr"> Would you like to know your international shoe size? </h3>
+            <h4 id="virsr2"> Do you know how long is your feet in centimeters? </h4>
         </div>
     {{-- <hr /> --}}
         
@@ -119,12 +120,10 @@
                 <div class="form-group col-sm-4">
 
                     <div class="de">
-                        <a>Inches: </a>
                         <input id="inputInches" class="form-control" type="number" placeholder="Inches"
                             oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
                     </div>
                     <div class="sk">
-                        <a>Cm: </a>
                         <input id="inputcm" class="form-control" type="number" placeholder="Cm"
                             oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
                     </div>

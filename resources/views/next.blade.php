@@ -60,16 +60,16 @@
                     <div class="card1-body">
                         <select id="ident" class="form-control1">
                             @foreach ($vans as $value)
-                                <option value="" disabled selected hidden>--> Click here to select <--</option>
+                                <option value="" disabled selected hidden>--> Click here to select cm <--</option>
                                 <option id="ident" value="{{ $value->v_cm }}">{{ $value->v_cm }}</option>
                             @endforeach
                         </select>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="listt">Your EU size is --><span id="size1"></span></li>
-                        <li class="listt">Your UK size is --><span id="size2"></span></li>
-                        <li class="listt">Your US M size is --><span id="size3"></span></li>
-                        <li class="listt">Your US W size is --><span id="size4"></span></li>
+                        <li class="listt">Your EU size --><span id="size1"></span></li>
+                        <li class="listt">Your UK size --><span id="size2"></span></li>
+                        <li class="listt">Your US M size --><span id="size3"></span></li>
+                        <li class="listt">Your US W size --><span id="size4"></span></li>
                         <li class="list-group-item1">
                             <div class="lala1">
                                 <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
@@ -88,7 +88,7 @@
                         class="cardimg" alt="...">
                             <select id="ident2" class="form-control1">
                                 @foreach ($nike as $value)
-                                    <option value="" disabled selected hidden>--> Click here to select <--</option>
+                                    <option value="" disabled selected hidden>--> Click here to select cm <--</option>
                                     <option id="ident2" value="{{ $value->n_cm }}">{{ $value->n_cm }}</option>
                                 @endforeach
                             </select>
@@ -97,10 +97,10 @@
                     </div>
                     
                     <ul class="list-group list-group-flush">
-                        <li class="listt">Your EU size is --><span id="size5"></span></li>
-                        <li class="listt">Your UK size is --><span id="size6"></span></li>
-                        <li class="listt">Your US M size is --><span id="size7"></span></li>
-                        <li class="listt">Your US W size is --><span id="size8"></span></li>
+                        <li class="listt">Your EU size --><span id="size5"></span></li>
+                        <li class="listt">Your UK size --><span id="size6"></span></li>
+                        <li class="listt">Your US M size --><span id="size7"></span></li>
+                        <li class="listt">Your US W size --><span id="size8"></span></li>
                         <li class="list-group-item1">
                             <div class="lala1">
                                 <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
@@ -120,16 +120,16 @@
                     <div class="card1-body">
                         <select id="ident3" class="form-control1">
                             @foreach ($adidas as $value)
-                                <option value="" disabled selected hidden>--> Click here to select <--</option>
+                                <option value="" disabled selected hidden>--> Click here to select cm <--</option>
                                 <option id="ident3" value="{{ $value->a_cm }}">{{ $value->a_cm }}</option>
                             @endforeach
                         </select>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="listt">Your EU size is --><span id="size9"></span></li>
-                        <li class="listt">Your UK size is --><span id="size10"></span></li>
-                        <li class="listt">Your US M size is --><span id="size11"></span></li>
-                        <li class="listt">Your US W size is --><span id="size12"></span></li>
+                        <li class="listt">Your EU size --><span id="size9"></span></li>
+                        <li class="listt">Your UK size --><span id="size10"></span></li>
+                        <li class="listt">Your US M size --><span id="size11"></span></li>
+                        <li class="listt">Your US W size --><span id="size12"></span></li>
                         <li class="list-group-item1">
                             <div class="lala1">
                                 <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
