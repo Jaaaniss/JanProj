@@ -15,7 +15,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/s_design.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/darkmode.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/dark.css') }}">
     <meta name="color-scheme" content="dark light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convert</title>
@@ -39,8 +39,8 @@
 
 
         <div class="deda">
-            <input onclick="myFunction31()" class="dark-mode-toggle" type="checkbox" id="toggle-btn" />
-            <label for="toggle-btn">
+                <img onclick="darkmode()" id="mybtn" src="{{ asset('/image/moon.png') }}" height="30px" width="30px">
+            {{-- <label for="mybtn">
 
 
                 <svg class="moon" version="1.0" width="26px" height="26px" viewBox="0 0 24 24" fill="none"
@@ -60,7 +60,7 @@
                 </svg>
 
                 
-            </label>
+            </label> --}}
         </div>
         </div>
     </nav>

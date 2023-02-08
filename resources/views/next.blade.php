@@ -8,7 +8,7 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/design.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/darkmode.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/dark.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -19,7 +19,6 @@
 </head>
 
 <body>
-
     <nav id="dedd" class="navbar navbar-expand-sm navbar-dark ">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
             aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,8 +28,8 @@
         </div>
         </ul>
         <div class="deda">
-            <input onclick="myFunction31()" class="dark-mode-toggle" type="checkbox" id="toggle-btn" />
-            <label for="toggle-btn">
+            <img onclick="darkmode()" id="mybtn" src="{{ asset('/image/moon.png') }}" height="30px" width="30px">
+            {{-- <label for="mybtn">
                 <svg class="moon" version="1.0" width="26px" height="26px" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -46,13 +45,13 @@
                         d="M19.14 19.14L19.01 19.01M19.01 4.99L19.14 4.86L19.01 4.99ZM4.86 19.14L4.99 19.01L4.86 19.14ZM12 2.08V2V2.08ZM12 22V21.92V22ZM2.08 12H2H2.08ZM22 12H21.92H22ZM4.99 4.99L4.86 4.86L4.99 4.99Z"
                         stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-            </label>
+            </label> --}}
         </div>
         </div>
     </nav>
 
     <div class=lielaiss>
-        <img class="imagew" src="{{ asset('/image/wallpaper1.jpg') }}" alt="" width="100%" height="718px">
+        <img class="imagew" src="{{ asset('/image/wallpaper1.jpg') }}" alt="" width="100%" height="829px">
         <div class="row1">
             <div class="col3">
                 <div class="card" id="cardd1">
@@ -77,7 +76,7 @@
                                 <a1 href="#collapse" class="nav-toggle">More info</a1>
                             </div>
                             <div id="collapse" style="display:none">
-                                <p1>Size conversions are approximate. Shoes should be tried on for proper fit.</p1>
+                                <p style="font-size: 15px; margin-bottom: 1px;">Size conversions are approximate. Shoes should be tried on for proper fit.</p>
                             </div>
                         </li>
                     </ul>
@@ -87,14 +86,16 @@
                 <div class="card" id="cardd2">
                     <img src="https://th.bing.com/th/id/OIP.-5BzDHfG77aUDltzc_LIKQAAAA?pid=ImgDet&rs=1"
                         class="cardimg" alt="...">
+                            <select id="ident2" class="form-control1">
+                                @foreach ($nike as $value)
+                                    <option value="" disabled selected hidden>--> Click here to select <--</option>
+                                    <option id="ident2" value="{{ $value->n_cm }}">{{ $value->n_cm }}</option>
+                                @endforeach
+                            </select>
                     <div class="card1-body">
-                        <select id="ident2" class="form-control1">
-                            @foreach ($nike as $value)
-                                <option value="" disabled selected hidden>--> Click here to select <--</option>
-                                <option id="ident2" value="{{ $value->n_cm }}">{{ $value->n_cm }}</option>
-                            @endforeach
-                        </select>
+
                     </div>
+                    
                     <ul class="list-group list-group-flush">
                         <li class="listt">Your EU size is --><span id="size5"></span></li>
                         <li class="listt">Your UK size is --><span id="size6"></span></li>
@@ -106,7 +107,7 @@
                                 <a1 href="#collapse2" class="nav-toggle2">More info</a1>
                             </div>
                             <div id="collapse2" style="display:none">
-                                <p1>Nike shoes fit slightly narrow at true to size, generally speaking.</p1>
+                                <p style="font-size: 15px; margin-bottom: 1px;">Nike shoes fit slightly narrow at true to size, generally speaking.</p>
                             </div>
                         </li>
                     </ul>
@@ -135,7 +136,7 @@
                                 <a1 href="#collapse3" class="nav-toggle3">More info</a1>
                             </div>
                             <div id="collapse3" style="display:none">
-                                <p1>For tight fit, go one size down. For loose fit, go one size up.</p1>
+                                <p style="font-size: 15px; margin-bottom: 1px;">For tight fit, go one size down. For loose fit, go one size up.</p>
                             </div>
                         </li>
                     </ul>

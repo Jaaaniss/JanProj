@@ -24,7 +24,7 @@
 }
 
 .deda {
-  padding-top: 10px;
+  padding-top: 5px;
   display: flex;
   float: right;
 }
@@ -136,10 +136,10 @@ svg {
   /* filter: brightness(120%); */
 }
 
-body {
+/* body {
   color: rgb(0, 0, 0);
   background: linear-gradient(to right, #ffffff, #d1d1d1)
-}
+} */
 
 
 
@@ -367,6 +367,10 @@ hr {
   justify-content: space-evenly;
 }
 
+#mybtn {
+  cursor: pointer;
+}
+
 .navbar-brand {
   font-size: 35px;
 }
@@ -440,6 +444,7 @@ div[class*=box] {
   opacity: 1; 
   transform: scale(1, 1); 
 }
+
 
 .btn-one::after {
   content: '';

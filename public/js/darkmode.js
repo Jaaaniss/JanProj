@@ -1,43 +1,29 @@
 
-function myFunction31() {
-    var element = document.body;
-    element.classList.toggle("invert");
+function darkmode(){
+    var SetTheme = document.body;
+
+    SetTheme.classList.toggle("invert");
+
+    var theme;
+
+    if(SetTheme.classList.contains("invert")){
+        console.log("Dark mode");
+        theme = "DARK";
+    }else{
+        console.log("Light mode");
+        theme = "LIGHT";
+    }
+
+    // saglabat localstorage
+
+    localStorage.setItem("PageTheme", JSON.stringify(theme));
+
 }
 
-// const check = document.getElementById("toggle-btn")
+let GetTheme = JSON.parse(localStorage.getItem("PageTheme"));
+console.log(GetTheme);
 
-// if (localStorage.getItem('darkMode')===null){
-//   localStorage.setItem('darkMode', "false");
+if(GetTheme === "DARK"){
+    document.body.classList = "invert";
+}
 
-// }
-
-// const link = document.createElement('link');
-// link.rel = 'stylesheet';
-// document.getElementsByTagName('HEAD')[0].appendChild(link);
-
-
-// checkStatus()
-
-// function checkStatus(){
-//     if (localStorage.getItem('darkMode')==="true"){
-//         check.checked = true;
-//         document.getElementsByTagName("body")[0].style.color="#FFF";
-//         document.body.style.backgroundColor = "#181A1B";
-//     }else{
-//         check.checked = "false";
-//         document.getElementsByTagName("body")[0].style.color="black";
-//         document.body.style.backgroundColor = "#FFF";
-//     }
-// }
-
-// function myFunction31(){
-//     if (localStorage.getItem('darkMode')==="true"){
-//         localStorage.setItem('darkMode', 'false');
-//         document.getElementsByTagName("body")[0].style.color="black";
-//         document.body.style.backgroundColor = "#FFF";
-//     } else{
-//         localStorage.setItem('darkMode', 'true');
-//         document.getElementsByTagName("body")[0].style.color="#FFF";
-//         document.body.style.backgroundColor = "#181A1B";
-//     }
-// }
