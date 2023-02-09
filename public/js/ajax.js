@@ -83,3 +83,31 @@ $("#ident3").on('change', function(){
    })
 });
 
+
+
+$("#ident4").on('change', function(){
+    var table = $("#ident4").find(":selected").val();
+    console.log(table);
+    $.ajax({
+        type: "GET",
+        url: "/api/nbsize/"+table,
+        dataType: "json",
+        success: function(data){
+                $.each(data.data, function(key,val) {
+                    uk=val.nb_uk
+                    eu=val.nb_eu
+                    usm=val.nb_usm
+                    usw=val.nb_usw
+                    
+                document.getElementById("size13").innerHTML = val.nb_eu;
+                document.getElementById("size14").innerHTML = val.nb_uk;
+                document.getElementById("size15").innerHTML = val.nb_usm;
+                document.getElementById("size16").innerHTML = val.nb_usw;
+                });
+       },
+        error: function(jqXhr, textStatus, errorMessage){
+            console.log(errorMessage)
+       }
+   })
+});
+

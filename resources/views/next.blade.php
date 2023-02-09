@@ -55,8 +55,7 @@
         <div class="row1">
             <div class="col3">
                 <div class="card" id="cardd1">
-                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnv9ij36ZmZzFbQ3agBIbpsB-sXXJkqqTEGMP3KKyqgNEfgLKS"
-                        class="cardimg" alt="...">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnv9ij36ZmZzFbQ3agBIbpsB-sXXJkqqTEGMP3KKyqgNEfgLKS" class="cardimg" alt="...">
                     <div class="card1-body">
                         <select id="ident" class="form-control1">
                             @foreach ($vans as $value)
@@ -137,6 +136,35 @@
                             </div>
                             <div id="collapse3" style="display:none">
                                 <p style="font-size: 18px; margin-bottom: 1px;">For tight fit, go one size down. For loose fit, go one size up.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col3">
+                <div class="card" id="cardd4">
+                    <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwc9cf77d7/images/page-designer/2021/april/12069_Comp_A_Mobile.jpg?sw=991&sfrm=jpg"
+                        class="cardimg1" alt="...">
+                    <div class="card1-body">
+                        <select id="ident4" class="form-control1">
+                            @foreach ($vans as $value)
+                                <option value="" disabled selected hidden>--> Click here to select cm <--</option>
+                                <option id="ident4" value="{{ $value->v_cm }}">{{ $value->v_cm }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <ul class="list-group list-group-flush " style="font-size: 20px;">
+                        <li class="listt">Your EU size --><span id="size13"></span></li>
+                        <li class="listt">Your UK size --><span id="size14"></span></li>
+                        <li class="listt">Your US M size --><span id="size15"></span></li>
+                        <li class="listt">Your US W size --><span id="size16"></span></li>
+                        <li class="list-group-item1">
+                            <div class="lala1">
+                                <!-- <a href="https://www.adidas.com/us/shoes" class="card-link">Shop</a> -->
+                                <a1 href="#collapse4" class="nav-toggle4">More info</a1>
+                            </div>
+                            <div id="collapse4" style="display:none">
+                                <p style="font-size: 18px; margin-bottom: 1px;">Size conversions are approximate. Shoes should be tried on for proper fit.</p>
                             </div>
                         </li>
                     </ul>

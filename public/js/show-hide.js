@@ -39,3 +39,17 @@ $(document).ready(function() {
          });
      });
  });
+
+ $(document).ready(function() {
+    $('.nav-toggle4').click(function() {
+        var collapse4_content_selector = $(this).attr('href');
+        var toggle_switch = $(this);
+        $(collapse4_content_selector).toggle(function() {
+            if ($(this).css('display') == 'none') {
+                toggle_switch.html('More info');
+            } else {
+                toggle_switch.html('Hide');
+            }
+        });
+    });
+});

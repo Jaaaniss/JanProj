@@ -884,6 +884,11 @@ body {
     /* padding-right: 40px; */
 }
 
+#collapse4 {
+  text-align: center;
+  color:black;
+}
+
 #collapse2 {
     text-align: center;
     color:black;
@@ -1037,6 +1042,14 @@ body {
   }
 
   #cardd3 {
+    width: 350px;
+    border-radius: 5px;
+    height: 700px;
+    --bs-card-bg: #b6b6b6;
+    box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);
+  }
+
+  #cardd4 {
     width: 350px;
     border-radius: 5px;
     height: 700px;
