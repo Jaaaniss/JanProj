@@ -147,9 +147,9 @@
                         class="cardimg1" alt="...">
                     <div class="card1-body">
                         <select id="ident4" class="form-control1">
-                            @foreach ($vans as $value)
+                            @foreach ($newbalance as $value)
                                 <option value="" disabled selected hidden>--> Click here to select cm <--</option>
-                                <option id="ident4" value="{{ $value->v_cm }}">{{ $value->v_cm }}</option>
+                                <option id="ident4" value="{{ $value->nb_cm }}">{{ $value->nb_cm }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -164,7 +164,7 @@
                                 <a1 href="#collapse4" class="nav-toggle4">More info</a1>
                             </div>
                             <div id="collapse4" style="display:none">
-                                <p style="font-size: 18px; margin-bottom: 1px;">Size conversions are approximate. Shoes should be tried on for proper fit.</p>
+                                <p style="font-size: 18px; margin-bottom: 1px;">Choose the larger size if your feet are between sizes. You can adjust for a better fit with socks, insoles and lacing patterns.</p>
                             </div>
                         </li>
                     </ul>

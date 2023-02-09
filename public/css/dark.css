@@ -28,6 +28,10 @@ select {
     color:rgb(255, 255, 255);
 }
 
+.invert #collapse4 {
+  text-align: center;
+  color:rgb(255, 255, 255);
+}
 .invert .form-control1 {
     background-color: #2e2e2e;
     text-align: center;
@@ -100,7 +104,7 @@ select {
     text-decoration: none;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
-    --bs-list-group-color: #ffffff;
+    color: #ffffff;
     background-color: #515151;
     border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
 }
@@ -607,4 +611,64 @@ select {
     padding-right: 20px;
     padding-left: 20px;
     font-weight: bold;
+}
+
+.invert #size13 {
+  display: flex;
+  align-items: flex-end;
+  height: 31px;
+  float: right;
+  color: #fff;
+  background-color: #2c2c2c;
+  border-radius: 25px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.invert #size14 {
+  display: flex;
+  align-items: flex-end;
+  height: 31px;
+  float: right;
+  color: #fff;
+  background-color: #2c2c2c;
+  border-radius: 25px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.invert #size15 {
+  display: flex;
+  align-items: flex-end;
+  height: 31px;
+  float: right;
+  color: #fff;
+  background-color: #2c2c2c;
+  border-radius: 25px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.invert #size16 {
+  display: flex;
+  align-items: flex-end;
+  height: 31px;
+  float: right;
+  color: #fff;
+  background-color: #2c2c2c;
+  border-radius: 25px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: bold;
 }

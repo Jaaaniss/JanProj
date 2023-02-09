@@ -2,6 +2,7 @@
 use App\Http\Controllers\VansController;
 use App\Http\Controllers\NikeController;
 use App\Http\Controllers\AdidasController;
+use App\Http\Controllers\NBController;
 
 /*
 |--------------------------------------------------------------------------
