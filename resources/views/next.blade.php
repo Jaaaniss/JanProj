@@ -51,7 +51,7 @@
     </nav>
 
     <div class=lielaiss>
-        <img class="imagew" src="{{ asset('/image/wallpaper1.jpg') }}" alt="" width="100%" height="829px">
+        <img class="imagew" src="{{ asset('/image/wallpaper1.jpg') }}" alt="" width="100%" height="949px">
         <div class="row1">
             <div class="col3">
                 <div class="card" id="cardd1">
@@ -65,7 +65,7 @@
                             @endforeach
                         </select>
                     </div>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush " style="font-size: 20px;">
                         <li class="listt">Your EU size --><span id="size1"></span></li>
                         <li class="listt">Your UK size --><span id="size2"></span></li>
                         <li class="listt">Your US M size --><span id="size3"></span></li>
@@ -76,7 +76,7 @@
                                 <a1 href="#collapse" class="nav-toggle">More info</a1>
                             </div>
                             <div id="collapse" style="display:none">
-                                <p style="font-size: 15px; margin-bottom: 1px;">Size conversions are approximate. Shoes should be tried on for proper fit.</p>
+                                <p style="font-size: 18px; margin-bottom: 1px;">Size conversions are approximate. Shoes should be tried on for proper fit.</p>
                             </div>
                         </li>
                     </ul>
@@ -96,7 +96,7 @@
 
                     </div>
                     
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush" style="font-size: 20px;">
                         <li class="listt">Your EU size --><span id="size5"></span></li>
                         <li class="listt">Your UK size --><span id="size6"></span></li>
                         <li class="listt">Your US M size --><span id="size7"></span></li>
@@ -107,7 +107,7 @@
                                 <a1 href="#collapse2" class="nav-toggle2">More info</a1>
                             </div>
                             <div id="collapse2" style="display:none">
-                                <p style="font-size: 15px; margin-bottom: 1px;">Nike shoes fit slightly narrow at true to size, generally speaking.</p>
+                                <p style="font-size: 18px; margin-bottom: 1px;">Nike shoes fit slightly narrow at true to size, generally speaking.</p>
                             </div>
                         </li>
                     </ul>
@@ -125,7 +125,7 @@
                             @endforeach
                         </select>
                     </div>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush" style="font-size: 20px;">
                         <li class="listt">Your EU size --><span id="size9"></span></li>
                         <li class="listt">Your UK size --><span id="size10"></span></li>
                         <li class="listt">Your US M size --><span id="size11"></span></li>
@@ -136,7 +136,7 @@
                                 <a1 href="#collapse3" class="nav-toggle3">More info</a1>
                             </div>
                             <div id="collapse3" style="display:none">
-                                <p style="font-size: 15px; margin-bottom: 1px;">For tight fit, go one size down. For loose fit, go one size up.</p>
+                                <p style="font-size: 18px; margin-bottom: 1px;">For tight fit, go one size down. For loose fit, go one size up.</p>
                             </div>
                         </li>
                     </ul>

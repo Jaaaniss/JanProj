@@ -235,18 +235,6 @@
   
   }
   
-  .row1 {
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    --bs-gutter-y: 0;
-    display: flex;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
-    flex-direction: row;
-    /* padding-bottom: 20px; */
-  }
   
   .col3 {
         margin-top: 20px;
@@ -558,7 +546,7 @@
 #size1 {
     display: flex;
     align-items: flex-end;
-    height: 25px;
+    height: 31px;
     color: #000;
     background-color: #cdcdcd91;
     border-radius: 25px;
@@ -573,7 +561,7 @@
 #size2 {
     display: flex;
     align-items: flex-end;
-    height: 25px;
+    height: 31px;
     float: right;
     color: #000;
     background-color: #cdcdcd91;
@@ -588,7 +576,7 @@
 #size3 {
     display: flex;
     align-items: flex-end;
-    height: 25px;
+    height: 31px;
     color: #000;
     float: right;
     background-color: #cdcdcd91;
@@ -603,7 +591,7 @@
 #size4 {
     display: flex;
     align-items: flex-end;
-    height: 25px;
+    height: 31px;
     float: right;
     color: #000;
     background-color: #cdcdcd91;
@@ -618,7 +606,7 @@
 #size5 {
     display: flex;
     align-items: flex-end;
-    height: 25px;
+    height: 31px;
     float: right;
     color: #000;
     background-color: #cdcdcd91;
@@ -633,7 +621,7 @@
 #size6 {
     display: flex;
     align-items: flex-end;
-    height: 25px;
+    height: 31px;
     float: right;
     color: #000;
     background-color: #cdcdcd91;
@@ -648,7 +636,7 @@
 #size7 {
     display: flex;
     align-items: flex-end;
-    height: 25px;
+    height: 31px;
     float: right;
     color: #000;
     background-color: #cdcdcd91;
@@ -663,7 +651,7 @@
 #size8 {
     display: flex;
     align-items: flex-end;
-    height: 25px;
+    height: 31px;
     float: right;
     color: #000;
     background-color: #cdcdcd91;
@@ -678,7 +666,7 @@
 #size9 {
     display: flex;
     align-items: flex-end;
-    height: 25px;
+    height: 31px;
     float: right;
     color: #000;
     background-color: #cdcdcd91;
@@ -693,7 +681,7 @@
 #size10 {
     display: flex;
     align-items: flex-end;
-    height: 25px;
+    height: 31px;
     float: right;
     color: #000;
     background-color: #cdcdcd91;
@@ -708,7 +696,7 @@
 #size11 {
     display: flex;
     align-items: flex-end;
-    height: 25px;
+    height: 31px;
     float: right;
     color: #000;
     background-color: #cdcdcd91;
@@ -723,7 +711,7 @@
 #size12 {
     display: flex;
     align-items: flex-end;
-    height: 25px;
+    height: 31px;
     float: right;
     color: #000;
     background-color: #cdcdcd91;
@@ -751,7 +739,7 @@ select {
     background-color: #b6b6b6;
     text-align: center;
     padding: 0.375rem 0.75rem;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 600;
     line-height: 2;
     width: 100%;
@@ -1033,25 +1021,25 @@ body {
   } */
 
   #cardd1 {
-    width: 300px;
+    width: 350px;
     border-radius: 5px;
-    height: 600px;
+    height: 700px;
     --bs-card-bg: #b6b6b6;
     box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);
   }
 
   #cardd2 {
-    width: 300px;
+    width: 350px;
     border-radius: 5px;
-    height: 600px;
+    height: 700px;
     --bs-card-bg: #b6b6b6;
     box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);
   }
 
   #cardd3 {
-    width: 300px;
+    width: 350px;
     border-radius: 5px;
-    height: 600px;
+    height: 700px;
     --bs-card-bg: #b6b6b6;
     box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);
   }
@@ -1138,8 +1126,8 @@ a1 {
 
 .row1 {
   justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 89px;
+  padding-top: 109px;
+  padding-bottom: 100px;
   width: 100%;
   --bs-gutter-y: 0;
   display: flex;
@@ -1147,8 +1135,9 @@ a1 {
   margin-right: calc(-.5 * var(--bs-gutter-x));
   margin-left: calc(-.5 * var(--bs-gutter-x));
   flex-direction: row;
-  /* padding-bottom: 20px;*/
-  }
+  /* padding-bottom: 20px; */
+}
+
 .listt {
     position: relative;
     display: block;

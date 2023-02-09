@@ -68,7 +68,7 @@
 
     <!-- Sākuma teksts -->
 
-<img class="imagew" src="{{ asset('/image/wallpaper1.jpg') }}" alt="" width="100%" height="550px">
+<img class="imagew" src="{{ asset('/image/wallpaper1.jpg') }}" alt="" width="100%" height="700px">
     <div class="teksts">
         <div class="mainit">
             <img id="imgg" src="{{ asset('/image/LOGO.png') }}" alt="Girl in a jacket" width="100" height="50"
