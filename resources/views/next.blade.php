@@ -51,7 +51,7 @@
     </nav>
 
     <div class=lielaiss>
-        <img class="imagew" src="{{ asset('/image/wallpaper1.jpg') }}" alt="" width="100%" height="949px">
+        <img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="949px">
         <div class="row1">
             <div class="col3">
                 <div class="card" id="cardd1">
