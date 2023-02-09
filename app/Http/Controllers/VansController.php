@@ -9,7 +9,6 @@ use App\Models\Nike;
 use App\Models\Adidas;
 use Illuminate\Http\Request;
 class VansController extends Controller {
-//  sooner or latewr this project will be 50% done by uvis
     public function index($size)
     {
         $time = DB::table("vans")
