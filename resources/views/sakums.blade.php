@@ -68,10 +68,10 @@
 
     <!-- Sākuma teksts -->
 
-{{-- <img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="700px"> --}}
-<video  alt="" width="100%" height="700px" class="imagew" autoplay loop muted>
+<img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="700px">
+{{-- <video  alt="" width="100%" height="700px" class="imagew" autoplay loop muted>
     <source src="{{ asset('/image/video.mp4') }}" type="video/mp4">
-</video>
+</video> --}}
     <div class="teksts">
         <div class="mainit">
             <img id="imgg" src="{{ asset('/image/LOGO.png') }}" alt="Girl in a jacket" width="100" height="50"
