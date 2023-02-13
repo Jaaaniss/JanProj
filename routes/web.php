@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('sakums');
 });
 
+Route::get('/register', function () {
+    return view('register');
+});
+
 Route::get('/next',[VansController::class,'vans']);
 
 

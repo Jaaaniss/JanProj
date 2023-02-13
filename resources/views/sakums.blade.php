@@ -15,6 +15,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/s_design.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/r_design.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/dark.css') }}">
     <meta name="color-scheme" content="dark light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,6 +33,9 @@
             aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+            <div class="registers">
+                <a href="/register">Create a new account!</a>
+            </div>
         <div class="collapse navbar-collapse" id="navbarsExample03">
         </div>
         </ul>
@@ -69,9 +73,7 @@
     <!-- Sākuma teksts -->
 
 <img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="700px">
-{{-- <video  alt="" width="100%" height="700px" class="imagew" autoplay loop muted>
-    <source src="{{ asset('/image/video.mp4') }}" type="video/mp4">
-</video> --}}
+
     <div class="teksts">
         <div class="mainit">
             <img id="imgg" src="{{ asset('/image/LOGO.png') }}" alt="Girl in a jacket" width="100" height="50"
