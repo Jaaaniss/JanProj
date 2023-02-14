@@ -268,9 +268,11 @@ select {
   .invert #imggg {
     filter: invert(100%);
   }
-  
+  .invert #a1 {
+    color: #ffffff;
+    text-decoration: underline;
+  }
 
-  
 .invert {
     color: rgb(255, 255, 255);
     background: linear-gradient(to right, #343434, #575757);

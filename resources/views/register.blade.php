@@ -78,7 +78,7 @@
   
       
                     <hr class="my-4">
-                    <a1 class="d-block text-center mt-2 small" href="/">Have an account? Sign In</a1>
+                    <a id="a1" class="d-block text-center mt-2 small" href="/" >Have an account? Go back to login</a>
       
                   </form>
                 </div>

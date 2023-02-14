@@ -33,7 +33,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
             <div class="registers">
-                <a href="/register">Create a new account!</a>
+                <a id="a1" href="/register">Create a new account!</a>
             </div>
             <div class="deda">
                 <img onclick="darkmode()" id="mybtn" src="{{ asset('/image/moon.png') }}" height="30px" width="30px">
