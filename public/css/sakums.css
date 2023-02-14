@@ -1,3 +1,53 @@
+#login-dp{
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow:hidden;
+  background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+  font-size:12px    
+}
+#login-dp .bottom{
+  background-color:rgba(255,255,255,.8);
+  border-top:1px solid #ddd;
+  clear:both;
+  padding:14px;
+}
+#login-dp .social-buttons{
+  margin:12px 0    
+}
+#login-dp .social-buttons a{
+  width: 49%;
+}
+#login-dp .form-group {
+  margin-bottom: 10px;
+}
+.btn-fb{
+  color: #fff;
+  background-color:#3b5998;
+}
+.btn-fb:hover{
+  color: #fff;
+  background-color:#496ebc 
+}
+.btn-tw{
+  color: #fff;
+  background-color:#55acee;
+}
+.btn-tw:hover{
+  color: #fff;
+  background-color:#59b5fa;
+}
+@media(max-width:768px){
+  #login-dp{
+      background-color: inherit;
+      color: #fff;
+  }
+  #login-dp .bottom{
+      background-color: inherit;
+      border-top:0 none;
+  }
+}
 #rod2 {
   width: 120px;
   height: 120px;
@@ -36,24 +86,15 @@
 }
 
 #dedd {
-  width: 100%;
-  overflow: hidden;
-  padding-bottom: 10px;
-}
-
-#dedd {
-  width: 100%;
-  height: 100%;
   background: transparent;
   box-shadow: 0 10px 15px rgb(0 0 0 / 75%);
-}
-#dedd {
-  
   padding-left: 189px;
+  padding-bottom: 10px;
   padding-right: 180px;
   display: flex;
-    justify-content: center;
-    flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
 label svg {
@@ -384,7 +425,7 @@ div[class*=box] {
   background-color: #ff666600; 
 }
 
-/* .btn {
+.btn {
   line-height: 35px;
   height: 50px;
   text-align: center;
@@ -451,7 +492,7 @@ div[class*=box] {
 .btn-one:hover::after {
   opacity: 0; 
   transform: scale(0.1, 1);
-} */
+}
 
 .navbar-dark .navbar-brand {
   color: rgb(0, 0, 0);

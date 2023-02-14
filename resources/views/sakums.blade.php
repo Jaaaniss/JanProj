@@ -14,8 +14,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/s_design.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/r_design.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/sakums.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/dark.css') }}">
     <meta name="color-scheme" content="dark light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,36 +35,53 @@
             <div class="registers">
                 <a href="/register">Create a new account!</a>
             </div>
+            <div class="deda">
+                <img onclick="darkmode()" id="mybtn" src="{{ asset('/image/moon.png') }}" height="30px" width="30px">
+            </div>
+            <div class="deda">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                      <ul id="login-dp" class="dropdown-menu">
+                          <li>
+                               <div class="row">
+                                      <div class="col-md-12">
+                                          Login via
+                                          <div class="social-buttons">
+                                              <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                              <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                          </div>
+                                          or
+                                           <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                                  <div class="form-group">
+                                                       <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                                  </div>
+                                                  <div class="form-group">
+                                                       <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                       <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                       <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                                  </div>
+                                                  <div class="checkbox">
+                                                       <label>
+                                                       <input type="checkbox"> keep me logged-in
+                                                       </label>
+                                                  </div>
+                                           </form>
+                                      </div>
+                                      <div class="bottom text-center">
+                                          New here ? <a href="#"><b>Join Us</b></a>
+                                      </div>
+                               </div>
+                          </li>
+                      </ul>
+                  </li>
+            </div>
         <div class="collapse navbar-collapse" id="navbarsExample03">
         </div>
         </ul>
-
-
-
-        <div class="deda">
-                <img onclick="darkmode()" id="mybtn" src="{{ asset('/image/moon.png') }}" height="30px" width="30px">
-            {{-- <label for="mybtn">
-
-
-                <svg class="moon" version="1.0" width="26px" height="26px" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M2.02911 12.42C2.38911 17.57 6.75911 21.76 11.9891 21.99C15.6791 22.15 18.9791 20.43 20.9591 17.72C21.7791 16.61 21.3391 15.87 19.9691 16.12C19.2991 16.24 18.6091 16.29 17.8891 16.26C12.9991 16.06 8.99911 11.97 8.97911 7.13996C8.96911 5.83996 9.23911 4.60996 9.72911 3.48996C10.2691 2.24996 9.61911 1.65996 8.36911 2.18996C4.40911 3.85996 1.69911 7.84996 2.02911 12.42Z"
-                        stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <svg class="sun" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M12 18.5C15.5899 18.5 18.5 15.5899 18.5 12C18.5 8.41015 15.5899 5.5 12 5.5C8.41015 5.5 5.5 8.41015 5.5 12C5.5 15.5899 8.41015 18.5 12 18.5Z"
-                        stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                        d="M19.14 19.14L19.01 19.01M19.01 4.99L19.14 4.86L19.01 4.99ZM4.86 19.14L4.99 19.01L4.86 19.14ZM12 2.08V2V2.08ZM12 22V21.92V22ZM2.08 12H2H2.08ZM22 12H21.92H22ZM4.99 4.99L4.86 4.86L4.99 4.99Z"
-                        stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-
-                
-            </label> --}}
-        </div>
         </div>
     </nav>
 
@@ -81,7 +97,7 @@
             <h3 id="virsr"> Would you like to know your international shoe size? </h3>
             <h4 id="virsr2"> Do you know how long is your feet in centimeters? </h4>
         </div>
-    {{-- <hr /> --}}
+
         
         <div class="container">
     
@@ -120,7 +136,6 @@
     <!-- Converter -->
 
 
-    {{-- <hr /> --}}
             <div class="converter" id="collapse3" style="display:none">
                 <div class="form-group col-sm-4">
 
