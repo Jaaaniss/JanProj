@@ -27,11 +27,7 @@
     <!-- Augšā navbars -->
 
 
-    <nav id="dedd" class="navbar navbar-expand-sm navbar-dark ">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
-            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav id="dedd" class="navbar navbarr navbar-dark ">
             <div class="deda">
                 <img onclick="darkmode()" id="mybtn" src="{{ asset('/image/moon.png') }}" height="30px" width="30px">
             </div>
@@ -43,30 +39,27 @@
                                <div class="row">
                                       <div class="col-md-12">
                                            <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                                                  <div class="form-group">
+                                                  <div class="form-group3">
                                                        <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                                                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                                       <input type="email" class="form-control2" id="exampleInputEmail2" placeholder="Email address" required>
                                                   </div>
-                                                  <div class="form-group">
+                                                  <div class="form-group3">
                                                        <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                                       <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                                       <input type="password" class="form-control2" id="exampleInputPassword2" placeholder="Password" required>
                                                   </div>
-                                                  <div class="form-group">
+                                                  <div class="form-group3">
                                                        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
                                                   </div>
                                            </form>
                                       </div>
                                       <div class="bottom text-center">
-                                          New here ? <a href="/register"><b>Join Us</b></a>
+                                          New here? <a href="/register"><b>Join Us</b></a>
                                       </div>
                                </div>
                           </li>
                       </ul>
                   </li>
             </div>
-        <div class="collapse navbar-collapse" id="navbarsExample03">
-        </div>
         </ul>
         </div>
     </nav>

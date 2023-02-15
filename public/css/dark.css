@@ -341,6 +341,20 @@ select {
     box-shadow: 0px 0px 20px 3px rgb(0 0 0 / 90%);
   }
 
+.invert #login-dp{
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow:hidden;
+  background: linear-gradient(to right, #343434, #575757);
+}
+
+.invert #login-dp .bottom {
+  background: transparent;
+  clear: both;
+  padding: 14px;
+  color: white;
+}
+
   .invert .form-control {
     border: 1px solid #000000;
     margin: auto;
