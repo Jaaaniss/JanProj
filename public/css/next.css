@@ -50,6 +50,11 @@
     background: transparent;
     box-shadow: 0 10px 15px rgb(0 0 0 / 75%);
   }
+
+  .imagewww {
+    position: absolute;
+    z-index: -1;
+  }
   #dedd {
     
     padding-left: 189px;
@@ -62,6 +67,10 @@
   .cardimg {
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
+  }
+
+  .cardimg1 {
+    background-image: linear-gradient(rgb(0 0 0/ 22%),rgb(4 9 30 / 88%));
   }
   
   input {

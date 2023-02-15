@@ -28,6 +28,12 @@
   border-radius: 0.25rem;
 }
 
+.invert .imagewww {
+  filter: opacity(30%);
+  position: absolute;
+  z-index: -1;
+}
+
 .invert .dropdown-item {
   display: block;
   width: 100%;
