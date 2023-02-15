@@ -8,6 +8,39 @@
     background: linear-gradient(to right, #343434, #575757);
 } */
 
+.invert .dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 84%;
+  z-index: 1000;
+  /* display: none; */
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: left;
+  list-style: none;
+  background: linear-gradient(to right, #343434, #575757);
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 0.25rem;
+}
+
+.invert .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
 .invert a1 {
     color: #fefefe;
     text-decoration: underline;

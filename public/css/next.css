@@ -59,57 +59,11 @@
       flex-direction: column;
   }
   
-  label svg {
-    position: absolute;
-    width: 19px;
-    height: 27px;
-    top: 7px;
-    z-index: 100;
-  }
-  label svg.sun {
-    left: 12px;
-    fill: #fff;
-    transition: 0.3s;
-  }
-  label svg.moon {
-    left: 55px;
-    fill: #7e7e7e;
-    transition: 0.3s;
-  }
-  input:checked + label svg.sun {
-    fill:#7e7e7e;
-  }
-  input:checked + label svg.moon {
-    fill:#fff;
-  }
-  
   .cardimg {
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
   }
   
-  label {
-    width: 85px;
-    height: 40px;
-    position: relative;
-    display: block;
-    background: #ebebeb;
-    border-radius: 201px;
-    box-shadow: inset 0px 5px 15px rgb(0 0 0 / 40%), inset 0px -5px 15px rgb(255 255 255 / 40%);
-    cursor: pointer;
-  }
-  
-  label:after {
-    content: "";
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 8px;
-    left: 9px;
-    background: linear-gradient(180deg,#ffcc89,#d8860b);
-    border-radius: 180px;
-    box-shadow: 0px 5px 10px rgb(0 0 0 / 20%);
-  }
   input {
     width: 0;
     height: 0;
@@ -121,18 +75,6 @@
     align-items: center;
     padding-bottom: 30px;
     padding-top: 30px;
-  }
-  
-  input:checked + label {
-    background: #242424;
-  }
-  input:checked + label:after {
-    left: 76px;
-    transform: translateX(-100%);
-    background: linear-gradient(180deg,#777,#3a3a3a);
-  }
-  label, label:after {
-    transition: 0.3s
   }
   
   svg {

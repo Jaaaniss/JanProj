@@ -10,7 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
@@ -23,18 +24,30 @@
 
 <body>
 
-
-    <!-- Augšā navbars -->
-
-
     <nav id="dedd" class="navbar navbarr navbar-dark ">
             <div class="deda">
                 <img onclick="darkmode()" id="mybtn" src="{{ asset('/image/moon.png') }}" height="30px" width="30px">
             </div>
-            <div class="deda">
-                <li class="dropdown">
+            <div class="dedis">
+                <li class="dropdown-menu-left">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
-                      <ul id="login-dp" class="dropdown-menu">
+                    <div class="dropdown-menu ">
+                        <form class="px-4 py-3">
+                          <div class="mb-3">
+                            <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                          </div>
+                          <button type="submit" class="btn btn-primary">Sign in</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/register">New around here? Sign up</a>
+                      </div>
+
+                      {{-- <ul id="login-dp" class="dropdown-menu pull-left">
                           <li>
                                <div class="row">
                                       <div class="col-md-12">
@@ -57,15 +70,10 @@
                                       </div>
                                </div>
                           </li>
-                      </ul>
+                      </ul> --}}
                   </li>
             </div>
-        </ul>
-        </div>
     </nav>
-
-
-    <!-- Sākuma teksts -->
 
 <img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="700px">
 
@@ -111,10 +119,6 @@
         </div>
     </div>
 
-
-    <!-- Converter -->
-
-
             <div class="converter" id="collapse3" style="display:none">
                 <div class="form-group col-sm-4">
 
@@ -128,10 +132,6 @@
                     </div>
                 </div>
             </div>
-
-
-    <!-- Poga -->
-
 
             <div class="beigaas">
                 <div class="box-1">
