@@ -70,7 +70,7 @@
   }
 
   .cardimg1 {
-    background-image: linear-gradient(rgb(0 0 0/ 22%),rgb(4 9 30 / 88%));
+    filter: contrast(150%);
   }
   
   input {
@@ -1233,7 +1233,7 @@ a1 {
     word-wrap: break-word;
     background-color: var(--bs-card-bg);
     background-clip: border-box;
-    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border: var(--bs-card-border-width) solid rgb(255, 255, 255);
     /* border-radius: var(--bs-card-border-radius); */
     flex-direction: column;
 }

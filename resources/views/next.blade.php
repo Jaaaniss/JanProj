@@ -144,7 +144,7 @@
             <div class="col3">
                 <div class="card" id="cardd4">
                     <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwc9cf77d7/images/page-designer/2021/april/12069_Comp_A_Mobile.jpg?sw=991&sfrm=jpg"
-                        class="cardimg1" alt="..." style="background-image: linear-gradient(rgb(255 0 0),rgb(0 49 255));">
+                        class="cardimg1" alt="...">
                     <div class="card1-body">
                         <select id="ident4" class="form-control1">
                             @foreach ($newbalance as $value)
