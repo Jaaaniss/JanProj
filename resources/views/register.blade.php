@@ -72,7 +72,7 @@
                     </div>
       
                     <div class="d-grid mb-2">
-                      <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Register</button>
+                      <button id="vjg2" class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Register</button>
                     </div>
       
   

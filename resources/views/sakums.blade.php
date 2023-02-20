@@ -30,7 +30,7 @@
             </div>
             <div class="dedis">
                 <li class="dropdown-menu-left">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="vjg"><b>Login</b> <span class="caret"></span></a>
                     <div class="dropdown-menu ">
                         <form class="px-4 py-3">
                           <div class="mb-3">
@@ -41,7 +41,7 @@
                             <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
                             <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
                           </div>
-                          <button type="submit" class="btn btn-primary">Sign in</button>
+                          <button id="vjg2" type="submit" class="btn btn-primary">Sign in</button>
                         </form>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="/register">New around here? Sign up</a>

@@ -99,12 +99,22 @@
   padding-top: 12px;
 }
 
-.deda {
-  padding-top: 5px;
-  display: flex;
-  float: right;
-  padding-right: 10px;
+#vjg {
+  color: #dc3545;
+  text-decoration: none;
+  background-color: transparent;
 }
+
+#vjg2 {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.deda {
+  margin-left: calc(50% - 10px);
+}
+
 .ded {
 
   
@@ -123,17 +133,22 @@
     flex-basis: auto;
 }
 
-#dedd {
+/* #dedd {
   background: transparent;
   box-shadow: 0 10px 15px rgb(0 0 0 / 75%);
-  /* padding-left: 400px; */
+  padding-left: 400px;
   padding-bottom: 10px;
-  /* padding-right: 400px; */
+  padding-right: 400px;
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: flex-end;
   flex-direction: row;
+} */
+
+#dedd {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
 }
 
 input {

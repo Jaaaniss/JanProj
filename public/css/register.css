@@ -282,3 +282,9 @@ body {
 #carder {
     background: linear-gradient(to right, #ffffff, #d1d1d1);
 }
+
+#vjg2 {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
