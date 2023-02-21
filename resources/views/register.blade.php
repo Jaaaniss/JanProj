@@ -33,8 +33,6 @@
     </nav>
 
 
-
-
     <div class=lielaiss>
         <img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="954px">
         <div class="container">
@@ -51,24 +49,25 @@
                 
                 <div id="carder" class="card-body p-4 p-sm-5">
                   <h2 class=" text-center mb5 fw-light fs5">Register</h2>
-                  <form>
+                  <form method="POST" action="{{ route('register') }}">
+                    @csrf
       
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control1" id="floatingInputUsername" placeholder="Username" required autofocus>
+                      <input name="name" type="text" class="form-control1" id="floatingInputUsername" placeholder="Username" required autofocus>
                     </div>
       
                     <div class="form-floating mb-3">
-                      <input type="email" class="form-control1" id="floatingInputEmail" placeholder="Email address">
+                      <input name="email" type="email" class="form-control1" id="floatingInputEmail" placeholder="Email address">
                     </div>
       
                     <hr>
       
                     <div class="form-floating mb-3">
-                      <input type="password" class="form-control1" id="floatingPassword" placeholder="Password">
+                      <input name="password" type="password" class="form-control1" id="floatingPassword" placeholder="Password">
                     </div>
       
                     <div class="form-floating mb-3">
-                      <input type="password" class="form-control1" id="floatingPasswordConfirm" placeholder="Confirm Password">
+                      <input name="password_confirmation" type="password" class="form-control1" id="floatingPasswordConfirm" placeholder="Confirm Password">
                     </div>
       
                     <div class="d-grid mb-2">
