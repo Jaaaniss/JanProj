@@ -14,9 +14,9 @@ body {
     padding-top: 0px!important;
   }
   
-  .pt-4, .py-4 {
-      padding-top: 0px!important;
-  }
+  .pb-4, .py-4 {
+    padding-bottom: 0px!important;
+}
 
 
   
@@ -223,8 +223,8 @@ body {
 }
 
 .row {
-  padding-top: 120px;
-  padding-bottom: 106px;
+  padding-top: 102px;
+    padding-bottom: 102px;
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;

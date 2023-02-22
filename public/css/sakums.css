@@ -77,8 +77,8 @@
   padding-top: 0px!important;
 }
 
-.pt-4, .py-4 {
-    padding-top: 0px!important;
+.pb-4, .py-4 {
+  padding-bottom: 0px!important;
 }
 
 .ded {
@@ -95,6 +95,7 @@
 .navbarr .navbar-collapse {
     display: -ms-flexbox!important;
     /* display: flex!important; */
+    align-items: center;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
 }
@@ -513,7 +514,7 @@ filter: saturate(255);
 
 
 .mainit {
-  padding-top: 146px;
+  padding-top: 108px;
   margin: 0;
   text-align: center;
   display: flex;

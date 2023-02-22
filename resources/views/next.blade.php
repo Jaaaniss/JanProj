@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
 
     <div class=lielaiss>
-        <img class="imagewww" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="949px">
+        <img class="imagewww" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="894px">
         <div class="row1">
             <div class="col3">
                 <div class="card" id="cardd1">

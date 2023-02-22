@@ -92,7 +92,7 @@ select {
 .invert .listt {
     position: relative;
     display: block;
-    padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+    padding: 10.5px;
     text-decoration: none;
     --bs-list-group-color: #ffffff;
     background-color: #515151;
@@ -314,6 +314,7 @@ select {
       display: flex;
       flex-direction: row; 
       align-items: center;
+      position: relative;
 
   }
   

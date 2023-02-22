@@ -23,7 +23,12 @@
     <div id="app">
     <nav id="dedd" class="navbar navbarr navbar-dark ">
         <div class="picturenav">
-                <img id="picturenav" style="margin: 0;" src="{{ asset('/image/LOGO2.png') }}" alt="Girl in a jacket" class="saturate">
+                <img id="picturenav" style="
+    align-self: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+" src="{{ asset('/image/LOGO2.png') }}" alt="Girl in a jacket" class="saturate">
             </div>
             <div class="dedis">
                 <div class="deda">

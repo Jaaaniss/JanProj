@@ -1,23 +1,28 @@
 #dedd {
     display: flex;
-    flex-direction: row; 
-    align-items: center;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
   }
+
 
   #picturenav {
     height: 75px;
     width: 275px;
-    margin-left: calc(50% - -290px);
   }
+
+  
 
   .invert #picturenav {
     filter: invert(100%);
   } 
 
   .dedis {
+    position: absolute;
+    right: 15px;
     display: flex;
-      flex-direction: row;
-      align-items: center;
+    flex-direction: row;
+    align-items: center;
   }
 
   .deda {
@@ -40,8 +45,8 @@
 
   .dropdown-menu {
     position: absolute;
-    top: 110%;
-    left: 84%;
+    top: 60px;
+    left: -172px;
     z-index: 1000;
     display: none;
     float: left;
@@ -56,12 +61,12 @@
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.15);
     border-radius: 0.25rem;
-  }
+}
 
   .invert .dropdown-menu {
     position: absolute;
-    top: 110%;
-    left: 84%;
+    top: 60px;
+    left: -172px;
     z-index: 1000;
     /* display: none; */
     float: left;
