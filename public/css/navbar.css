@@ -1,0 +1,144 @@
+#dedd {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+  }
+
+  #picturenav {
+    height: 75px;
+    width: 275px;
+    margin-left: calc(50% - -290px);
+  }
+
+  .invert #picturenav {
+    filter: invert(100%);
+  } 
+
+  .dedis {
+    display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .deda {
+    padding-right: 10px;
+  }
+
+  
+#mybtn {
+    cursor: pointer;
+  }
+
+  .invert #mybtn {
+    cursor: pointer;
+    filter: invert(100%);
+  }
+
+  .dropdown-menu-left {
+    list-style: none;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 110%;
+    left: 84%;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background: linear-gradient(to right, #ffffff, #d1d1d1);
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+  }
+
+  .invert .dropdown-menu {
+    position: absolute;
+    top: 110%;
+    left: 84%;
+    z-index: 1000;
+    /* display: none; */
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: left;
+    list-style: none;
+    background: linear-gradient(to right, #343434, #575757);
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+  }
+
+  .nav-item {
+    list-style: none;
+  }
+
+  .invert .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  }
+
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #000000;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  }
+
+  #vjg {
+    color: #dc3545;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: transparent;
+  }
+
+  #vjg2 {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+
+  .nav-item-dropdown {
+    list-style: none;
+  }
+
+  #navbarDropdown {
+    padding: 0px;
+    font-weight: 750;
+    color: #dc3545;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 20px;
+  }
+
+  .btn {
+    line-height: 35px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+}
+

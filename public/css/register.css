@@ -10,28 +10,16 @@ body {
   }
 
 
-
-  #dedd {
-    width: 100%;
-    overflow: hidden;
-    padding-bottom: 10px;
+  .pb-4, .py-4 {
+    padding-top: 0px!important;
   }
   
-  #dedd {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    box-shadow: 0 10px 15px rgb(0 0 0 / 75%);
-  }
-  #dedd {
-    
-    padding-left: 189px;
-    padding-right: 180px;
-    display: flex;
-      justify-content: center;
-      flex-direction: column;
+  .pt-4, .py-4 {
+      padding-top: 0px!important;
   }
 
+
+  
   .bak {
     box-shadow: 0px -10px 15px rgb(0 0 0 / 75%);
     /* border: 1.5px solid;
@@ -210,13 +198,17 @@ body {
   text-decoration: none;
 }
 
+.btn2 {
+  line-height: 35px;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
 #a1 {
   color: #000000;
   text-decoration: underline;
-}
-
-#mybtn {
-  cursor: pointer;
 }
 
 .btn2-one:hover::after {
@@ -281,10 +273,4 @@ body {
 
 #carder {
     background: linear-gradient(to right, #ffffff, #d1d1d1);
-}
-
-#vjg2 {
-  color: #fff;
-  background-color: #dc3545;
-  border-color: #dc3545;
 }

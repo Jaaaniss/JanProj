@@ -1,36 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/register.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/register_dark.css') }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-    </script>
-    <title>Converter</title>
-</head>
-
-
-
-<body>
-    <nav id="dedd" class="navbar navbar-expand-sm navbar-dark ">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
-            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="deda">
-            <img onclick="darkmode()" id="mybtn" src="{{ asset('/image/moon.png') }}" height="30px" width="30px">
-        </div>
-    </nav>
+@extends('layouts.app')
+@section('content')
+<link rel="stylesheet" type="text/css" href="{{ asset('css/register.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/register_dark.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
 
 
     <div class=lielaiss>
@@ -71,7 +44,7 @@
                     </div>
       
                     <div class="d-grid mb-2">
-                      <button id="vjg2" class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Register</button>
+                      <button id="vjg2" class="btn2 btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Register</button>
                     </div>
       
   
@@ -100,6 +73,5 @@
     <script src="{{ asset('js/ajax.js') }}"></script>
     <script src="{{ asset('js/show-hide.js') }}"></script>
     <script src="{{ asset('js/darkmode.js') }}"></script>
-</body>
 
-</html>
+@endsection

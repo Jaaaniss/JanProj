@@ -8,6 +8,7 @@
     padding-top: 12px;
   }
   
+  
   .de {
     padding-bottom: 10px;
   }
@@ -23,46 +24,27 @@
     padding-top: 12px;
   }
 
-  #mybtn {
-    cursor: pointer;
-  }
-  
-  .deda {
-    padding-top: 5px;
-    display: flex;
-    float: right;
-  }
+
   .ded {
   
     
     display:flex;
   }
-  
-  #dedd {
-    width: 100%;
-    overflow: hidden;
-    padding-bottom: 10px;
+
+
+  .pb-4, .py-4 {
+    padding-top: 0px!important;
   }
   
-  #dedd {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    box-shadow: 0 10px 15px rgb(0 0 0 / 75%);
+  .pt-4, .py-4 {
+      padding-top: 0px!important;
   }
 
   .imagewww {
     position: absolute;
     z-index: -1;
   }
-  #dedd {
-    
-    padding-left: 189px;
-    padding-right: 180px;
-    display: flex;
-      justify-content: center;
-      flex-direction: column;
-  }
+
   
   .cardimg {
     border-top-right-radius: 3px;
@@ -803,14 +785,6 @@ select {
     background-color: black;
 }
 
-label {
-    display: inline-block;
-    max-width: 100%;
-    margin-bottom: 5px;
-    font-weight: 700;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-}
 
 body {
     color: rgb(0, 0, 0);
@@ -823,9 +797,7 @@ body {
     z-index: -1;
     /* filter: brightness(120%); */
   }
-.btn {
-    background-color: #000000 !important;
-}
+
 
 .btn-info {
     color: #fff;
@@ -883,6 +855,8 @@ body {
     width: 290px;
     height: 290px;
 }
+
+
 
 #p1 {
     margin-top: 0px;

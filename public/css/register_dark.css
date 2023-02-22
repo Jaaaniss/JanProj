@@ -1,15 +1,3 @@
-.invert #dedd {
-    width: 100%;
-    height: 100%;
-    color: #000;
-    background: transparent;
-    box-shadow: 0 10px 15px rgb(0 0 0 / 75%);
-  }
-
-  .invert #mybtn {
-    cursor: pointer;
-    filter: invert(100%);
-}
 
 .invert .form-control1 {
     border: 1px solid #000000;

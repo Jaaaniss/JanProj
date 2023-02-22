@@ -8,25 +8,9 @@
     background: linear-gradient(to right, #343434, #575757);
 } */
 
-.invert .dropdown-menu {
-  position: absolute;
-  top: 110%;
-  left: 84%;
-  z-index: 1000;
-  /* display: none; */
-  float: left;
-  min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
-  font-size: 1rem;
-  color: #ffffff;
-  text-align: left;
-  list-style: none;
-  background: linear-gradient(to right, #343434, #575757);
-  background-clip: padding-box;
-  border: 1px solid rgba(0,0,0,.15);
-  border-radius: 0.25rem;
-}
+
+
+
 .invert .card {
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
@@ -62,18 +46,7 @@
   z-index: -1;
 }
 
-.invert .dropdown-item {
-  display: block;
-  width: 100%;
-  padding: 0.25rem 1.5rem;
-  clear: both;
-  font-weight: 400;
-  color: #ffffff;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-}
+
 
 .invert a1 {
     color: #fefefe;
@@ -176,23 +149,11 @@ select {
     border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
 }
 
-.invert #mybtn {
-    cursor: pointer;
-    filter: invert(100%);
-  }
-
 .invert {
     color: rgb(255, 255, 255);
     background: linear-gradient(to right, #343434, #575757);
   }
   
-  .invert #dedd {
-    width: 100%;
-    height: 100%;
-    color: #000;
-    background: transparent;
-    box-shadow: 0 10px 15px rgb(0 0 0 / 75%);
-  }
   
   .invert #navbarsExample03 {
     color: rgb(255, 255, 255);
@@ -346,11 +307,14 @@ select {
   }
   
   .invert #dedd {
-    width: 100%;
-    height: 100%;
+
     color: #000;
     background: transparent;
     box-shadow: 0 10px 15px rgb(0 0 0 / 75%);
+      display: flex;
+      flex-direction: row; 
+      align-items: center;
+
   }
   
   .invert #navbarsExample03 {

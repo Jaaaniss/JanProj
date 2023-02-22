@@ -25,7 +25,7 @@ Route::get('/', function () {
 
 Route::get('/next',[VansController::class,'vans']);
 
-Route::view('/home','home')->middleware('auth');
+// Route::view('/home','home')->middleware('auth');
 
 
 

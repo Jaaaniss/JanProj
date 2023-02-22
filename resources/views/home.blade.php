@@ -25,10 +25,13 @@
 <body>
 
     <nav id="dedd" class="navbar navbarr navbar-dark ">
-            <div class="deda">
-                <img onclick="darkmode()" id="mybtn" src="{{ asset('/image/moon.png') }}" height="30px" width="30px">
+        <div class="picturenav">
+                <img id="picturenav" src="{{ asset('/image/LOGO2.png') }}" alt="Girl in a jacket" class="saturate">
             </div>
             <div class="dedis">
+                <div class="deda">
+                    <img onclick="darkmode()" id="mybtn" src="{{ asset('/image/moon.png') }}" height="30px" width="30px">
+                </div>
                 <li class="dropdown-menu-left">
                     <div class="dropdown-menu ">
                         
