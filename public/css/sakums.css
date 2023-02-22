@@ -69,6 +69,10 @@
 
 
 
+.nav-item-dropdown {
+  list-style: none;
+}
+
 .dropdown-menu-left {
   list-style: none;
 }
@@ -97,6 +101,14 @@
 }
 .uu2 {
   padding-top: 12px;
+}
+
+#navbarDropdown {
+  padding: 0px;
+  font-weight: 750;
+  color: #dc3545;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 #vjg {
