@@ -40,10 +40,12 @@
                     </div>
 
                     <div id="message" >
-                      <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-                      <p id="capital" class="invalid">A <b>uppercase</b> letter</p>
-                      <p id="number" class="invalid">A <b>number</b></p>
-                      <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                      <div class="paragrafi">
+                        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                        <p id="capital" class="invalid">A <b>uppercase</b> letter</p>
+                        <p id="number" class="invalid">A <b>number</b></p>
+                        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                      </div>
                     </div>
       
                     <div class="form-floating mb-3">
