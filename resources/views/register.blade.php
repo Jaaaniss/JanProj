@@ -36,7 +36,7 @@
                     <hr>
       
                     <div class="form-floating mb-3">
-                      <input name="password" type="password" class="form-control1" id="floatingPassword" placeholder="Password">
+                      <input name="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="form-control1" id="floatingPassword" placeholder="Password">
                     </div>
       
                     <div class="form-floating mb-3">
@@ -46,8 +46,6 @@
                     <div class="d-grid mb-2">
                       <button id="vjg2" class="btn2 btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Register</button>
                     </div>
-      
-  
       
                     <hr class="my-4">
                     <a id="a1" class="d-block text-center mt-2 small" href="/" >Have an account? Go back to login</a>
@@ -61,6 +59,15 @@
     </div>
 
 
+    
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+
 
 
     <div class="bak">
@@ -73,5 +80,6 @@
     <script src="{{ asset('js/ajax.js') }}"></script>
     <script src="{{ asset('js/show-hide.js') }}"></script>
     <script src="{{ asset('js/darkmode.js') }}"></script>
+    <script src="{{ asset('js/password.js') }}"></script>
 
 @endsection
