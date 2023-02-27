@@ -17,18 +17,13 @@
     <meta name="color-scheme" content="dark light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
-    <title>Convert</title>
+        <title>Convert</title>
 </head>
 <body>
     <div id="app">
     <nav id="dedd" class="navbar navbarr navbar-dark ">
         <div class="picturenav">
-                <img id="picturenav" style="
-    align-self: center;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-" src="{{ asset('/image/LOGO2.png') }}" alt="Girl in a jacket" class="saturate">
+                <img id="picturenav" style="align-self: center;margin: 0;margin-left: auto;margin-right: auto;" src="{{ asset('/image/LOGO2.png') }}" alt="Girl in a jacket" class="saturate">
             </div>
             <div class="dedis">
                 <div class="deda">
@@ -66,12 +61,14 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="/savesize">
+                                        {{ __('Save your size') }}
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
@@ -82,7 +79,7 @@
                   </li>
             </div>
     </nav>
-
+    
         <main class="py-4">
             @yield('content')
         </main>

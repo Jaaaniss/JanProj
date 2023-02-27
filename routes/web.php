@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('sakums');
 });
 
+Route::get('/savesize', function () {
+    return view('savesize');
+});
+
 // Route::get('/register', function () {
 //     return view('register');
 // });

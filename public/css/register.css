@@ -21,7 +21,6 @@ body {
 
   
   .bak {
-    box-shadow: 0px -10px 15px rgb(0 0 0 / 75%);
     /* border: 1.5px solid;
     border-left: 0;
     border-bottom: 0;
@@ -343,4 +342,8 @@ input[type=submit] {
   margin: 0;
   content: "✖";
   padding-right: 10px;
+}
+
+.invert #nulll {
+  color: rgb(255, 255, 255);
 }
