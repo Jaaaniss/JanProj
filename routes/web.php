@@ -19,15 +19,21 @@ Route::get('/', function () {
     return view('sakums');
 });
 
-Route::get('/savesize', function () {
-    return view('savesize');
+Route::get('/editsize', function () {
+    return view('editsize');
 });
+
+Route::get('/select', function () {
+    return view('select');
+});
+
 
 // Route::get('/register', function () {
 //     return view('register');
 // });
 
 Route::get('/next',[VansController::class,'vans']);
+// Route::get('/select',[VansController::class,'vans']);
 
 // Route::view('/home','home')->middleware('auth');
 
