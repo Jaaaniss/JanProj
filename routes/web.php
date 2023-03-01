@@ -28,10 +28,6 @@ Route::get('/select', function () {
 });
 
 
-// Route::get('/register', function () {
-//     return view('register');
-// });
-
 Route::get('/next',[VansController::class,'vans']);
 // Route::get('/select',[VansController::class,'vans']);
 

@@ -29,29 +29,14 @@
                 <div class="deda">
                     <img onclick="darkmode()" id="mybtn" src="{{ asset('/image/moon.png') }}" height="30px" width="30px">
                 </div>
+                
                 <li class="dropdown-menu-left">
                     <div class="dropdown-menu">
                         
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="vjg"><b>Login</b> <span class="caret"></span></a>
-                                    <div class="dropdown-menu">
-                                        <form class="px-4 py-3" method="POST" action="{{ route('login') }}">
-                                        @csrf
-                                        <div class="mb-3">
-                                            <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
-                                            <input name="email" type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
-                                            <input name="password" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                                        </div>
-                                        <button id="vjg2" type="submit" class="btn btn-primary">Sign in</button>
-                                        </form>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="/register">New around here? Sign up</a>
-                                    </div>
+                                    <a href="/login" id="vjg"><b>Login</b> <span class="caret"></span></a>
                                 </li>
                             @endif
                         @else
