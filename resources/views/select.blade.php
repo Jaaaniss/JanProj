@@ -2,8 +2,14 @@
 @extends('layouts.app')
 @section('content')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/select.css') }}">
 
 <img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="899px">
+
+
+    <div class="lielaisdiv">
+        <h1>Select your size here to save it for future</h1>
+    </div>
 
 
 <div class="bak">

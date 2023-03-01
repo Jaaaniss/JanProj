@@ -1,0 +1,14 @@
+.lielaisdiv {
+    /* z-index: 1; */
+padding-bottom: 425px;
+padding-top: 425px;
+}
+
+.imagew {
+z-index: -1;
+position: absolute;
+}
+
+h1 {
+text-align: center;
+}

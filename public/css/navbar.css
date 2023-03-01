@@ -307,9 +307,9 @@ div[class*=box] {
   /* border-image: linear-gradient(to left, rgba(0, 0, 0, 0) 20%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 80%);
   border-image-slice: 1; */
   padding-bottom: 20px;
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 
