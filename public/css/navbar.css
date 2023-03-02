@@ -134,6 +134,13 @@
     background-color: transparent;
   }
 
+  #vjg3 {
+    color: #858585;
+    text-decoration: none;
+    font-size: 13px;
+    background-color: transparent;
+}
+
   #vjg2 {
     color: #fff;
     background-color: #dc3545;
@@ -300,6 +307,12 @@ div[class*=box] {
   border-bottom-color: rgba(0, 0, 0, 0.5);
   transform: scale(0.1, 1);
 }
+
+.abidivi {
+  display: flex;
+  flex-direction: column;
+}
+
 .bak {    /* border: 1.5px solid;
   border-left: 0;
   border-bottom: 0;

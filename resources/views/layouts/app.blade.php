@@ -17,7 +17,7 @@
     <meta name="color-scheme" content="dark light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
-        <title>Convert</title>
+        <title>JSneaks</title>
 </head>
 <body>
     <div id="app">
@@ -36,7 +36,11 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a href="/login" id="vjg"><b>Login</b> <span class="caret"></span></a>
+                                    <div class="abidivi">
+                                        <a href="/login" id="vjg"><b>Login</b> <span class="caret"></span></a>
+                                        <a href="/register" id="vjg3"><b>New around here? Sign up</b> <span class="caret"></span></a>
+                                    </div>
+                                    
                                 </li>
                             @endif
                         @else
