@@ -10,7 +10,7 @@
 
 
     <div class="lielaisdiv">
-        <h1>Edit your size here</h1>
+        <h1>Size here</h1>
     </div>
 
 

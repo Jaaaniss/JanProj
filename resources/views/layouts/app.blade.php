@@ -40,7 +40,6 @@
                                         <a href="/login" id="vjg"><b>Login</b> <span class="caret"></span></a>
                                         <a href="/register" id="vjg3"><b>New around here? Sign up</b> <span class="caret"></span></a>
                                     </div>
-                                    
                                 </li>
                             @endif
                         @else
@@ -51,7 +50,7 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/editsize">
-                                        {{ __('Edit your size') }}
+                                        {{ __('Check or edit your size') }}
                                     </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
