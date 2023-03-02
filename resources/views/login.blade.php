@@ -29,20 +29,27 @@
                     @csrf
 
                     <div class="form-floating mb-3">
-                      <input name="email" type="email" class="form-control1" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                      <input name="email" type="email" class="form-control @error('email') is-invalid @enderror" id="Emaill" placeholder="email@example.com" required autocomplete="email" value="{{ old('email') }}" autofocus>
+                    
+                      
                     </div>
-      
+
                     
       
                     <div class="form-floating mb-3">
-                        <input name="password" type="password" class="form-control1 @error('password') is invalid @enderror"  id="exampleDropdownFormPassword1" placeholder="Password">
+                        <input name="password" type="password" class="form-control  @error('password') is-invalid @enderror"  id="Passwordd" placeholder="Password" required autocomplete="current_password" autofocus>
                     </div>
+                        @error('password')
+                            <span style="position: absolute;" class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
 
-                    @error('password')
-                        <span class="">
-                            <strong>{{$message}}</strong>
+                        @error('email')
+                        <span style="position: absolute;" class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
                         </span>
-                    @enderror
+                        @enderror
 
                     <hr>
       

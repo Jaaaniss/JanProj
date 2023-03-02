@@ -1,9 +1,16 @@
 
-.invert .form-control1 {
-    border: 1px solid #000000;
-    margin: auto;
-    color: white;
-    background-color: #585858;
+.invert .form-control {
+  border: 1px solid #000000;
+  /* margin: auto; */
+  color: white;
+  background-color: #585858;
+}
+
+.invert 
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  border-color: #dc3545;
+  padding-right: calc(1.5em + 0.75rem);
 }
 
 .invert #a1 {
@@ -11,7 +18,7 @@
     text-decoration: underline;
   }
 
-.invert .form-control1::-webkit-input-placeholder {
+.invert .form-control::-webkit-input-placeholder {
     color:rgb(255, 255, 255);
   }
 

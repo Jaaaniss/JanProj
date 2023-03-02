@@ -293,8 +293,28 @@ body {
   #shadoww {
     box-shadow: 0px 0px 16px 12px rgb(0 0 0 / 75%);
   }
-  
-  .form-control1 {
+
+  .mb-3, .my-3 {
+    margin-bottom: 0px!important;
+}
+
+#Passwordd {
+  margin-top: 26px;
+}
+hr {
+  margin-top: 30px;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+  .invalid-feedback {
+    display: flex;
+    width: 100%;
+    margin-top: 0rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+  .form-control {
     display: block;
     width: 100%;
     height: calc(1.5em + 0.75rem + 2px);
@@ -310,23 +330,25 @@ body {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   }
   
-  .form-floating>.form-control1, .form-floating>.form-control1-plaintext {
+  .form-floating>.form-control, .form-floating>.form-control-plaintext {
     padding: 1rem 0.75rem;
   }
   
-  .form-floating>.form-control1, .form-floating>.form-control1-plaintext, .form-floating>.form-select {
+  .form-floating>.form-control, .form-floating>.form-control-plaintext, .form-floating>.form-select {
     height: calc(3.5rem + 2px);
     line-height: 1.25;
   }
   
   #carder {
-      background: linear-gradient(to right, #ffffff, #d1d1d1);
-      padding-left: 3rem!important;
+    background: linear-gradient(to right, #ffffff, #d1d1d1);
+    padding-left: 3rem!important;
     padding-right: 3rem!important;
-    padding-top: 90px!important;
-    padding-bottom: 90px!important;
-  }
-  
+    padding-top: 70px!important;
+    padding-bottom: 70px!important;
+}
+.mt-4, .my-4 {
+  margin-top: 1rem!important;
+}
   
   /* Style all input fields */
   input {
@@ -336,8 +358,8 @@ body {
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
-  }
+    margin-bottom: 5px;
+}
   
   /* Style the submit button */
   input[type=submit] {
