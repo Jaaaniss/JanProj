@@ -17,10 +17,13 @@ class VansController extends Controller {
         return response()->json(array('data' => $time->get()));
     }
     
-    // public function index1(){
-    //     $vans=
-    //     return view('next');
-    // }
+    public function vans2(){
+        $vans = vans::all();
+        $nike = nike::all();
+        $adidas = adidas::all();
+        $newbalance = newbalance::all();
+        return view('select',['vans'=>$vans,'nike'=>$nike,'adidas'=>$adidas, 'newbalance'=>$newbalance]);
+    }
     
 
     public function vans()

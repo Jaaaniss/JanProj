@@ -111,3 +111,21 @@ $("#ident4").on('change', function(){
    })
 });
 
+let btn = document.getElementById('submitbutton');
+        btn.addEventListener('click', (e) => {
+            console.log($('#sizeinput').val())
+            $.ajax({
+                type: "POST",
+                url: '/api/save-size',
+                data: {
+                    size: $('#sizeinput').val(),
+                },
+                // dataType: "json",
+                success: function(data){
+                        console.log('a')
+               },
+                error: function(jqXhr, textStatus, errorMessage){
+                    console.log(errorMessage)
+               }
+           })
+        });

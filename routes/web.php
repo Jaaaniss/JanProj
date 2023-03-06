@@ -23,13 +23,13 @@ Route::get('/editsize', function () {
     return view('editsize');
 });
 
-Route::get('/select', function () {
-    return view('select');
-});
+// Route::get('/select', function () {
+//     return view('select');
+// });
 
 
 Route::get('/next',[VansController::class,'vans']);
-// Route::get('/select',[VansController::class,'vans']);
+Route::get('/select',[VansController::class,'vans2']);
 
 // Route::view('/home','home')->middleware('auth');
 
