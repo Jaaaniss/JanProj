@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->float('foot_size_cm')->nullable();
         });
     }
 

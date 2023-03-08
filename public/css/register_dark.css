@@ -45,25 +45,17 @@
     background: linear-gradient(to right, #343434, #575757);
   }
 
-  .invert .btn2 {
-    /* line-height: 35px; */
-    /* height: 50px; */
-    text-align: center;
-    /* width: 250px; */
-    cursor: pointer;
-  }
-  
-  .invert .btn2-one {
+  .invert .btn7-one {
     color: #FFF;
     transition: all 0.3s;
     position: relative;
   }
   
-  .invert .btn2-one span {
+  .invert .btn7-one span {
     transition: all 0.3s;
   }
   
-  .invert .btn2-one::before {
+  .invert .btn7-one::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -82,16 +74,16 @@
     transform: scale(0.1, 1);
   }
   
-  .invert .btn2-one:hover span {
+  .invert .btn7-one:hover span {
     letter-spacing: 2px;
   }
   
-  .invert .btn2-one:hover::before {
+  .invert .btn7-one:hover::before {
     opacity: 1; 
     transform: scale(1, 1); 
   }
   
-  .invert .btn2-one::after {
+  .invert .btn7-one::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -103,66 +95,12 @@
     background-color: rgba(255,255,255,0.1);
   }
   
-  .invert .btn2:hover {
+  .invert .btn7:hover {
     color: #ffffff;
     text-decoration: none;
   }
   
-  .invert .btn2-one:hover::after {
-    opacity: 0; 
-    transform: scale(0.1, 1);
-  }
-
-  .invert .btn2-one span {
-    transition: all 0.3s;
-  }
-  
-  .invert .btn2-one::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    transition: all 0.3s;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-top-color: rgba(255,255,255,0.5);
-    border-bottom-color: rgba(255,255,255,0.5);
-    transform: scale(0.1, 1);
-  }
-  
-  .invert .btn2-one:hover span {
-    letter-spacing: 2px;
-  }
-  
-  .invert .btn2-one:hover::before {
-    opacity: 1; 
-    transform: scale(1, 1); 
-  }
-  
-  .invert .btn2-one::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transition: all 0.3s;
-    background-color: rgba(255,255,255,0.1);
-  }
-  
-  .invert .btn2:hover {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  .invert .btn2-one:hover::after {
+  .invert .btn7-one:hover::after {
     opacity: 0; 
     transform: scale(0.1, 1);
   }
@@ -170,3 +108,10 @@
   .invert #carder {
     background: linear-gradient(to right, #343434, #575757);
   }
+
+  .invert hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

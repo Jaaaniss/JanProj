@@ -4,7 +4,7 @@ $("#ident").on('change', function(){
     console.log(table);
     $.ajax({
         type: "GET",
-        url: "/api/vanssize/"+table,
+        url: "/vanssize/"+table,
         dataType: "json",
         success: function(data){
                 $.each(data.data, function(key,val) {
@@ -33,7 +33,7 @@ $("#ident2").on('change', function(){
     console.log(table);
     $.ajax({
         type: "GET",
-        url: "/api/nikesize/"+table,
+        url: "/nikesize/"+table,
         dataType: "json",
         success: function(data){
                 $.each(data.data, function(key,val) {
@@ -62,7 +62,7 @@ $("#ident3").on('change', function(){
     console.log(table);
     $.ajax({
         type: "GET",
-        url: "/api/adidassize/"+table,
+        url: "/adidassize/"+table,
         dataType: "json",
         success: function(data){
                 $.each(data.data, function(key,val) {
@@ -90,7 +90,7 @@ $("#ident4").on('change', function(){
     console.log(table);
     $.ajax({
         type: "GET",
-        url: "/api/nbsize/"+table,
+        url: "/nbsize/"+table,
         dataType: "json",
         success: function(data){
                 $.each(data.data, function(key,val) {
@@ -110,22 +110,3 @@ $("#ident4").on('change', function(){
        }
    })
 });
-
-let btn = document.getElementById('submitbutton');
-        btn.addEventListener('click', (e) => {
-            console.log($('#sizeinput').val())
-            $.ajax({
-                type: "POST",
-                url: '/api/save-size',
-                data: {
-                    size: $('#sizeinput').val(),
-                },
-                // dataType: "json",
-                success: function(data){
-                        console.log('a')
-               },
-                error: function(jqXhr, textStatus, errorMessage){
-                    console.log(errorMessage)
-               }
-           })
-        });

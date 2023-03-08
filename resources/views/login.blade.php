@@ -72,7 +72,7 @@
 
     <div class="bak">
         <div class="box-1">
-            <a id="nulll" href="/" class="btn3 btn-one" role="button"><span>Back Home</span></a>
+            <a id="nulll" href="/" class="btn6 btn6-one" role="button"><span>Back Home</span></a>
         </div>
     </div>
 

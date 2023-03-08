@@ -2,6 +2,7 @@
 @extends('layouts.app')
 @section('content')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/login.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/edit.css') }}">
 
 <img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="899px">
@@ -9,23 +10,40 @@
 
 
 
-    <div class="lielaisdiv">
-        <h1>Size here</h1>
+
+
+        <div class="col-lg-10 col-xl-9 mx-auto">
+            <div id= "shadoww" class="card flex-row my-5 border-0 rounded-3 overflow-hidden">
+              <div id="carder" class="card-body p-4 p-sm-5">
+                <div class="input-group mb-3">
+                    <div class="virsra">
+                        <h2>
+                            Your saved foot size is {{ auth()->user()->foot_size_cm }}cm
+                        </h2>
+                        <h2>
+                            You can enter your new size below to save it
+                        </h2>
+                    </div>
+                        <form class="formss" action="/select" method="post">
+                            @csrf
+                            <input id="sizeinput" max="1000" type="number" name="foot_size_cm" class="form-control" placeholder="Enter a number" aria-label="Cm" aria-describedby="button-addon2">
+                            <button class="btn10 btn10-one" type="submit" id="submitbutton">Save</button>
+                        </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+    <div class="bak">
+        <div class="box-1">
+            <a id="nulll" href="/" class="btn4 btn4-one" role="button"><span>Back Home</span></a>
+        </div>
     </div>
-
-
-
-
-
-<div class="bak">
-    <div class="box-1">
-        <a id="nulll" href="/" class="btn2 btn-one" role="button"><span>Back Home</span></a>
-    </div>
-</div>
 
     <script src="{{ asset('js/ajax.js') }}"></script>
     <script src="{{ asset('js/show-hide.js') }}"></script>
     <script src="{{ asset('js/darkmode.js') }}"></script>
-    <script src="{{ asset('js/password.js') }}"></script>
 
 @endsection

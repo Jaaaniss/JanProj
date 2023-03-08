@@ -128,7 +128,7 @@
     </div>
     <div class="bak">
         <div class="box-1">
-            <a id="nulll" href="/" class="btn2 btn-one" role="button"><span>Back Home</span></a>
+            <a id="nulll" href="/" class="btn8 btn8-one" role="button"><span>Back Home</span></a>
         </div>
     </div>
     </div>
