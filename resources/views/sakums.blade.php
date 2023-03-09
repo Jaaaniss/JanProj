@@ -3,9 +3,12 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/sakums.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/dark.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
+
 <img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="700px">
 
+
     <div class="teksts">
+
         <div class="mainit">
             <img id="imgg" src="{{ asset('/image/LOGO.png') }}" alt="Girl in a jacket" width="100" height="50"
             class="saturate">
@@ -13,9 +16,9 @@
             <h4 id="virsr2"> Do you know how long is your feet in centimeters? </h4>
         </div>
 
-        
+
         <div class="container">
-    
+
             <div class="row1" id="inv">
                 <div id="ir1" class="col-sm">
                     <div class="uu1">
@@ -45,6 +48,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
             <div class="converter" id="collapse3" style="display:none">
@@ -60,6 +64,7 @@
                     </div>
                 </div>
             </div>
+
 
             <div class="beigaas">
                 <div class="box-1">

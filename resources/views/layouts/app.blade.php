@@ -21,56 +21,58 @@
 </head>
 <body>
     <div id="app">
-    <nav id="dedd" class="navbar navbarr navbar-dark ">
-        <div class="picturenav">
-                <img id="picturenav" style="align-self: center;margin: 0;margin-left: auto;margin-right: auto;" src="{{ asset('/image/LOGO2.png') }}" alt="Girl in a jacket" class="saturate">
-            </div>
-            <div class="dedis">
-                <div class="deda">
-                    <img onclick="darkmode()" id="mybtn" src="{{ asset('/image/moon.png') }}" height="30px" width="30px">
+
+        <nav id="dedd" class="navbar navbarr navbar-dark ">
+            <div class="picturenav">
+                    <img id="picturenav" style="align-self: center;margin: 0;margin-left: auto;margin-right: auto;" src="{{ asset('/image/LOGO2.png') }}" alt="Girl in a jacket" class="saturate">
                 </div>
-                
-                <li class="dropdown-menu-left">
-                    <div class="dropdown-menu">
-                        
-                        @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <div class="abidivi">
-                                        <a href="/login" id="vjg"><b>Login</b> <span class="caret"></span></a>
-                                        <a href="/register" id="vjg3"><b>New around here? Sign up</b> <span class="caret"></span></a>
+                <div class="dedis">
+                    <div class="deda">
+                        <img onclick="darkmode()" id="mybtn" src="{{ asset('/image/moon.png') }}" height="30px" width="30px">
+                    </div>
+
+                    <li class="dropdown-menu-left">
+                        <div class="dropdown-menu">
+
+                            @guest
+                                @if (Route::has('login'))
+                                    <li class="nav-item">
+                                        <div class="abidivi">
+                                            <a href="/login" id="vjg"><b>Login</b> <span class="caret"></span></a>
+                                            <a href="/register" id="vjg3"><b>New around here? Sign up</b> <span class="caret"></span></a>
+                                        </div>
+                                    </li>
+                                @endif
+                            @else
+                                <li class="nav-item-dropdown">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        {{ Auth::user()->name }}
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/editsize">
+                                            {{ __('Check or edit your size') }}
+                                        </a>
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
                                     </div>
                                 </li>
-                            @endif
-                        @else
-                            <li class="nav-item-dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
+                            @endguest
+                        </div>
+                    </li>
+                </div>
+        </nav>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="/editsize">
-                                        {{ __('Check or edit your size') }}
-                                    </a>
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </div>
-                  </li>
-            </div>
-    </nav>
-    
         <main class="py-4">
             @yield('content')
         </main>
+
     </div>
 </body>
 </html>

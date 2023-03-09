@@ -4,6 +4,9 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/dark.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
 
+
+
+
     <div class=lielaiss>
         <img class="imagewww" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="894px">
         <div class="row1">
@@ -48,7 +51,7 @@
                     <div class="card1-body">
 
                     </div>
-                    
+
                     <ul class="list-group list-group-flush" style="font-size: 20px;">
                         <li class="listt">Your EU size --><span id="size5"></span></li>
                         <li class="listt">Your UK size --><span id="size6"></span></li>
@@ -126,6 +129,14 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
     <div class="bak">
         <div class="box-1">
             <a id="nulll" href="/" class="btn8 btn8-one" role="button"><span>Back Home</span></a>

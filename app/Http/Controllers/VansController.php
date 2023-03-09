@@ -14,10 +14,17 @@ use Illuminate\Support\Facades\Auth;
 class VansController extends Controller {
     public function index($size)
     {
-        $time = DB::table("vans")
-            ->where("v_cm",$size);
+            $time = DB::table("vans")
+            ->where('v_cm',$size);
         return response()->json(array('data' => $time->get()));
     }
+
+    // public function index($column,$size)
+    // {
+    //         $time = DB::table("vans")
+    //         ->where($column,$size);
+    //     return response()->json(array('data' => $time->get()));
+    // }
 
     public function vans2(){
         $vans = vans::all();

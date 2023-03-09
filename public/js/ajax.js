@@ -1,6 +1,7 @@
 
 $("#ident").on('change', function(){
     var table = $("#ident").find(":selected").val();
+    // var table1 = $("#ident").find(":selected").val();
     console.log(table);
     $.ajax({
         type: "GET",
@@ -12,7 +13,7 @@ $("#ident").on('change', function(){
                     eu=val.v_eu
                     usm=val.v_usm
                     usw=val.v_usw
-                    
+
                 document.getElementById("size1").innerHTML = val.v_eu;
                 document.getElementById("size2").innerHTML = val.v_uk;
                 document.getElementById("size3").innerHTML = val.v_usm;
@@ -41,7 +42,7 @@ $("#ident2").on('change', function(){
                     eu=val.n_eu
                     usm=val.n_usm
                     usw=val.n_usw
-                    
+
                 document.getElementById("size5").innerHTML = val.n_eu;
                 document.getElementById("size6").innerHTML = val.n_uk;
                 document.getElementById("size7").innerHTML = val.n_usm;
@@ -70,7 +71,7 @@ $("#ident3").on('change', function(){
                     eu=val.a_eu
                     usm=val.a_usm
                     usw=val.a_usw
-                    
+
                 document.getElementById("size9").innerHTML = val.a_eu;
                 document.getElementById("size10").innerHTML = val.a_uk;
                 document.getElementById("size11").innerHTML = val.a_usm;
@@ -98,7 +99,7 @@ $("#ident4").on('change', function(){
                     eu=val.nb_eu
                     usm=val.nb_usm
                     usw=val.nb_usw
-                    
+
                 document.getElementById("size13").innerHTML = val.nb_eu;
                 document.getElementById("size14").innerHTML = val.nb_uk;
                 document.getElementById("size15").innerHTML = val.nb_usm;
@@ -110,3 +111,5 @@ $("#ident4").on('change', function(){
        }
    })
 });
+
+

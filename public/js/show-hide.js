@@ -53,3 +53,17 @@ $(document).ready(function() {
         });
     });
 });
+
+// $(document).ready(function() {
+//     $('#clik').click(function() {
+//         var collapse5_content_selector = $(this).attr('href');
+//         var toggle_switch = $(this);
+//         $(collapse5_content_selector).toggle(function() {
+//             if ($(this).css('display') == 'none') {
+//                 toggle_switch.html('Enter');
+//             } else {
+//                 toggle_switch.html('Hide');
+//             }
+//         });
+//     });
+// });

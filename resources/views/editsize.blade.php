@@ -5,12 +5,9 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/login.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/edit.css') }}">
 
-<img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="899px">
 
 
-
-
-
+        <img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="899px">
 
         <div class="col-lg-10 col-xl-9 mx-auto">
             <div id= "shadoww" class="card flex-row my-5 border-0 rounded-3 overflow-hidden">
@@ -35,7 +32,7 @@
                     </div>
               </div>
             </div>
-          </div>
+        </div>
 
 
 
@@ -44,6 +41,8 @@
             <a id="nulll" href="/" class="btn4 btn4-one" role="button"><span>Back Home</span></a>
         </div>
     </div>
+
+
 
     <script src="{{ asset('js/ajax.js') }}"></script>
     <script src="{{ asset('js/show-hide.js') }}"></script>
