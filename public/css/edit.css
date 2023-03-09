@@ -47,8 +47,8 @@ h1 {
 }
 
 .invert .btn10-one:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
+  opacity: 1;
+  transform: scale(1, 1);
 }
 
 .invert .btn10-one::after {
@@ -69,7 +69,7 @@ h1 {
 }
 
 .invert .btn10-one:hover::after {
-  opacity: 0; 
+  opacity: 0;
   transform: scale(0.1, 1);
 }
 
@@ -79,7 +79,7 @@ h1 {
   border: none;
   text-align: center;
   background-color: transparent;
-  width: 225px;
+  width: 155px;
   cursor: pointer;
 }
 
@@ -117,8 +117,8 @@ h1 {
 }
 
 .btn10-one:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
+  opacity: 1;
+  transform: scale(1, 1);
 }
 
 
@@ -140,7 +140,7 @@ h1 {
 }
 
 .btn10-one:hover::after {
-  opacity: 0; 
+  opacity: 0;
   transform: scale(0.1, 1);
 }
 
@@ -162,17 +162,39 @@ h1 {
 }
 
 .col-xl-9 {
-  -ms-flex: 0 0 75%;
-  flex: 0 0 75%;
-  max-width: 800px;
-  padding-top: 245px;
-  padding-bottom: 231px;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 800px;
+    padding-top: 186px;
+    padding-bottom: 203px;
 }
 
 .formss {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.form-control {
+  display: block;
+  width: 101.5%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0px solid #ced4da00;
+  border-radius: 0px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.butooni {
+    display: flex;
+    width: 101.5%;
+    justify-content: space-between;
 }
 
 .invert #carder {
@@ -233,8 +255,8 @@ h1 {
 }
 
 .invert .btn4-one:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
+  opacity: 1;
+  transform: scale(1, 1);
 }
 
 .invert .btn4-one::after {
@@ -255,7 +277,7 @@ h1 {
 }
 
 .invert .btn4-one:hover::after {
-  opacity: 0; 
+  opacity: 0;
   transform: scale(0.1, 1);
 }
 
@@ -266,17 +288,17 @@ h1 {
     width: 100px;
     cursor: pointer;
 }
-  
+
   .btn4-one {
     color: rgb(0, 0, 0);
     transition: all 0.3s;
     position: relative;
   }
-  
+
   .btn4-one span {
     transition: all 0.3s;
   }
-  
+
   .btn4-one::before {
     content: '';
     position: absolute;
@@ -295,17 +317,17 @@ h1 {
     border-bottom-color: rgba(0, 0, 0, 0.5);
     transform: scale(0.1, 1);
   }
-  
+
   .btn4-one:hover span {
     letter-spacing: 2px;
   }
-  
+
   .btn4-one:hover::before {
-    opacity: 1; 
-    transform: scale(1, 1); 
+    opacity: 1;
+    transform: scale(1, 1);
   }
-  
-  
+
+
   .btn4-one::after {
     content: '';
     position: absolute;
@@ -317,14 +339,14 @@ h1 {
     transition: all 0.3s;
     background-color: rgba(0, 0, 0, 0.1);
   }
-  
+
   .btn4:hover {
     color: #000000;
     text-decoration: none;
   }
-  
+
   .btn4-one:hover::after {
-    opacity: 0; 
+    opacity: 0;
     transform: scale(0.1, 1);
   }
 
@@ -336,17 +358,17 @@ h1 {
     width: 100px;
     cursor: pointer;
 }
-  
+
   .btn5-one {
     color: rgb(0, 0, 0);
     transition: all 0.3s;
     position: relative;
   }
-  
+
   .btn5-one span {
     transition: all 0.3s;
   }
-  
+
   .btn5-one::before {
     content: '';
     position: absolute;
@@ -365,17 +387,17 @@ h1 {
     border-bottom-color: rgba(0, 0, 0, 0.5);
     transform: scale(0.1, 1);
   }
-  
+
   .btn5-one:hover span {
     letter-spacing: 2px;
   }
-  
+
   .btn5-one:hover::before {
-    opacity: 1; 
-    transform: scale(1, 1); 
+    opacity: 1;
+    transform: scale(1, 1);
   }
-  
-  
+
+
   .btn5-one::after {
     content: '';
     position: absolute;
@@ -387,14 +409,14 @@ h1 {
     transition: all 0.3s;
     background-color: rgba(0, 0, 0, 0.1);
   }
-  
+
   .btn5:hover {
     color: #000000;
     text-decoration: none;
   }
-  
+
   .btn5-one:hover::after {
-    opacity: 0; 
+    opacity: 0;
     transform: scale(0.1, 1);
   }
 

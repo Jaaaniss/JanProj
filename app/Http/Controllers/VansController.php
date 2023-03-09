@@ -9,6 +9,8 @@ use App\Models\Nike;
 use App\Models\Adidas;
 use App\Models\NewBalance;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 class VansController extends Controller {
     public function index($size)
     {
@@ -16,15 +18,19 @@ class VansController extends Controller {
             ->where("v_cm",$size);
         return response()->json(array('data' => $time->get()));
     }
-    
+
     public function vans2(){
         $vans = vans::all();
         $nike = nike::all();
         $adidas = adidas::all();
         $newbalance = newbalance::all();
-        return view('select',['vans'=>$vans,'nike'=>$nike,'adidas'=>$adidas, 'newbalance'=>$newbalance]);
+        if (Auth::user()->foot_size_cm == null) {
+            return view('select',['vans'=>$vans,'nike'=>$nike,'adidas'=>$adidas, 'newbalance'=>$newbalance]);
+        } else {
+           return redirect("/editsize");
+        }
     }
-    
+
 
     public function vans()
     {

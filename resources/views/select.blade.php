@@ -13,14 +13,18 @@
               <div id="carder" class="card-body p-4 p-sm-5">
                 <div class="input-group mb-3">
                     <div class="virsra">
-                        <h2>
-                            Enter your size to save it for future
+                        <h2 style=" padding-bottom: 20px"><center>
+                            Enter your foot size to 'Save' it for future or click 'Next' to manually select it
+                            </center>
                         </h2>
                     </div>
                         <form class="formss" action="/select" method="post">
                             @csrf
                             <input id="sizeinput" type="text" name="foot_size_cm" class="form-control" placeholder="Enter a number" aria-label="Cm" aria-describedby="button-addon2">
-                            <button class="btn10 btn10-one" type="submit" id="submitbutton">Save</button>
+                            <div class="butooni">
+                                <button class="btn10 btn10-one" type="submit" id="submitbutton">Save</button>
+                                <a id="nulll" href="/next" class="btn10 btn10-one" role="button"><span>Next</span></a>
+                            </div>
                         </form>
                 </div>
               </div>

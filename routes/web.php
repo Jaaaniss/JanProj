@@ -4,6 +4,7 @@ use App\Http\Controllers\NikeController;
 use App\Http\Controllers\AdidasController;
 use App\Http\Controllers\NBController;
 use App\Http\Controllers\SizeController;
+use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\DB;
 
 /*

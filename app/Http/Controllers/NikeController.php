@@ -67,7 +67,7 @@ class NikeController extends Controller {
      * @param  \App\Models\Vans  $nike
      * @return \Illuminate\Http\Response
      */
-    public function edit(Vans $nike)
+    public function edit()
     {
         //
     }
@@ -79,7 +79,7 @@ class NikeController extends Controller {
      * @param  \App\Models\Vans  $nike
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Vans $nike)
+    public function update(Request $request)
     {
         //
     }
@@ -90,7 +90,7 @@ class NikeController extends Controller {
      * @param  \App\Models\Vans  $nike
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Vans $nike)
+    public function destroy()
     {
         //
     }

@@ -20,22 +20,25 @@
                         <h2>
                             Your saved foot size is {{ auth()->user()->foot_size_cm }}cm
                         </h2>
-                        <h2>
-                            You can enter your new size below to save it
+                        <h2 style="padding-top: 30px; padding-bottom: 20px">
+                            <center>You can enter your new size below to 'Save' it or click 'Next' for sizing</center>
                         </h2>
                     </div>
                         <form class="formss" action="/select" method="post">
                             @csrf
                             <input id="sizeinput" max="1000" type="number" name="foot_size_cm" class="form-control" placeholder="Enter a number" aria-label="Cm" aria-describedby="button-addon2">
-                            <button class="btn10 btn10-one" type="submit" id="submitbutton">Save</button>
+                            <div class="butooni">
+                                <button class="btn10 btn10-one" type="submit" id="submitbutton">Save</button>
+                                <a id="nulll" href="/next" class="btn10 btn10-one" role="button"><span>Next</span></a>
+                            </div>
                         </form>
-                </div>
+                    </div>
               </div>
             </div>
           </div>
 
 
-          
+
     <div class="bak">
         <div class="box-1">
             <a id="nulll" href="/" class="btn4 btn4-one" role="button"><span>Back Home</span></a>
