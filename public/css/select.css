@@ -88,11 +88,6 @@ text-align: center;
     fill: none;
   }
 
-  .imagew {
-    position: absolute;
-    z-index: -1;
-    /* filter: brightness(120%); */
-  }
 
   /* body {
     color: rgb(0, 0, 0);
@@ -814,6 +809,7 @@ body {
     position: absolute;
     z-index: -1;
     /* filter: brightness(120%); */
+    object-fit: cover;
   }
 
 

@@ -153,61 +153,61 @@ select {
     color: rgb(255, 255, 255);
     background: linear-gradient(to right, #343434, #575757);
   }
-  
-  
+
+
   .invert #navbarsExample03 {
     color: rgb(255, 255, 255);
   }
-  
+
   .invert #rod1 {
     filter: brightness(0) invert(1);
   }
-  
+
   .invert #rod2 {
     filter: brightness(0) invert(1);
   }
-  
+
   .invert #rod3 {
     filter: brightness(0) invert(1);
   }
-  
-  
+
+
   .invert .navbar-brand {
     color: rgb(255, 255, 255);
   }
-  
+
   .invert #dark2 {
     color: rgb(255, 255, 255);
     filter: contrast(100%);
   }
-  
+
   .invert #dark1 {
     color: rgb(255, 255, 255);
     filter: contrast(100%);
   }
-  
+
   .invert #ir2 {
     background-color: #555555;
     padding-top: 28px;
     width: 250px;
     float: left;
-  
+
     /* border: 1.5px solid; */
-  
+
     /* border-top: 0;
     border-bottom: 0; */
-  
+
     /* border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
     border-image-slice: 1; */
     box-shadow: 0px 0px 20px 3px rgb(0 0 0 / 90%);
-  
+
     /* margin-top: 20px;
     margin-bottom: 20px; */
-  
-  
+
+
   }
-  
-  
+
+
 
   .invert .form-group {
     display: flex;
@@ -216,33 +216,33 @@ select {
     padding-top: 38px;
     color: rgb(255, 255, 255);
 }
-  
+
   .invert hr {
-    
+
     margin-top: 1rem;
       margin-bottom: 1rem;
-      border: 0;                
+      border: 0;
     background-image: linear-gradient(90deg,transparent, rgb(255, 255, 255), transparent);  height: 1px;
   }
-  
+
   .invert #nulll {
     color: rgb(255, 255, 255);
 }
-  
+
 .invert .btn2 {
     cursor: pointer;
   }
-  
+
   .invert .btn2-one {
     color: #FFF;
     transition: all 0.3s;
     position: relative;
   }
-  
+
   .invert .btn-one span {
     transition: all 0.3s;
   }
-  
+
   .invert .btn-one::before {
     content: '';
     position: absolute;
@@ -261,16 +261,16 @@ select {
     border-bottom-color: rgba(255,255,255,0.5);
     transform: scale(0.1, 1);
   }
-  
+
   .invert .btn-one:hover span {
     letter-spacing: 2px;
   }
-  
+
   .invert .btn-one:hover::before {
-    opacity: 1; 
-    transform: scale(1, 1); 
+    opacity: 1;
+    transform: scale(1, 1);
   }
-  
+
   .invert .btn-one::after {
     content: '';
     position: absolute;
@@ -282,17 +282,17 @@ select {
     transition: all 0.3s;
     background-color: rgba(255,255,255,0.1);
   }
-  
+
   .invert .btn:hover {
     color: #ffffff;
     text-decoration: none;
   }
-  
+
   .invert .btn-one:hover::after {
-    opacity: 0; 
+    opacity: 0;
     transform: scale(0.1, 1);
   }
-  
+
   .invert #imggg {
     filter: invert(100%);
   }
@@ -305,63 +305,63 @@ select {
     color: rgb(255, 255, 255);
     background: linear-gradient(to right, #343434, #575757);
   }
-  
+
   .invert #dedd {
 
     color: #000;
     background: transparent;
     box-shadow: 0 10px 15px rgb(0 0 0 / 75%);
       display: flex;
-      flex-direction: row; 
+      flex-direction: row;
       align-items: center;
       position: relative;
 
   }
-  
+
   .invert #navbarsExample03 {
     color: rgb(255, 255, 255);
   }
-  
+
   .invert #rod1 {
     filter: brightness(0) invert(1);
   }
-  
+
   .invert #rod2 {
     filter: brightness(0) invert(1);
   }
-  
+
   .invert #rod3 {
     filter: brightness(0) invert(1);
   }
-  
-  
+
+
   .invert .navbar-brand {
     color: rgb(255, 255, 255);
   }
-  
+
   .invert #dark2 {
     color: rgb(255, 255, 255);
     filter: contrast(100%);
   }
-  
+
   .invert #dark1 {
     color: rgb(255, 255, 255);
     filter: contrast(100%);
   }
-  
-  
+
+
   .invert #ir1 {
     background-color: #555555;
     padding-top: 50px;
     padding-bottom: 70px;
-  
+
     /* border-top: 0;
     border-bottom: 0; */
     /* border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
     border-image-slice: 1; */
     box-shadow: 0px 0px 20px 3px rgb(0 0 0 / 90%);
   }
-  
+
   .invert #ir3 {
     background-color: #555555;
     padding-top: 28px;
@@ -397,17 +397,17 @@ select {
 .invert .form-control::-webkit-input-placeholder {
     color:rgb(255, 255, 255);
   }
-  
+
   .invert hr {
-    
+
     margin-top: 1rem;
       margin-bottom: 1rem;
-      border: 0;                
+      border: 0;
     background-image: linear-gradient(90deg,transparent, rgb(255, 255, 255), transparent);  height: 1px;
   }
-  
-  
-  
+
+
+
   .invert .btn {
     line-height: 35px;
     height: 50px;
@@ -415,17 +415,17 @@ select {
     width: 250px;
     cursor: pointer;
   }
-  
+
   .invert .btn-one {
     color: #FFF;
     transition: all 0.3s;
     position: relative;
   }
-  
+
   .invert .btn-one span {
     transition: all 0.3s;
   }
-  
+
   .invert .btn-one::before {
     content: '';
     position: absolute;
@@ -444,16 +444,16 @@ select {
     border-bottom-color: rgba(255,255,255,0.5);
     transform: scale(0.1, 1);
   }
-  
+
   .invert .btn-one:hover span {
     letter-spacing: 2px;
   }
-  
+
   .invert .btn-one:hover::before {
-    opacity: 1; 
-    transform: scale(1, 1); 
+    opacity: 1;
+    transform: scale(1, 1);
   }
-  
+
   .invert .btn-one::after {
     content: '';
     position: absolute;
@@ -465,14 +465,14 @@ select {
     transition: all 0.3s;
     background-color: rgba(255,255,255,0.1);
   }
-  
+
   .invert .btn:hover {
     color: #ffffff;
     text-decoration: none;
   }
-  
+
   .invert .btn-one:hover::after {
-    opacity: 0; 
+    opacity: 0;
     transform: scale(0.1, 1);
   }
 
@@ -481,11 +481,11 @@ select {
     transition: all 0.3s;
     position: relative;
   }
-  
+
   .invert .btn8-one span {
     transition: all 0.3s;
   }
-  
+
   .invert .btn8-one::before {
     content: '';
     position: absolute;
@@ -504,16 +504,16 @@ select {
     border-bottom-color: rgba(255,255,255,0.5);
     transform: scale(0.1, 1);
   }
-  
+
   .invert .btn8-one:hover span {
     letter-spacing: 2px;
   }
-  
+
   .invert .btn8-one:hover::before {
-    opacity: 1; 
-    transform: scale(1, 1); 
+    opacity: 1;
+    transform: scale(1, 1);
   }
-  
+
   .invert .btn8-one::after {
     content: '';
     position: absolute;
@@ -525,24 +525,24 @@ select {
     transition: all 0.3s;
     background-color: rgba(255,255,255,0.1);
   }
-  
+
   .invert .btn8:hover {
     color: #ffffff;
     text-decoration: none;
   }
-  
+
   .invert .btn8-one:hover::after {
-    opacity: 0; 
+    opacity: 0;
     transform: scale(0.1, 1);
   }
-  
+
   .invert #imggg {
     filter: invert(100%);
   }
-  
 
 
-  
+
+
   .invert #size1 {
     display: flex;
     align-items: flex-end;

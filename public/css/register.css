@@ -2,7 +2,7 @@ body {
   color: rgb(0, 0, 0);
   background: linear-gradient(to right, #ffffff, #d1d1d1)
 }
-  
+
   .card-img-left {
     width: 45%;
 
@@ -13,7 +13,7 @@ body {
   .pb-4, .py-4 {
     padding-top: 0px!important;
   }
-  
+
   .pb-4, .py-4 {
     padding-bottom: 0px!important;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 
-  
+
   .bak {
     /* border: 1.5px solid;
     border-left: 0;
@@ -47,8 +47,8 @@ body {
 }
 
 .box-1 {
-  text-align: center; 
-  background-color: #ff666600; 
+  text-align: center;
+  background-color: #ff666600;
 }
 
 .btn7 {
@@ -93,8 +93,8 @@ body {
 }
 
 .btn7-one:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
+  opacity: 1;
+  transform: scale(1, 1);
 }
 
 
@@ -116,7 +116,7 @@ body {
 }
 
 .btn7-one:hover::after {
-  opacity: 0; 
+  opacity: 0;
   transform: scale(0.1, 1);
 }
 
@@ -198,8 +198,8 @@ body {
 }
 
 .btn2-one:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
+  opacity: 1;
+  transform: scale(1, 1);
 }
 
 .btn2-one::after {
@@ -220,7 +220,7 @@ body {
 }
 
 .btn2-one:hover::after {
-  opacity: 0; 
+  opacity: 0;
   transform: scale(0.1, 1);
 }
 
@@ -258,8 +258,8 @@ body {
 }
 
 .btn2-one:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
+  opacity: 1;
+  transform: scale(1, 1);
 }
 
 .btn2-one::after {
@@ -329,7 +329,7 @@ body {
 }
 
 .btn2-one:hover::after {
-  opacity: 0; 
+  opacity: 0;
   transform: scale(0.1, 1);
 }
 
@@ -337,6 +337,7 @@ body {
   position: absolute;
   /* filter: brightness(120%); */
   z-index: -1000;
+  object-fit: cover;
 }
 
 .row {
@@ -409,7 +410,7 @@ input[type=submit] {
   background-color: #04AA6D;
   color: white;
 }
-    
+
 /* Style the container for inputs */
 .container {
   padding: 20px;

@@ -5,14 +5,14 @@
   background: linear-gradient(to right, #ffffff, #d1d1d1)
 }
 #login-dp .help-block{
-  font-size:12px    
+  font-size:12px
 }
 #login-dp .bottom{
   clear:both;
   padding:14px;
 }
 #login-dp .social-buttons{
-  margin:12px 0    
+  margin:12px 0
 }
 #login-dp .social-buttons a{
   width: 49%;
@@ -26,7 +26,7 @@
 }
 .btn-fb:hover{
   color: #fff;
-  background-color:#496ebc 
+  background-color:#496ebc
 }
 .btn-tw{
   color: #fff;
@@ -83,7 +83,7 @@
 
 .ded {
 
-  
+
   display:flex;
 }
 #a1 {
@@ -123,6 +123,7 @@ svg {
   position: absolute;
   z-index: -1;
   /* filter: brightness(120%); */
+  object-fit: cover;
 }
 
 /* body {
@@ -153,7 +154,7 @@ svg {
   width: 95px;
   height: 95px;
   filter: brightness(0) invert(0);
-  
+
 }
 
 #rod3 {
@@ -393,15 +394,15 @@ hr {
 
 div[class*=box] {
   height: 33.33%;
-  width: 100%; 
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .box-1 {
-  text-align: center; 
-  background-color: #ff666600; 
+  text-align: center;
+  background-color: #ff666600;
 }
 
 .btn {
@@ -446,8 +447,8 @@ div[class*=box] {
 }
 
 .btn-one:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
+  opacity: 1;
+  transform: scale(1, 1);
 }
 
 
@@ -469,7 +470,7 @@ div[class*=box] {
 }
 
 .btn-one:hover::after {
-  opacity: 0; 
+  opacity: 0;
   transform: scale(0.1, 1);
 }
 
@@ -507,7 +508,7 @@ div[class*=box] {
 }
 
 #imggg {
-filter: saturate(255); 
+filter: saturate(255);
 }
 
 /* Dark mode styles */

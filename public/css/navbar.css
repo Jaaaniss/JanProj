@@ -11,11 +11,11 @@
     width: 275px;
   }
 
-  
+
 
   .invert #picturenav {
     filter: invert(100%);
-  } 
+  }
 
   .dedis {
     position: absolute;
@@ -33,7 +33,11 @@
     color: rgb(255, 255, 255);
     background: linear-gradient(to right, #343434, #575757);
   }
-  
+
+  .invert {
+    background-repeat: repeat-y;
+  }
+
 #mybtn {
     cursor: pointer;
   }
@@ -41,7 +45,7 @@
   .pb-4, .py-4 {
     padding-top: 0px!important;
   }
-  
+
   .pb-4, .py-4 {
     padding-bottom: 0px!important;
   }
@@ -163,18 +167,18 @@
 
 div[class*=box] {
   height: 33.33%;
-  width: 100%; 
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .box-1 {
-  text-align: center; 
-  background-color: #ff666600; 
+  text-align: center;
+  background-color: #ff666600;
 }
 
-  
+
 .btn2 {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
@@ -245,8 +249,8 @@ div[class*=box] {
 }
 
 .btn-one:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
+  opacity: 1;
+  transform: scale(1, 1);
 }
 
 .btn-one::after {
@@ -267,7 +271,7 @@ div[class*=box] {
 }
 
 .btn-one:hover::after {
-  opacity: 0; 
+  opacity: 0;
   transform: scale(0.1, 1);
 }
 
@@ -331,8 +335,8 @@ div[class*=box] {
 }
 
 .btn-one:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
+  opacity: 1;
+  transform: scale(1, 1);
 }
 
 .btn-one::after {
@@ -349,11 +353,11 @@ div[class*=box] {
 
 
 .btn-one:hover::after {
-  opacity: 0; 
+  opacity: 0;
   transform: scale(0.1, 1);
 }
 
-  
+
 .btn:hover {
   color: #000000;
   text-decoration: none;
@@ -401,8 +405,8 @@ div[class*=box] {
 }
 
 .invert .btn-one:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
+  opacity: 1;
+  transform: scale(1, 1);
 }
 
 .invert .btn-one::after {
@@ -423,6 +427,6 @@ div[class*=box] {
 }
 
 .invert .btn-one:hover::after {
-  opacity: 0; 
+  opacity: 0;
   transform: scale(0.1, 1);
 }
