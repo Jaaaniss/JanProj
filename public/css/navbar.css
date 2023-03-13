@@ -34,7 +34,7 @@
     background: linear-gradient(to right, #343434, #575757);
   }
 
-  .invert {
+  body {
     background-repeat: repeat-y;
   }
 
