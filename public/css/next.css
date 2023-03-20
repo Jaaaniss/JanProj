@@ -46,6 +46,11 @@
     object-fit: cover;
   }
 
+  @media (min-width: 1200px){
+.container {
+    max-width: 100%;
+}
+  }
 
   .cardimg {
     border-top-right-radius: 3px;

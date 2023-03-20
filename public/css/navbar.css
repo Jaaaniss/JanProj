@@ -4,6 +4,9 @@
     position: relative;
     justify-content: center;
   }
+.navalign {
+    display: flex;
+}
 
 
   #picturenav {
@@ -27,6 +30,8 @@
 
   .deda {
     padding-right: 10px;
+    display: flex;
+    align-items: center;
   }
 
   .invert {
@@ -34,9 +39,24 @@
     background: linear-gradient(to right, #343434, #575757);
   }
 
+  .invert #krasaa {
+    filter: invert(100%);
+  }
+
   body {
     background-repeat: repeat-y;
   }
+#darkmodenavbar{
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #ffffff, #d1d1d1);
+
+}
+
+.invert #darkmodenavbar{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, #343434, #575757);
+
+}
 
 #mybtn {
     cursor: pointer;

@@ -188,8 +188,7 @@ select {
 
   .invert #ir2 {
     background-color: #555555;
-    padding-top: 28px;
-    width: 250px;
+
     float: left;
 
     /* border: 1.5px solid; */
@@ -352,8 +351,6 @@ select {
 
   .invert #ir1 {
     background-color: #555555;
-    padding-top: 50px;
-    padding-bottom: 70px;
 
     /* border-top: 0;
     border-bottom: 0; */
@@ -364,8 +361,6 @@ select {
 
   .invert #ir3 {
     background-color: #555555;
-    padding-top: 28px;
-    padding-bottom: 20px;
     /* border-top: 0;
     border-bottom: 0; */
     /* border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);

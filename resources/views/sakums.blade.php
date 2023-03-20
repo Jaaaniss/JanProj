@@ -18,8 +18,7 @@
 
 
         <div class="container">
-
-            <div class="row1" id="inv">
+            <div class="row">
                 <div id="ir1" class="col-sm">
                     <div class="uu1">
                         <img id="rod1"
@@ -47,7 +46,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
 
     </div>
 
