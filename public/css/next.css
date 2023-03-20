@@ -46,11 +46,43 @@
     object-fit: cover;
   }
 
-  @media (min-width: 1200px){
-.container {
-    max-width: 100%;
-}
-  }
+  @media (min-width: 1680px){
+  .container {
+      max-width: 100%;
+      padding-top: 150px;
+      padding-bottom: 70px;
+  }}
+
+  @media (max-width: 1680px){
+    .container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }}
+  /* @media (min-width: 1200px){
+  .container {
+      max-width: 1140px;
+  }}
+  @media (min-width: 992px){
+  .container {
+      max-width: 960px;
+  }}
+  @media (min-width: 768px){
+  .container {
+      max-width: 720px;
+  }}
+  @media (min-width: 576px){
+  .container {
+      max-width: 540px;
+  }} */
+
+
+  /* @media (max-width: 1680px){
+        .row {
+            width: 1269px;
+        }
+    } */
+
+
 
   .cardimg {
     border-top-right-radius: 3px;
@@ -312,11 +344,12 @@
 
   .navbar-nav {
     display: flex;
-      padding-left: 0;
-      margin-bottom: 0;
-      list-style: none;
-      align-items: center;
-  }
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+}
 
 
   @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
@@ -727,10 +760,10 @@
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
-    /* padding-right: calc(var(--bs-gutter-x) * .5); */
-    padding-left: calc(var(--bs-gutter-x) * .5);
     margin-top: var(--bs-gutter-y);
 }
+
+
 
 select {
   direction: rtl;
@@ -892,9 +925,7 @@ body {
     color:black;
 }
 
-.container {
-    padding-top: 50px;
-}
+
 
 #virsraksts {
     color: white;
@@ -1021,7 +1052,6 @@ body {
   #cardd1 {
     width: 350px;
     border-radius: 5px;
-    height: 700px;
     --bs-card-bg: #b6b6b6;
     box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);
   }
@@ -1029,7 +1059,6 @@ body {
   #cardd2 {
     width: 350px;
     border-radius: 5px;
-    height: 700px;
     --bs-card-bg: #b6b6b6;
     box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);
   }
@@ -1037,7 +1066,6 @@ body {
   #cardd3 {
     width: 350px;
     border-radius: 5px;
-    height: 700px;
     --bs-card-bg: #b6b6b6;
     box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);
   }
@@ -1252,8 +1280,8 @@ a1 {
 
 
   .col {
-    flex: 1 0 0%;
     display: flex;
+    padding-bottom: 20px;
     justify-content: center;
   }
 

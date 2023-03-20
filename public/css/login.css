@@ -410,8 +410,6 @@ hr {
 
   #carder {
     background: linear-gradient(to right, #ffffff, #d1d1d1);
-    padding-left: 3rem!important;
-    padding-right: 3rem!important;
     padding-top: 70px!important;
     padding-bottom: 70px!important;
 }
@@ -440,6 +438,16 @@ hr {
   .container {
     padding: 20px;
   }
+
+  @media (max-width: 991px){
+    .invalid-feedback {
+        width: 302px;
+    }}
+
+    @media (max-width: 435px){
+        .invalid-feedback {
+            width: 280px;
+        }}
 
   /* The message box is shown when the user clicks on the password field */
   #message {

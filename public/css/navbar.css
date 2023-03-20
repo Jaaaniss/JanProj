@@ -20,6 +20,7 @@
     filter: invert(100%);
   }
 
+
   .dedis {
     position: absolute;
     right: 15px;
@@ -49,8 +50,8 @@
 #darkmodenavbar{
     color: rgb(0, 0, 0);
     background: linear-gradient(to right, #ffffff, #d1d1d1);
-
-}
+    box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);
+    }
 
 .invert #darkmodenavbar{
     color: rgb(255, 255, 255);
@@ -81,8 +82,6 @@
 
   .dropdown-menu {
     position: absolute;
-    top: 60px;
-    left: -172px;
     z-index: 1000;
     display: none;
     float: left;
@@ -102,12 +101,10 @@
 
 
   .invert .dropdown-menu {
-    position: absolute;
-    top: 60px;
-    left: -172px;
+    /* position: absolute;
     z-index: 1000;
-    /* display: none; */
-    float: left;
+    /* display: none;
+    float: left; */
     min-width: 10rem;
     padding: 0.5rem 0;
     margin: 0.125rem 0 0;

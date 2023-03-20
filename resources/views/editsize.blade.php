@@ -14,7 +14,7 @@
               <div id="carder" class="card-body p-4 p-sm-5">
                 <div class="input-group mb-3">
                     <div class="virsra">
-                        <h2>
+                        <h2 style="text-align: center;">
                             Your saved foot size is {{ auth()->user()->foot_size_cm }}cm
                         </h2>
                         <h2 style="padding-top: 30px; padding-bottom: 20px">

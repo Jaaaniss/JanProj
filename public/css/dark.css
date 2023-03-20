@@ -101,33 +101,25 @@ select {
 
 
 .invert #cardd1 {
-  width: 350px;
-  height: 700px;
   border-radius: 5px;
   --bs-card-bg: #2e2e2e;
   box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);
 }
 
   .invert #cardd2 {
-    width: 350px;
     border-radius: 5px;
-    height: 700px;
     --bs-card-bg: #2e2e2e;
     box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);
   }
 
   .invert #cardd3 {
-    width: 350px;
     border-radius: 5px;
-    height: 700px;
     --bs-card-bg: #2e2e2e;
     box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);
   }
 
   .invert #cardd4 {
-    width: 350px;
     border-radius: 5px;
-    height: 700px;
     --bs-card-bg: #2e2e2e;
     box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);
   }

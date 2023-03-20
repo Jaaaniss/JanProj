@@ -27,14 +27,13 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="darkmodenavbar">
             <div class="picturenav">
-                <img id="picturenav" style="align-self: center;margin: 0;margin-left: auto;margin-right: auto;"
-                    src="{{ asset('/image/LOGO2.png') }}" alt="Girl in a jacket" class="saturate">
+                    <img id="picturenav" style="align-self: center;margin: 0;margin-left: auto;margin-right: auto;" src="{{ asset('/image/LOGO2.png') }}" alt="Girl in a jacket" class="saturate">
+                </div>
+            <div class="malaa1">
+                <button id="krasaa" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             </div>
-            <button id="krasaa" class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
+
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="justify-content: flex-end;">
                 <div class="navbar-nav">
                     <div class="deda">
