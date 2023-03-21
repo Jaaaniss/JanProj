@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Adidas extends Model
 {
     protected $table = 'adidas';
-    public $incrementing = false;
+    public $incrementing = true;
     public $timestamp = false;
     protected $fillable =
     [

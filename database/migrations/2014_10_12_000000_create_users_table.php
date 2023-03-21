@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -21,7 +23,15 @@ return new class extends Migration
             $table->timestamps();
             $table->float('foot_size_cm')->nullable();
         });
+
+        DB::table('users')->insert([[
+
+            'name' => 'Admin',
+            'email' => 'Admin@Admin.Admin',
+            'password' => Hash::make('1234567890Aa')]]);
     }
+
+
 
     /**
      * Reverse the migrations.

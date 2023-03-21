@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class NewBalance extends Model
 {
     protected $table = 'newbalance';
-    public $incrementing = false;
+    public $incrementing = true;
     public $timestamp = false;
     protected $fillable =
     [

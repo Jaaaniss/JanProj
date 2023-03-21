@@ -2,9 +2,11 @@
 use App\Http\Controllers\VansController;
 use App\Http\Controllers\NikeController;
 use App\Http\Controllers\AdidasController;
+use App\Http\Controllers\EditController;
 use App\Http\Controllers\NBController;
 use App\Http\Controllers\SizeController;
-use Illuminate\Routing\Route;
+use App\Http\Controllers\UpdateController;
+// use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\DB;
 
 /*
@@ -26,15 +28,35 @@ Route::get('/editsize', function () {
     return view('editsize');
 });
 
+
+
 // Route::get('/select', function () {
 //     return view('select');
 // });
 
-
+Route::get('/manage', [VansController::class, 'vans3']);
 Route::get('/next',[VansController::class,'vans']);
 Route::get('/select',[VansController::class,'vans2']);
 
 // Route::view('/home','home')->middleware('auth');
+
+
+
+Route::get('edit/{id}', [EditController::class, 'editt_vans']);
+
+// Route::get('edit/{id}', [EditController::class, 'editt_nike']);
+
+// Route::get('edit/{id}', [EditController::class, 'editt_adidas']);
+
+// Route::get('edit/{id}', [EditController::class, 'editt_newbalance']);
+
+Route::put('update/{id}', [UpdateController::class, 'updatee_vans']);
+
+// Route::put('update/{id}', [UpdateController::class, 'updatee_nike']);
+
+// Route::put('update/{id}', [UpdateController::class, 'updatee_adidas']);
+
+// Route::put('update/{id}', [UpdateController::class, 'updatee_newbalance']);
 
 
 

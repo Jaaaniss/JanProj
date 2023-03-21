@@ -48,6 +48,16 @@ class VansController extends Controller {
         return view('next',['vans'=>$vans,'nike'=>$nike,'adidas'=>$adidas, 'newbalance'=>$newbalance]);
     }
 
+
+    public function vans3()
+    {
+        $vans = vans::all();
+        $nike = nike::all();
+        $adidas = adidas::all();
+        $newbalance = newbalance::all();
+        return view('manage',['vans'=>$vans,'nike'=>$nike,'adidas'=>$adidas, 'newbalance'=>$newbalance]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
