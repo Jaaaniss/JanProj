@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\models;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ModelsController extends Controller
 {
@@ -12,9 +13,9 @@ class ModelsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function indexxx()
     {
-        //
+        
     }
 
     /**

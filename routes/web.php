@@ -37,15 +37,30 @@ Route::get('/editsize', function () {
 //     return view('select');
 // });
 
-Route::get('/manage', [VansController::class, 'vans3']);
+Route::get('/manage_vans', [VansController::class, 'vans3']);
 Route::get('/next',[VansController::class,'vans']);
 Route::get('/select',[VansController::class,'vans2']);
 
 // Route::view('/home','home')->middleware('auth');
 
+
+
+
 Route::get('/add', [AddController::class, 'create']);
 
-Route::post('/add', [AddController::class, 'store']);
+
+
+
+Route::post('/add', [AddController::class, 'store_vans']);
+
+// Route::post('/add', [AddController::class, 'store_nike']);
+
+// Route::post('/add', [AddController::class, 'store_adidas']);
+
+// Route::post('/add', [AddController::class, 'store_nb']);
+
+
+
 
 Route::get('edit/{id}', [EditController::class, 'editt_vans']);
 
@@ -55,6 +70,10 @@ Route::get('edit/{id}', [EditController::class, 'editt_vans']);
 
 // Route::get('edit/{id}', [EditController::class, 'editt_newbalance']);
 
+
+
+
+
 Route::put('update/{id}', [UpdateController::class, 'updatee_vans']);
 
 // Route::put('update/{id}', [UpdateController::class, 'updatee_nike']);
@@ -63,7 +82,20 @@ Route::put('update/{id}', [UpdateController::class, 'updatee_vans']);
 
 // Route::put('update/{id}', [UpdateController::class, 'updatee_newbalance']);
 
-Route::delete('delete/{id}', [DestroyController::class, 'destroy']);
+
+
+
+
+Route::delete('delete/{id}', [DestroyController::class, 'destroy_vans']);
+
+// Route::delete('delete/{id}', [DestroyController::class, 'destroy_nike']);
+
+// Route::delete('delete/{id}', [DestroyController::class, 'destroy_adidas']);
+
+// Route::delete('delete/{id}', [DestroyController::class, 'destroy_nb']);
+
+
+
 
 
 Route::get('/vanssize/{size}',[VansController::class,'index']);
@@ -84,6 +116,5 @@ Route::get('view-records','StudViewController@index');
 
 
 
-// Route::get('/next', function () {
-//     return view('next');
-// });
+
+// Route::get('students', [App\Http\Controllers\StudentController::class, 'index']);

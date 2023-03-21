@@ -55,7 +55,7 @@ class VansController extends Controller {
         $nike = nike::all();
         $adidas = adidas::all();
         $newbalance = newbalance::all();
-        return view('manage',['vans'=>$vans,'nike'=>$nike,'adidas'=>$adidas, 'newbalance'=>$newbalance]);
+        return view('manage_vans',['vans'=>$vans,'nike'=>$nike,'adidas'=>$adidas, 'newbalance'=>$newbalance]);
     }
 
     /**
@@ -63,10 +63,7 @@ class VansController extends Controller {
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
+
 
     /**
      * Store a newly created resource in storage.

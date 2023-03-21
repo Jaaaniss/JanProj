@@ -37,7 +37,7 @@
                         </div>
                         <div class="form-group mb-3">
                             <button type="submit" class="btn btn-primary">Update Sizes</button>
-                            <a href="{{ url('manage') }}" class="btn btn-danger float-end">BACK</a>
+                            <a href="{{ url('manage_vans') }}" class="btn btn-danger float-end">BACK</a>
                         </div>
 
                     </form>

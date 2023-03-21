@@ -64,7 +64,7 @@
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 @if (Auth::user()->id==1)
-                                <a class="dropdown-item" href="/manage">
+                                <a class="dropdown-item" href="/manage_vans">
                                     {{ __('Manage sizes') }}
                                 </a>
 

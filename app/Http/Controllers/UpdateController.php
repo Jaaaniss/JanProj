@@ -20,7 +20,7 @@ class UpdateController extends Controller
         $vans->v_usm = $request->input('US_M');
         $vans->v_usw = $request->input('US_W');
         $vans->update();
-        return redirect('manage')->with('status','Sizes Updated Successfully');
+        return redirect('manage_vans')->with('status','Sizes Updated Successfully');
     }
 
     // public function updatee_nike(Request $request, $id)
@@ -33,7 +33,7 @@ class UpdateController extends Controller
     //     $nike->n_usm = $request->input('US_M');
     //     $nike->n_usw = $request->input('US_W');
     //     $nike->update();
-    //     return redirect('manage')->with('status','Sizes Updated Successfully');
+    //     return redirect('manage_nike')->with('status','Sizes Updated Successfully');
     // }
 
     // public function updatee_adidas(Request $request, $id)
@@ -45,7 +45,7 @@ class UpdateController extends Controller
     //     $adidas->a_usm = $request->input('US_M');
     //     $adidas->a_usw = $request->input('US_W');
     //     $adidas->update();
-    //     return redirect('manage')->with('status','Sizes Updated Successfully');
+    //     return redirect('manage_adidas')->with('status','Sizes Updated Successfully');
     // }
 
     // public function updatee_newbalance(Request $request, $id)
@@ -57,6 +57,6 @@ class UpdateController extends Controller
     //     $newbalance->nb_usm = $request->input('US_M');
     //     $newbalance->nb_usw = $request->input('US_W');
     //     $newbalance->update();
-    //     return redirect('manage')->with('status','Sizes Updated Successfully');
+    //     return redirect('manage_nb')->with('status','Sizes Updated Successfully');
     // }
 }
