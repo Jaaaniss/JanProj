@@ -22,6 +22,7 @@ return new class extends Migration
             $table->float("v_usm");
             $table->float("v_usw");
             $table->dateTime("updated_at")->nullable();
+            $table->dateTime("created_at")->nullable();
         });
 
 

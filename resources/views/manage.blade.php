@@ -12,7 +12,7 @@
             <div class="card">
                 <div class="card-header">
                     <h4>Vans
-                        <a href="{{ url('add-student') }}" class="btn btn-primary float-end">Add Size</a>
+                        <a href="{{ url('/add') }}" class="btn btn-primary float-end">Add Size</a>
                     </h4>
                 </div>
                 <div class="card-body">
@@ -27,6 +27,7 @@
                                 <th>US M</th>
                                 <th>US W</th>
                                 <th>Edit</th>
+                                <th>Delete</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -40,6 +41,14 @@
                                 <td>{{ $item->v_usw }}</td>
                                 <td>
                                     <a href="{{ url('edit/'.$item->id) }}" style="width:fit-content; padding-left:20px; padding-right:20px;" class="btn btn-primary btn-sm">Edit size</a>
+                                </td>
+                                <td>
+                                    {{-- <a href="{{ url('delete/'.$item->id) }}" style="width:fit-content; padding-left:20px; padding-right:20px;" class="btn btn-danger btn-sm">Delete</a> --}}
+                                    <form action="{{ url('delete/'.$item->id) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" style="width:fit-content; padding-left:20px; padding-right:20px;" class="btn btn-danger btn-sm">Delete</button>
+                                    </form>
                                 </td>
                             </tr>
                             @endforeach

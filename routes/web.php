@@ -1,7 +1,10 @@
 <?php
+
+use App\Http\Controllers\AddController;
 use App\Http\Controllers\VansController;
 use App\Http\Controllers\NikeController;
 use App\Http\Controllers\AdidasController;
+use App\Http\Controllers\DestroyController;
 use App\Http\Controllers\EditController;
 use App\Http\Controllers\NBController;
 use App\Http\Controllers\SizeController;
@@ -40,7 +43,9 @@ Route::get('/select',[VansController::class,'vans2']);
 
 // Route::view('/home','home')->middleware('auth');
 
+Route::get('/add', [AddController::class, 'create']);
 
+Route::post('/add', [AddController::class, 'store']);
 
 Route::get('edit/{id}', [EditController::class, 'editt_vans']);
 
@@ -58,6 +63,7 @@ Route::put('update/{id}', [UpdateController::class, 'updatee_vans']);
 
 // Route::put('update/{id}', [UpdateController::class, 'updatee_newbalance']);
 
+Route::delete('delete/{id}', [DestroyController::class, 'destroy']);
 
 
 Route::get('/vanssize/{size}',[VansController::class,'index']);

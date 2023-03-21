@@ -22,6 +22,7 @@ return new class extends Migration
             $table->float("nb_usm");
             $table->string("nb_usw");
             $table->dateTime("updated_at")->nullable();
+            $table->dateTime("created_at")->nullable();
         });
 
         DB::table('newbalance')->insert(

@@ -7,9 +7,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>Edit & Update Student
-                        <a href="{{ url('manage') }}" class="btn btn-danger float-end">BACK</a>
-                    </h4>
+                    <h4>Edit & Update Sizes</h4>
                 </div>
                 <div class="card-body">
 
@@ -18,27 +16,28 @@
                         @method('PUT')
 
                         <div class="form-group mb-3">
-                            <label for="">Student Name</label>
+                            <label for="">CM</label>
                             <input type="text" name="CM" value="{{$vans->v_cm}}" class="form-control">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="">Student Email</label>
+                            <label for="">EU</label>
                             <input type="text" name="EU" value="{{$vans->v_eu}}" class="form-control">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="">Student Course</label>
+                            <label for="">UK</label>
                             <input type="text" name="UK" value="{{$vans->v_uk}}" class="form-control">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="">Student Section</label>
+                            <label for="">US M</label>
                             <input type="text" name="US_M" value="{{$vans->v_usm}}" class="form-control">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="">Student Section</label>
+                            <label for="">US W</label>
                             <input type="text" name="US_W" value="{{$vans->v_usw}}" class="form-control">
                         </div>
                         <div class="form-group mb-3">
                             <button type="submit" class="btn btn-primary">Update Sizes</button>
+                            <a href="{{ url('manage') }}" class="btn btn-danger float-end">BACK</a>
                         </div>
 
                     </form>

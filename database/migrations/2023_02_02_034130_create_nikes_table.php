@@ -22,6 +22,7 @@ return new class extends Migration
             $table->float("n_usm");
             $table->float("n_usw");
             $table->dateTime("updated_at")->nullable();
+            $table->dateTime("created_at")->nullable();
         });
 
         DB::table('nike')->insert(
