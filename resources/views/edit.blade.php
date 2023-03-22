@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/edit_size.css') }}">
 
 <div class="container">
     <div class="row">
@@ -37,7 +38,7 @@
                         </div>
                         <div class="form-group mb-3">
                             <button type="submit" class="btn btn-primary">Update Sizes</button>
-                            <a href="{{ url('manage_vans') }}" class="btn btn-danger float-end">BACK</a>
+                            <a href="{{ url("manage_$company") }}" class="btn btn-danger float-end">BACK</a>
                         </div>
                     </form>
                 </div>

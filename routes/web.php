@@ -80,5 +80,9 @@ Route::POST('/select',[SizeController::class,'insert']);
 
 
 
+// Route::GET('/add',[AddController::class,'autofill']);
+
+
+
 
 Route::get('view-records','StudViewController@index');

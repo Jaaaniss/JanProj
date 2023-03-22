@@ -1,7 +1,8 @@
 @extends('layouts.app')
-
 @section('content')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/add.css') }}">
+
 
 <div class="container">
     <div class="row justify-content-center">
@@ -41,8 +42,8 @@
                             <input type="text" name="US_W" class="form-control">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="">company</label>
-                            <select name="company" id="company">
+                            <label for="">Brand</label>
+                            <select class="form-select" name="company" id="company">
                                 <option value="vans">Vans</option>
                                 <option value="adidas">Adidas</option>
                                 <option value="nike">Nike</option>

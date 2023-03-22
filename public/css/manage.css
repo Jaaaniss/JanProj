@@ -1,0 +1,26 @@
+.invert #kaards {
+    background-color: #2e2e2e;
+    border: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+.invert .table-dark {
+    --bs-table-bg: #646464;
+}
+
+.invert #table-darkk {
+    border-color: red;
+    border-style: solid;
+    border-width: 0;
+    color: white;
+}
+
+.invert .table-bordered td, .invert .table-bordered th {
+    border: 1px solid #ffffff12;
+}
+
+
+.invert .table-striped>tbody>tr:nth-of-type(odd)>* {
+    color: white;
+}
+
+

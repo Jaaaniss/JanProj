@@ -7,6 +7,8 @@ use App\Models\NewBalance;
 use App\Models\Nike;
 use App\Models\Vans;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use League\CommonMark\Node\Inline\Newline;
 
 class AddController extends Controller
 {
@@ -43,4 +45,25 @@ class AddController extends Controller
         $item->save();
         return redirect("manage_$request->company")->with('status','Size Added Successfully');
     }
+
+
+    public function autofill()
+    {
+
+
+
+        // $vanss = (new Vans)->getTable();
+        // return view('add', ['currentTable' => $vanss,]);
+
+
+
+
+        // $users1 = Vans::pluck('name1');
+        // $users2 = Nike::pluck('name2');
+        // $users3 = Adidas::pluck('name3');
+        // $users4 = NewBalance::pluck('name4');
+        // return view('add', ['users1' => $users1,'users2' => $users2,'users3' => $users3,'users4' => $users4,]);
+    }
+
+
 }

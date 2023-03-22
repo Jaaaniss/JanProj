@@ -20,8 +20,10 @@ function darkmode(){
 
 }
 
+
 let GetTheme = JSON.parse(localStorage.getItem("PageTheme"));
 console.log(GetTheme);
+
 
 if(GetTheme === "DARK"){
     document.body.classList = "invert";

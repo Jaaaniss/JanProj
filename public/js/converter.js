@@ -10,6 +10,7 @@ function lengthConverter(source, valNum) {
     }
 }
 
+
 $(document).ready(function() {
     $('.nav-link').click(function() {
         var collapse3_content_selector = $(this).attr('href');
