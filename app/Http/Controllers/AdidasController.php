@@ -14,12 +14,6 @@ class AdidasController extends Controller {
             ->where("a_cm",$size);
         return response()->json(array('data' => $time->get()));
     }
-    
-    // public function index1(){
-    //     $adidas=
-    //     return view('next');
-    // }
-    
 
     public function adidas()
     {

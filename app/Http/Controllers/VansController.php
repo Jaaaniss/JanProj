@@ -19,13 +19,6 @@ class VansController extends Controller {
         return response()->json(array('data' => $time->get()));
     }
 
-    // public function index($column,$size)
-    // {
-    //         $time = DB::table("vans")
-    //         ->where($column,$size);
-    //     return response()->json(array('data' => $time->get()));
-    // }
-
     public function vans2(){
         $vans = vans::all();
         $nike = nike::all();
@@ -52,10 +45,25 @@ class VansController extends Controller {
     public function vans3()
     {
         $vans = vans::all();
+        return view('manage_vans',['vans'=>$vans]);
+    }
+
+    public function nike3()
+    {
         $nike = nike::all();
+        return view('manage_nike',['nike'=>$nike]);
+    }
+
+    public function adidas3()
+    {
         $adidas = adidas::all();
-        $newbalance = newbalance::all();
-        return view('manage_vans',['vans'=>$vans,'nike'=>$nike,'adidas'=>$adidas, 'newbalance'=>$newbalance]);
+        return view('manage_adidas',['adidas'=>$adidas]);
+    }
+
+    public function newbalance3()
+    {
+        $newbalance = NewBalance::all();
+        return view('manage_nb',['newbalance'=>$newbalance]);
     }
 
     /**

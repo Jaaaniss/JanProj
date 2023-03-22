@@ -2,17 +2,23 @@
 @section('content')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
 
-<div class="container">
-    <div class="row">
+<div style="padding-top: 50px" class="container">
+    <div id="managee" class="row">
+        <a href="{{ url('manage_adidas') }}" class="btn btn-primary float-end">Adidas</a>
+        <a href="{{ url('manage_nike') }}" class="btn btn-primary float-end">Nike</a>
+        <a href="{{ url('manage_vans') }}" class="btn btn-primary float-end">Vans</a>
         <div style="padding: 30px;" class="col-md-12">
             @if (session('status'))
                 <h6 class="alert alert-success">{{ session('status') }}</h6>
             @endif
             <div class="card">
-                <div class="card-header">
-                    <h4>New Balance
-                        <a href="{{ url('add-student') }}" class="btn btn-primary float-end">Add Size</a>
-                    </h4>
+                <div id="headeris" class="card-header">
+                    <div class="h2table">
+                        <h2>New Balance</h2>
+                    </div>
+                    <div class="poga-add">
+                        <a href="{{ url('add') }}" class="btn btn-primary float-end">Add Size</a>
+                    </div>
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered table-striped">
@@ -25,22 +31,23 @@
                                 <th>US M</th>
                                 <th>US W</th>
                                 <th>Edit</th>
+                                <th>Delete</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($newbalance as $item4)
                             <tr>
                                 <td>{{ $item4->id }}</td>
-                                <td>{{ $item4->nb_cm }}</td>
-                                <td>{{ $item4->nb_eu }}</td>
-                                <td>{{ $item4->nb_uk }}</td>
-                                <td>{{ $item4->nb_usm }}</td>
-                                <td>{{ $item4->nb_usw }}</td>
+                                <td>{{ $item4->cm }}</td>
+                                <td>{{ $item4->eu }}</td>
+                                <td>{{ $item4->uk }}</td>
+                                <td>{{ $item4->usm }}</td>
+                                <td>{{ $item4->usw }}</td>
                                 <td>
-                                    <a href="{{ url('edit/'.$item4->id) }}" style="width:fit-content; padding-left:20px; padding-right:20px;" class="btn btn-primary btn-sm">Edit size</a>
+                                    <a href="{{ url('edit/'.$item4->id.'/nb') }}" style="width:fit-content; padding-left:20px; padding-right:20px;" class="btn btn-primary btn-sm">Edit size</a>
                                 </td>
                                 <td>
-                                    <form action="{{ url('delete/'.$item4->id) }}" method="POST">
+                                    <form action="{{ url('delete/'.$item4->id.'/nb') }}" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" style="width:fit-content; padding-left:20px; padding-right:20px;" class="btn btn-danger btn-sm">Delete</button>

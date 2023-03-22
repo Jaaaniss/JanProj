@@ -32,68 +32,35 @@ Route::get('/editsize', function () {
 });
 
 
-
-// Route::get('/select', function () {
-//     return view('select');
-// });
-
 Route::get('/manage_vans', [VansController::class, 'vans3']);
-Route::get('/next',[VansController::class,'vans']);
-Route::get('/select',[VansController::class,'vans2']);
+Route::get('/manage_nike', [VansController::class, 'nike3']);
+Route::get('/manage_adidas', [VansController::class, 'adidas3']);
+Route::get('/manage_nb', [VansController::class, 'newbalance3']);
 
-// Route::view('/home','home')->middleware('auth');
+
+
+Route::get('/next',[VansController::class,'vans']);
+
+Route::get('/select',[VansController::class,'vans2']);
 
 
 
 
 Route::get('/add', [AddController::class, 'create']);
 
-
-
-
-Route::post('/add', [AddController::class, 'store_vans']);
-
-// Route::post('/add', [AddController::class, 'store_nike']);
-
-// Route::post('/add', [AddController::class, 'store_adidas']);
-
-// Route::post('/add', [AddController::class, 'store_nb']);
+Route::post('/add', [AddController::class, 'storeAnything']);
 
 
 
 
-Route::get('edit/{id}', [EditController::class, 'editt_vans']);
+Route::get('edit/{id}/{company}', [EditController::class, 'editAnything']);
 
-// Route::get('edit/{id}', [EditController::class, 'editt_nike']);
-
-// Route::get('edit/{id}', [EditController::class, 'editt_adidas']);
-
-// Route::get('edit/{id}', [EditController::class, 'editt_newbalance']);
+Route::put('update/{id}/{company}', [UpdateController::class, 'updateAnything']);
 
 
 
 
-
-Route::put('update/{id}', [UpdateController::class, 'updatee_vans']);
-
-// Route::put('update/{id}', [UpdateController::class, 'updatee_nike']);
-
-// Route::put('update/{id}', [UpdateController::class, 'updatee_adidas']);
-
-// Route::put('update/{id}', [UpdateController::class, 'updatee_newbalance']);
-
-
-
-
-
-Route::delete('delete/{id}', [DestroyController::class, 'destroy_vans']);
-
-// Route::delete('delete/{id}', [DestroyController::class, 'destroy_nike']);
-
-// Route::delete('delete/{id}', [DestroyController::class, 'destroy_adidas']);
-
-// Route::delete('delete/{id}', [DestroyController::class, 'destroy_nb']);
-
+Route::delete('delete/{id}/{company}', [DestroyController::class, 'destroyAnything']);
 
 
 
@@ -107,14 +74,11 @@ Route::get('/adidassize/{size}',[AdidasController::class,'index']);
 Route::get('/nbsize/{size}',[NBController::class,'index']);
 
 
+
+
 Route::POST('/select',[SizeController::class,'insert']);
 
 
+
+
 Route::get('view-records','StudViewController@index');
-
-
-
-
-
-
-// Route::get('students', [App\Http\Controllers\StudentController::class, 'index']);

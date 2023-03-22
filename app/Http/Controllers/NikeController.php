@@ -15,12 +15,6 @@ class NikeController extends Controller {
         return response()->json(array('data' => $time->get()));
     }
     
-    // public function index1(){
-    //     $nike=
-    //     return view('next');
-    // }
-    
-
     public function nike()
     {
 

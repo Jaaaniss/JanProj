@@ -10,31 +10,26 @@ use Illuminate\Http\Request;
 
 class DestroyController extends Controller
 {
-    public function destroy_vans($id)
+    public function destroyAnything($id, $company)
     {
-        $vans = Vans::find($id);
-        $vans->delete();
-        return redirect('manage_vans')->with('status','Size Deleted Successfully');
+        $item = null;
+
+        switch ($company) {
+            case 'vans':
+                $item = Vans::find($id);
+                break;
+            case 'adidas':
+                $item = Adidas::find($id);
+                break;
+            case 'nike':
+                $item = Nike::find($id);
+                break;
+            case 'nb':
+                $item = NewBalance::find($id);
+                break;
+        }
+
+        $item->delete();
+        return redirect("manage_$company")->with('status', 'Size Deleted Successfully');
     }
-
-    // public function destroy_nike($id)
-    // {
-    //     $nike = Nike::find($id);
-    //     $nike->delete();
-    //     return redirect('manage_nike')->with('status','Size Deleted Successfully');
-    // }
-
-    // public function destroy_adidas($id)
-    // {
-    //     $adidas = Adidas::find($id);
-    //     $adidas->delete();
-    //     return redirect('manage_adidas')->with('status','Size Deleted Successfully');
-    // }
-
-    // public function destroy_nb($id)
-    // {
-    //     $newbalance = NewBalance::find($id);
-    //     $newbalance->delete();
-    //     return redirect('manage_nb')->with('status','Size Deleted Successfully');
-    // }
 }

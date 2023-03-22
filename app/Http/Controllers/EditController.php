@@ -10,27 +10,25 @@ use Illuminate\Http\Request;
 
 class EditController extends Controller
 {
-    public function editt_vans($id)
+    public function editAnything($id, $company)
     {
-        $vans = Vans::find($id);
-        return view('edit', compact('vans'));
+        $item = null;
+
+        switch ($company) {
+            case 'vans':
+                $item = Vans::find($id);
+                break;
+            case 'adidas':
+                $item = Adidas::find($id);
+                break;
+            case 'nike':
+                $item = Nike::find($id);
+                break;
+            case 'nb':
+                $item = NewBalance::find($id);
+                break;
+        }
+
+        return view('edit', compact('item', 'company'));
     }
-
-    // public function editt_nike($id)
-    // {
-    //     $nike = Nike::find($id);
-    //     return view('edit', compact('nike'));
-    // }
-
-    // public function editt_adidas($id)
-    // {
-    //     $adidas = Adidas::find($id);
-    //     return view('edit', compact('adidas'));
-    // }
-
-    // public function editt_newbalance($id)
-    // {
-    //     $newblance = NewBalance::find($id);
-    //     return view('edit', compact('newbalance'));
-    // }
 }

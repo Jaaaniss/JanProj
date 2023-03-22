@@ -9,11 +9,6 @@ use Symfony\Component\Console\Output\ConsoleOutput;
 
 class SizeController extends Controller
 {
-    public function savesize(Request $request)
-    {
-
-    }
-
         public function insert(Request $request){
             $size = $request->foot_size_cm;
             $data=array('foot_size_cm'=>$size);
