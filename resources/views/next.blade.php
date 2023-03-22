@@ -15,7 +15,7 @@
                     <select id="ident" class="form-control1">
                         @foreach ($vans as $value)
                             <option value="" disabled selected hidden>--> Click here to select cm <--</option>
-                            <option id="ident" value="{{ $value->v_cm }}">{{ $value->v_cm }}</option>
+                            <option id="ident" value="{{ $value->cm }}">{{ $value->cm }}</option>
                         @endforeach
                     </select>
                 </div>
@@ -45,7 +45,7 @@
                         <select id="ident2" class="form-control1">
                             @foreach ($nike as $value)
                                 <option value="" disabled selected hidden>--> Click here to select cm <--</option>
-                                <option id="ident2" value="{{ $value->n_cm }}">{{ $value->n_cm }}</option>
+                                <option id="ident2" value="{{ $value->cm }}">{{ $value->cm }}</option>
                             @endforeach
                         </select>
                 <div class="card1-body">
@@ -79,7 +79,7 @@
                     <select id="ident3" class="form-control1">
                         @foreach ($adidas as $value)
                             <option value="" disabled selected hidden>--> Click here to select cm <--</option>
-                            <option id="ident3" value="{{ $value->a_cm }}">{{ $value->a_cm }}</option>
+                            <option id="ident3" value="{{ $value->cm }}">{{ $value->cm }}</option>
                         @endforeach
                     </select>
                 </div>
@@ -110,7 +110,7 @@
                     <select id="ident4" class="form-control1">
                         @foreach ($newbalance as $value)
                             <option value="" disabled selected hidden>--> Click here to select cm <--</option>
-                            <option id="ident4" value="{{ $value->nb_cm }}">{{ $value->nb_cm }}</option>
+                            <option id="ident4" value="{{ $value->cm }}">{{ $value->cm }}</option>
                         @endforeach
                     </select>
                 </div>

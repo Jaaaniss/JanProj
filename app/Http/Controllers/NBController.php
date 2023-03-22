@@ -16,7 +16,7 @@ class NBController extends Controller
     public function index($size)
     {
         $time = DB::table("newbalance")
-            ->where("nb_cm",$size);
+            ->where("cm",$size);
         return response()->json(array('data' => $time->get()));
     }
 

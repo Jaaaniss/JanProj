@@ -12,11 +12,11 @@ class Adidas extends Model
     public $timestamp = false;
     protected $fillable =
     [
-    'a_cm',
-    'a_eu',
-    'a_uk',
-    'a_usm',
-    'a_usw'
+    'cm',
+    'eu',
+    'uk',
+    'usm',
+    'usw'
     ];
     use HasFactory;
 }

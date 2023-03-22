@@ -12,11 +12,11 @@ class NewBalance extends Model
     public $timestamp = false;
     protected $fillable =
     [
-    'nb_cm',
-    'nb_eu',
-    'nb_uk',
-    'nb_usm',
-    'nb_usw'
+    'cm',
+    'eu',
+    'uk',
+    'usm',
+    'usw'
     ];
     use HasFactory;
 }

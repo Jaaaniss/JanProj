@@ -12,11 +12,11 @@ class Vans extends Model
     public $timestamp = false;
     protected $fillable =
     [
-    'v_cm',
-    'v_eu',
-    'v_uk',
-    'v_usm',
-    'v_usw'
+    'cm',
+    'eu',
+    'uk',
+    'usm',
+    'usw'
     ];
     use HasFactory;
 }

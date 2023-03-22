@@ -15,7 +15,7 @@ class VansController extends Controller {
     public function index($size)
     {
             $time = DB::table("vans")
-            ->where('v_cm',$size);
+            ->where('cm',$size);
         return response()->json(array('data' => $time->get()));
     }
 

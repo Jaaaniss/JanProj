@@ -11,10 +11,10 @@ class NikeController extends Controller {
     public function index($size)
     {
         $time = DB::table("nike")
-            ->where("n_cm",$size);
+            ->where("cm",$size);
         return response()->json(array('data' => $time->get()));
     }
-    
+
     public function nike()
     {
 

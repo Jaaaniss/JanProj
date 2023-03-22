@@ -9,15 +9,15 @@ $("#ident").on('change', function(){
         dataType: "json",
         success: function(data){
                 $.each(data.data, function(key,val) {
-                    uk=val.v_uk
-                    eu=val.v_eu
-                    usm=val.v_usm
-                    usw=val.v_usw
+                    uk=val.uk
+                    eu=val.eu
+                    usm=val.usm
+                    usw=val.usw
 
-                document.getElementById("size1").innerHTML = val.v_eu;
-                document.getElementById("size2").innerHTML = val.v_uk;
-                document.getElementById("size3").innerHTML = val.v_usm;
-                document.getElementById("size4").innerHTML = val.v_usw;
+                document.getElementById("size1").innerHTML = val.eu;
+                document.getElementById("size2").innerHTML = val.uk;
+                document.getElementById("size3").innerHTML = val.usm;
+                document.getElementById("size4").innerHTML = val.usw;
                 });
        },
         error: function(jqXhr, textStatus, errorMessage){
@@ -38,15 +38,15 @@ $("#ident2").on('change', function(){
         dataType: "json",
         success: function(data){
                 $.each(data.data, function(key,val) {
-                    uk=val.n_uk
-                    eu=val.n_eu
-                    usm=val.n_usm
-                    usw=val.n_usw
+                    uk=val.uk
+                    eu=val.eu
+                    usm=val.usm
+                    usw=val.usw
 
-                document.getElementById("size5").innerHTML = val.n_eu;
-                document.getElementById("size6").innerHTML = val.n_uk;
-                document.getElementById("size7").innerHTML = val.n_usm;
-                document.getElementById("size8").innerHTML = val.n_usw;
+                document.getElementById("size5").innerHTML = val.eu;
+                document.getElementById("size6").innerHTML = val.uk;
+                document.getElementById("size7").innerHTML = val.usm;
+                document.getElementById("size8").innerHTML = val.usw;
                 });
        },
         error: function(jqXhr, textStatus, errorMessage){
@@ -67,15 +67,15 @@ $("#ident3").on('change', function(){
         dataType: "json",
         success: function(data){
                 $.each(data.data, function(key,val) {
-                    uk=val.a_uk
-                    eu=val.a_eu
-                    usm=val.a_usm
-                    usw=val.a_usw
+                    uk=val.uk
+                    eu=val.eu
+                    usm=val.usm
+                    usw=val.usw
 
-                document.getElementById("size9").innerHTML = val.a_eu;
-                document.getElementById("size10").innerHTML = val.a_uk;
-                document.getElementById("size11").innerHTML = val.a_usm;
-                document.getElementById("size12").innerHTML = val.a_usw;
+                document.getElementById("size9").innerHTML = val.eu;
+                document.getElementById("size10").innerHTML = val.uk;
+                document.getElementById("size11").innerHTML = val.usm;
+                document.getElementById("size12").innerHTML = val.usw;
                 });
        },
         error: function(jqXhr, textStatus, errorMessage){
@@ -95,15 +95,15 @@ $("#ident4").on('change', function(){
         dataType: "json",
         success: function(data){
                 $.each(data.data, function(key,val) {
-                    uk=val.nb_uk
-                    eu=val.nb_eu
-                    usm=val.nb_usm
-                    usw=val.nb_usw
+                    uk=val.uk
+                    eu=val.eu
+                    usm=val.usm
+                    usw=val.usw
 
-                document.getElementById("size13").innerHTML = val.nb_eu;
-                document.getElementById("size14").innerHTML = val.nb_uk;
-                document.getElementById("size15").innerHTML = val.nb_usm;
-                document.getElementById("size16").innerHTML = val.nb_usw;
+                document.getElementById("size13").innerHTML = val.eu;
+                document.getElementById("size14").innerHTML = val.uk;
+                document.getElementById("size15").innerHTML = val.usm;
+                document.getElementById("size16").innerHTML = val.usw;
                 });
        },
         error: function(jqXhr, textStatus, errorMessage){

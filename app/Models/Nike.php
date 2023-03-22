@@ -12,11 +12,11 @@ class Nike extends Model
     public $timestamp = false;
     protected $fillable =
     [
-    'n_cm',
-    'n_eu',
-    'n_uk',
-    'n_usm',
-    'n_usw'
+    'cm',
+    'eu',
+    'uk',
+    'usm',
+    'usw'
     ];
     use HasFactory;
 }

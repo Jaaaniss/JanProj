@@ -11,7 +11,7 @@ class AdidasController extends Controller {
     public function index($size)
     {
         $time = DB::table("adidas")
-            ->where("a_cm",$size);
+            ->where("cm",$size);
         return response()->json(array('data' => $time->get()));
     }
 
