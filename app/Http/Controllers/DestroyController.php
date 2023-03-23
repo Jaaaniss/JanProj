@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Adidas;
 use App\Models\NewBalance;
 use App\Models\Nike;
+use App\Models\User;
 use App\Models\Vans;
 use Illuminate\Http\Request;
 
@@ -31,5 +32,12 @@ class DestroyController extends Controller
 
         $item->delete();
         return redirect("manage_$company")->with('status', 'Size Deleted Successfully');
+    }
+
+    public function destroy_user($id)
+    {
+        $userr = User::find($id);
+        $userr->delete();
+        return redirect('manage_users')->with('status','User Deleted Successfully');
     }
 }

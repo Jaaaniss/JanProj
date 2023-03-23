@@ -36,6 +36,7 @@ Route::get('/manage_vans', [VansController::class, 'vans3']);
 Route::get('/manage_nike', [VansController::class, 'nike3']);
 Route::get('/manage_adidas', [VansController::class, 'adidas3']);
 Route::get('/manage_nb', [VansController::class, 'newbalance3']);
+Route::get('/manage_users', [VansController::class, 'users3']);
 
 
 
@@ -57,10 +58,16 @@ Route::get('edit/{id}/{company}', [EditController::class, 'editAnything']);
 
 Route::put('update/{id}/{company}', [UpdateController::class, 'updateAnything']);
 
+Route::get('edit_users/{id}', [EditController::class, 'edit_user']);
+
+Route::put('update/{id}', [UpdateController::class, 'update_user']);
+
 
 
 
 Route::delete('delete/{id}/{company}', [DestroyController::class, 'destroyAnything']);
+
+Route::delete('delete/{id}', [DestroyController::class, 'destroy_user']);
 
 
 

@@ -16,44 +16,36 @@
                     <div class="h2table">
                         <div class="dropdown">
                             <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Adidas
+                              Users
                             </a>
                             <div style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 50px, 0px);" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                               <a class="dropdown-item" href="{{ url('manage_vans') }}">Vans</a>
                               <a class="dropdown-item" href="{{ url('manage_nike') }}">Nike</a>
                               <a class="dropdown-item" href="{{ url('manage_nb') }}">New balance</a>
-                              <a class="dropdown-item" href="{{ url('manage_users') }}">Users</a>
+                              <a class="dropdown-item" href="{{ url('manage_adidas') }}">Adidas</a>
                             </div>
                           </div>
                     </div>
                     <div class="poga-add">
-                        <a href="{{ url('add') }}" class="btn btn-primary float-end">Add Size</a>
+                        <a href="{{ url('add') }}" class="btn btn-primary float-end">Add User</a>
                     </div>
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered table-striped">
                         <thead class="table-dark">
                             <tr>
-                                <th>CM</th>
-                                <th>EU</th>
-                                <th>UK</th>
-                                <th>US M</th>
-                                <th>US W</th>
+                                <th>Name</th>
                                 <th style="width: 250px !important;">Action</th>
                             </tr>
                         </thead>
                         <tbody id="table-darkk">
-                            @foreach ($adidas as $item3)
+                            @foreach ($userr as $itemm)
                             <tr>
-                                <td>{{ $item3->cm }}</td>
-                                <td>{{ $item3->eu }}</td>
-                                <td>{{ $item3->uk }}</td>
-                                <td>{{ $item3->usm }}</td>
-                                <td>{{ $item3->usw }}</td>
+                                <td>{{ $itemm->name }}</td>
                                 <td>
                                     <div class="stails">
-                                        <a href="{{ url('edit/'.$item3->id.'/adidas') }}" style="width:100px; padding-left:20px; padding-right:20px;" class="btn btn-primary btn-sm">Edit size</a>
-                                        <form action="{{ url('delete/'.$item3->id.'/adidas') }}" method="POST">
+                                        <a href="{{ url('edit_users/'.$itemm->id) }}" style="width:100px; padding-left:20px; padding-right:20px;" class="btn btn-primary btn-sm">Edit size</a>
+                                        <form action="{{ url('delete/'.$itemm->id) }}" method="POST">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" style="width:100px; padding-left:20px; padding-right:20px;" class="btn btn-danger btn-sm">Delete</button>

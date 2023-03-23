@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Nike;
 use App\Models\Adidas;
 use App\Models\NewBalance;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -64,6 +65,12 @@ class VansController extends Controller {
     {
         $newbalance = NewBalance::all();
         return view('manage_nb',['newbalance'=>$newbalance]);
+    }
+
+    public function users3()
+    {
+        $userr = User::all();
+        return view('manage_users',['userr'=>$userr]);
     }
 
     /**

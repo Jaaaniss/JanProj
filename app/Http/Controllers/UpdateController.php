@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Adidas;
 use App\Models\NewBalance;
 use App\Models\Nike;
+use App\Models\User;
 use App\Models\Vans;
 use Illuminate\Http\Request;
 
@@ -38,5 +39,13 @@ class UpdateController extends Controller
         $item->usw = $request->input('US_W');
         $item->update();
         return redirect("manage_$company")->with('status','Sizes Updated Successfully');
+    }
+
+    public function update_user(Request $request, $id)
+    {
+        $userr = User::find($id);
+        $userr->name = $request->input('name');
+        $userr->update();
+        return redirect('manage_users')->with('status','User Updated Successfully');
     }
 }

@@ -5,8 +5,8 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <div class="card">
+        <div style="display:flex; justify-content: center; padding: 50px;" class="col-md-12">
+            <div id="kolor" class="card">
                 <div class="card-header">
                     <h4>Edit & Update Sizes</h4>
                 </div>
@@ -37,8 +37,10 @@
                             <input type="text" name="US_W" value="{{$item->usw}}" class="form-control">
                         </div>
                         <div class="form-group mb-3">
-                            <button type="submit" class="btn btn-primary">Update Sizes</button>
-                            <a href="{{ url("manage_$company") }}" class="btn btn-danger float-end">BACK</a>
+                            <div class="abibtn" style="width: 420px; display:flex;justify-content: space-between;">
+                                <button type="submit" class="btn btn-primary">Update Sizes</button>
+                                <a href="{{ url("manage_$company") }}" class="btn btn-danger float-end">BACK</a>
+                            </div>
                         </div>
                     </form>
                 </div>

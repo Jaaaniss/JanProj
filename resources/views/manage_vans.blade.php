@@ -16,13 +16,14 @@
                     <div id="headeris" class="card-header">
                         <div class="h2table">
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Vans
-                                </button>
-                                <div style="position: absolute; will-change: transform; top: 0px; left: 0px; width: 250px; transform: translate3d(0px, 50px, 0px);" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                </a>
+                                <div style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 50px, 0px);" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                   <a class="dropdown-item" href="{{ url('manage_adidas') }}">Adidas</a>
                                   <a class="dropdown-item" href="{{ url('manage_nike') }}">Nike</a>
                                   <a class="dropdown-item" href="{{ url('manage_nb') }}">New balance</a>
+                                  <a class="dropdown-item" href="{{ url('manage_users') }}">Users</a>
                                 </div>
                               </div>
                         </div>

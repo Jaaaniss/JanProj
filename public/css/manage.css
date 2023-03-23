@@ -47,24 +47,29 @@
 
 }
 
-
-.btn-secondary:not(:disabled):not(.disabled).active,.btn-secondary:not(:disabled):not(.disabled):active,
-  .invert .show>.invert .btn-secondary.dropdown-toggle {
-    color: #ffffff;
-    background-color: #545b6200;
-    border-color: #4e555b00;
-}
-
 .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
      box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0);
      border-color: #6c757d00;
 }
 
+
+
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
-    color: #fff;
+    color: #909090;
     background-color: #545b6200;
     border-color: #5895c900;
 }
+
+.btn-secondary:active {
+    outline: none;
+    border: none;
+}
+
+/* .btn-secondary:not(:disabled):not(.disabled).active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #545b6200;
+    border-color: #5895c900;
+} */
 
 .invert #vecaisdrop {
     background: linear-gradient(to right, #343434, #575757);;

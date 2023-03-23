@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(to right, #ffffff, #d1d1d1);
+}
+
+.invert body {
+    background: linear-gradient(to right, #343434, #575757);
+}
+
+.invert #kolor {
+    background-color: #2e2e2e;
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    border-radius: 20px;
+}
+
+#kolor {
+
+    border-radius: 20px;
+}
+
+.invert .form-control {
+    border: 1px solid #000000;
+
+    color: white;
+    background-color: #585858;
+}
+
+.btn {
+    line-height: 35px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+  }
+
+  .invert .btn {
+    line-height: 35px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+  }
