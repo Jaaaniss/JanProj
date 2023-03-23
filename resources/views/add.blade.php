@@ -2,6 +2,8 @@
 @section('content')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/add.css') }}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 
 
 <div class="container">
@@ -53,6 +55,7 @@
                         </div>
                         <div class="form-group mb-3">
                             <button type="submit" class="btn btn-primary">Save Size</button>
+                            {{-- <a href="{{ url("manage_$company") }}" class="btn btn-danger float-end">BACK</a> --}}
                         </div>
 
                     </form>

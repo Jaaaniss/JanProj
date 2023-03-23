@@ -98,6 +98,9 @@
     border-radius: 0.25rem;
 }
 
+
+
+
 #managee {
     display: -ms-flexbox;
     display: flex;
@@ -124,10 +127,6 @@
 }
 
   .invert .dropdown-menu {
-    /* position: absolute;
-    z-index: 1000;
-    /* display: none;
-    float: left; */
     min-width: 10rem;
     padding: 0.5rem 0;
     margin: 0.125rem 0 0;
@@ -204,6 +203,12 @@
     font-size: 20px;
   }
 
+
+.invert .dropdown-item:focus, .invert .dropdown-item:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #7a7a7a;
+}
 
 div[class*=box] {
   height: 33.33%;
