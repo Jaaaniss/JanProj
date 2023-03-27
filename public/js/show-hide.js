@@ -13,7 +13,6 @@ $(document).ready(function() {
 });
 
 
-
  $(document).ready(function() {
      $('.nav-toggle2').click(function() {
          var collapse2_content_selector = $(this).attr('href');
@@ -29,7 +28,6 @@ $(document).ready(function() {
  });
 
 
-
  $(document).ready(function() {
      $('.nav-toggle3').click(function() {
          var collapse3_content_selector = $(this).attr('href');
@@ -43,7 +41,6 @@ $(document).ready(function() {
          });
      });
  });
-
 
 
  $(document).ready(function() {

@@ -1,7 +1,10 @@
+
 function lengthConverter(source, valNum) {
+
     valNum = parseFloat(valNum);
     var inputInches = document.getElementById("inputInches");
     var inputcm = document.getElementById("inputcm");
+
     if (source == "inputInches") {
         inputcm.value = (valNum / 0.39370).toFixed(2);
     }

@@ -9,14 +9,12 @@ use App\Models\User;
 use App\Models\Vans;
 use Illuminate\Http\Request;
 
-class UpdateController extends Controller
-{
+class UpdateController extends Controller {
 
     public function updateAnything( $id,$company,Request $request)
     {
 
         $item = null;
-
         switch ($company) {
             case 'vans':
                 $item = Vans::find($id);
@@ -40,6 +38,7 @@ class UpdateController extends Controller
         $item->update();
         return redirect("manage_$company")->with('status','Sizes Updated Successfully');
     }
+
 
     public function update_user(Request $request, $id)
     {

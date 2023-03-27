@@ -14,7 +14,6 @@ class DestroyController extends Controller
     public function destroyAnything($id, $company)
     {
         $item = null;
-
         switch ($company) {
             case 'vans':
                 $item = Vans::find($id);
@@ -33,6 +32,7 @@ class DestroyController extends Controller
         $item->delete();
         return redirect("manage_$company")->with('status', 'Size Deleted Successfully');
     }
+
 
     public function destroy_user($id)
     {

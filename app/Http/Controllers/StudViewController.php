@@ -9,8 +9,11 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB as FacadesDB;
 
 class StudViewController extends Controller {
+
    public function index() {
+
       $users = FacadesDB::select('select * from users');
       return view('editsize',['users'=>$users]);
+
    }
 }

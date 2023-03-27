@@ -7,14 +7,11 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('nike', function (Blueprint $table) {
+
             $table->id();
             $table->float("cm");
             $table->float("eu");
@@ -24,6 +21,7 @@ return new class extends Migration
             $table->dateTime("updated_at")->nullable();
             $table->dateTime("created_at")->nullable();
         });
+
 
         DB::table('nike')->insert(
             array(
@@ -186,11 +184,7 @@ return new class extends Migration
         );
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+
     public function down()
     {
         Schema::dropIfExists('nike');

@@ -1,9 +1,8 @@
 
 function darkmode(){
+
     var SetTheme = document.body;
-
     SetTheme.classList.toggle("invert");
-
     var theme;
 
     if(SetTheme.classList.contains("invert")){
@@ -14,18 +13,13 @@ function darkmode(){
         theme = "LIGHT";
     }
 
-    // saglabat localstorage
-
     localStorage.setItem("PageTheme", JSON.stringify(theme));
 
 }
 
-
 let GetTheme = JSON.parse(localStorage.getItem("PageTheme"));
 console.log(GetTheme);
-
 
 if(GetTheme === "DARK"){
     document.body.classList = "invert";
 }
-

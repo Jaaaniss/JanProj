@@ -17,11 +17,10 @@ class AddController extends Controller
         return view('add');
     }
 
-
+    
     public function storeAnything(Request $request)
     {
         $item = null;
-
         switch ($request->company) {
             case 'vans':
                 $item = new Vans;
@@ -45,25 +44,4 @@ class AddController extends Controller
         $item->save();
         return redirect("manage_$request->company")->with('status','Size Added Successfully');
     }
-
-
-    public function autofill()
-    {
-
-
-
-        // $vanss = (new Vans)->getTable();
-        // return view('add', ['currentTable' => $vanss,]);
-
-
-
-
-        // $users1 = Vans::pluck('name1');
-        // $users2 = Nike::pluck('name2');
-        // $users3 = Adidas::pluck('name3');
-        // $users4 = NewBalance::pluck('name4');
-        // return view('add', ['users1' => $users1,'users2' => $users2,'users3' => $users3,'users4' => $users4,]);
-    }
-
-
 }

@@ -14,7 +14,6 @@ class EditController extends Controller
     public function editAnything($id, $company)
     {
         $item = null;
-
         switch ($company) {
             case 'vans':
                 $item = Vans::find($id);
@@ -32,6 +31,7 @@ class EditController extends Controller
 
         return view('edit', compact('item', 'company'));
     }
+
 
     public function edit_user($id)
     {
