@@ -342,8 +342,8 @@ body {
 }
 
 .row {
-  padding-top: 85px;
-    padding-bottom: 85px;
+    padding-top: 50px;
+        padding-bottom: 19px;
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -362,7 +362,7 @@ body {
 }
 
 #shadoww {
-  box-shadow: 0px 0px 16px 12px rgb(0 0 0 / 75%);
+    box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 75%);
 }
 
 .form-control1 {

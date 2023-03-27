@@ -21,12 +21,14 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
             $table->float('foot_size_cm')->nullable();
+            $table->string('role')->nullable();
 
         });
 
         DB::table('users')->insert([[
             'name' => 'Admin',
             'email' => 'Admin@Admin.Admin',
+            'role' => 'Admin',
             'password' => Hash::make('1234567890Aa')]]);
     }
 

@@ -408,7 +408,7 @@ hr {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    align-items: center;
+    align-items: flex-end;
 }
 
 

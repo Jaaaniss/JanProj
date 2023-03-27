@@ -27,8 +27,10 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="darkmodenavbar">
             <div class="picturenav">
+                <a href="/">
                 <img id="picturenav" style="align-self: center;margin: 0;margin-left: auto;margin-right: auto;"
                     src="{{ asset('/image/LOGO2.png') }}" alt="Girl in a jacket" class="saturate">
+                </a>
             </div>
             <div class="malaa1">
                 <button id="krasaa" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -57,13 +59,13 @@
                         </li>
                         @endif
                     @else
-                        <li class="nav-item-dropdown">
+                        <li style=" display: flex;flex-direction: column;align-items: flex-end;" class="nav-item-dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
                             </a>
 
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <div style="position:absolute" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 @if (Auth::user()->id==1)
                                 <a class="dropdown-item" href="/manage_vans">
                                     {{ __('Manage sizes') }}

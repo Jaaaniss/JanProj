@@ -341,8 +341,8 @@ body {
   }
 
   .row {
-    padding-top: 111px;
-    padding-bottom: 124px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -361,7 +361,7 @@ body {
   }
 
   #shadoww {
-    box-shadow: 0px 0px 16px 12px rgb(0 0 0 / 75%);
+    box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 75%);
   }
 
   .mb-3, .my-3 {
@@ -377,6 +377,11 @@ hr {
   border: 0;
   border-top: 1px solid rgba(0,0,0,.1);
 }
+
+.invert hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
   .invalid-feedback {
     display: flex;
     width: 100%;
@@ -395,7 +400,6 @@ hr {
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
-    border: 0px solid #ced4da00;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   }
 

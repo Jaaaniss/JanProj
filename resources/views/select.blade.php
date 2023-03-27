@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/login.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/select.css') }}">
 
-<img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="899px">
+{{-- <img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="899px"> --}}
 
 
 
