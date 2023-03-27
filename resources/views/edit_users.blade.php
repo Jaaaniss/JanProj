@@ -5,10 +5,10 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-header">
-                    <h4>Edit & Update Users</h4>
+        <div style="padding-top: 100px" class="col-md-12">
+            <div id="kolor" class="card">
+                <div id="editcard" class="card-header">
+                    <h4 style="margin: 0;" >Edit & Update Users</h4>
                 </div>
                 <div class="card-body">
 
@@ -20,7 +20,7 @@
                             <label for="">Name</label>
                             <input type="text" name="name" value="{{$userr->name}}" class="form-control">
                         </div>
-                        <div class="form-group mb-3">
+                        <div style="display: flex;justify-content: space-between;" class="form-group mb-3">
                             <button type="submit" class="btn btn-primary">Update User</button>
                             <a href="{{ url("manage_users") }}" class="btn btn-danger float-end">BACK</a>
                         </div>

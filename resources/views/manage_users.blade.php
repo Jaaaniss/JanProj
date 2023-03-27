@@ -26,9 +26,9 @@
                             </div>
                           </div>
                     </div>
-                    <div class="poga-add">
-                        <a href="{{ url('add') }}" class="btn btn-primary float-end">Add User</a>
-                    </div>
+                    {{-- <div class="poga-add">
+                        <a style="width: 100%;" href="{{ url('add') }}" class="btn btn-primary float-end">Add User</a>
+                    </div> --}}
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered table-striped">
@@ -44,7 +44,7 @@
                                 <td>{{ $itemm->name }}</td>
                                 <td>
                                     <div class="stails">
-                                        <a href="{{ url('edit_users/'.$itemm->id) }}" style="width:100px; padding-left:20px; padding-right:20px;" class="btn btn-primary btn-sm">Edit size</a>
+                                        <a href="{{ url('edit_users/'.$itemm->id) }}" style="width:100px; padding-left:20px; padding-right:20px;" class="btn btn-primary btn-sm">Edit user</a>
                                         <form action="{{ url('delete/'.$itemm->id) }}" method="POST">
                                             @csrf
                                             @method('DELETE')

@@ -38,11 +38,12 @@
 
 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="justify-content: flex-end;">
-                <div class="navbar-nav">
-                    <div class="deda">
+                <div class="deda">
                         <img onclick="darkmode()" id="mybtn" src="{{ asset('/image/moon.png') }}" height="30px"
                             width="30px">
                     </div>
+                <div class="navbar-nav">
+
                     <li class="dropdown-menu-left">
                         <div class="dropdown-menu">
                             @guest

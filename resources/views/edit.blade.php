@@ -3,12 +3,10 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/edit_size.css') }}">
 
-<div class="container">
-    <div class="row">
-        <div style="display:flex; justify-content: center; padding: 50px;" class="col-md-12">
+<div style="padding-top: 100px;" class="container">
             <div id="kolor" class="card">
-                <div class="card-header">
-                    <h4>Edit & Update Sizes</h4>
+                <div id="editcard" class="card-header">
+                    <h4 style="margin: 0;" >Edit & Update Sizes</h4>
                 </div>
                 <div class="card-body">
 
@@ -32,12 +30,12 @@
                             <label for="">US M</label>
                             <input type="text" name="US_M" value="{{$item->usm}}" class="form-control">
                         </div>
-                        <div class="form-group mb-3">
+                        <div style="padding-bottom: 25px;" class="form-group mb-3">
                             <label for="">US W</label>
                             <input type="text" name="US_W" value="{{$item->usw}}" class="form-control">
                         </div>
-                        <div class="form-group mb-3">
-                            <div class="abibtn" style="width: 420px; display:flex;justify-content: space-between;">
+                        <div style="padding-bottom: 3px;" class="formg">
+                            <div class="abibtn" style=" display:flex;justify-content: space-between;">
                                 <button type="submit" class="btn btn-primary">Update Sizes</button>
                                 <a href="{{ url("manage_$company") }}" class="btn btn-danger float-end">BACK</a>
                             </div>
@@ -45,8 +43,6 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
 </div>
 
 <script src="{{ asset('js/darkmode.js') }}"></script>

@@ -9,7 +9,6 @@ body {
 .invert #kolor {
     background-color: #2e2e2e;
     border: 1px solid rgba(255, 255, 255, 0.21);
-    border-radius: 20px;
 }
 
 #kolor {
@@ -17,11 +16,23 @@ body {
     border-radius: 20px;
 }
 
+
 .invert .form-control {
     border: 1px solid #000000;
 
     color: white;
     background-color: #585858;
+}
+
+.invert #editcard {
+    border-bottom: 1px solid rgb(255 255 255 / 14%);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#editcard {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .btn {
