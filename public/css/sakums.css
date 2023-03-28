@@ -142,10 +142,10 @@ svg {
   object-fit: cover;
 }
 
-/* body {
+body {
   color: rgb(0, 0, 0);
   background: linear-gradient(to right, #ffffff, #d1d1d1)
-} */
+}
 
 
 
@@ -537,11 +537,11 @@ filter: saturate(255);
 
 
 .mainit {
-  padding-top: 150px;
+  padding-top: 128px;
   margin: 0;
   text-align: center;
   display: flex;
-  padding-bottom: 150px;
+  padding-bottom: 128px;
   /* width: 80%; */
   flex-direction: column;
   align-items: center;

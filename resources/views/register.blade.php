@@ -5,9 +5,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
 
 
-    
+
     <div class=lielaiss>
-        {{-- <img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="899px"> --}}
+        <img class="imagew" src="{{ asset('/image/wallpaper_jordan.jpg') }}" alt="" width="100%" height="899px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-xl-9 mx-auto">

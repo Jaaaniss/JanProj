@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/dark.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
 
-    <img class="imagew" src="{{ asset('/image/wallpaper_jordan.jpg') }}" alt="" width="100%" height="700px">
+    <img class="imagew" src="{{ asset('/image/wallpaper_jordan.jpg') }}" alt="" width="100%" height="600px">
 
 
     <div class="teksts">

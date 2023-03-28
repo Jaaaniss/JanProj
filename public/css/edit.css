@@ -154,6 +154,89 @@ h1 {
     padding-bottom: 15px;
 }
 
+
+@media (max-width: 423px){
+    #carder {
+        max-width: 315px;
+    }}
+
+    @media (max-width: 423px){
+        #shadoww {
+            max-width: 315px;
+        }}
+
+        @media (max-width: 423px){
+            .btn10 {
+                   width: 135px;
+            }}
+
+
+
+.container {
+    padding-top: 222px;
+    padding-bottom: 222px;
+  }
+
+
+
+
+  @media (min-width: 349px){
+    .container {
+        padding-top: 172px;
+        padding-bottom: 172px;
+    }}
+
+
+    @media (min-width: 423px){
+        .container {
+            padding-top: 190px;
+            padding-bottom: 190px;
+        }}
+
+    @media (min-width: 449px){
+        .container {
+            padding-top: 212px;
+            padding-bottom: 212px;
+        }}
+
+        @media (min-width: 495px){
+            .container {
+                padding-top: 212px;
+                padding-bottom: 212px;
+            }}
+
+
+        @media (min-width: 518px){
+            .container {
+                padding-top: 230px;
+                padding-bottom: 230px;
+            }}
+
+  @media (min-width: 576px){
+    .container {
+        padding-top: 212px;
+        padding-bottom: 212px;
+    }}
+
+  @media (min-width: 768px){
+    .container {
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }}
+
+  @media (min-width: 992px){
+    .container {
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }}
+
+    @media (min-width: 1200px){
+    .container {
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }}
+
+
 .invert .virsra {
   color: rgb(255, 255, 255);
   display: flex;
@@ -166,8 +249,6 @@ h1 {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 800px;
-    padding-top: 100px;
-    padding-bottom: 75px;
 }
 
 .formss {

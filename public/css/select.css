@@ -1236,9 +1236,72 @@ a1 {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 800px;
-    padding-top: 100px;
-    padding-bottom: 75px;
 }
+
+
+
+  @media (max-width: 423px){
+    #carder {
+        max-width: 315px;
+    }}
+
+    @media (max-width: 423px){
+        #shadoww {
+            max-width: 315px;
+        }}
+
+        @media (max-width: 423px){
+            .btn10 {
+                   width: 135px;
+            }}
+
+
+.container {
+    padding-top: 222px;
+    padding-bottom: 222px;
+  }
+
+  @media (min-width: 391px){
+    .container {
+        padding-top: 225px;
+        padding-bottom: 225px;
+    }}
+
+    @media (min-width: 423px){
+        .container {
+            padding-top: 246px;
+            padding-bottom: 246px;
+        }}
+
+    @media (min-width: 495px){
+        .container {
+            padding-top: 266px;
+            padding-bottom: 266px;
+        }}
+
+  @media (min-width: 576px){
+    .container {
+        padding-top: 247px;
+        padding-bottom: 247px;
+    }}
+
+  @media (min-width: 768px){
+    .container {
+        padding-top: 266px;
+        padding-bottom: 266px;
+    }}
+
+  @media (min-width: 992px){
+    .container {
+        padding-top: 284px;
+        padding-bottom: 284px;
+    }}
+
+    @media (min-width: 1200px){
+    .container {
+        padding-top: 284px;
+        padding-bottom: 284px;
+    }}
 
 .btn4 {
   line-height: 35px;
@@ -1552,4 +1615,13 @@ a1 {
     border: var(--bs-card-border-width) solid rgb(255, 255, 255);
     /* border-radius: var(--bs-card-border-radius); */
     flex-direction: column;
+}
+
+
+.mb-5, .my-5 {
+    margin-bottom: 0!important;
+}
+
+.mt-5, .my-5 {
+    margin-top: 0!important;
 }
