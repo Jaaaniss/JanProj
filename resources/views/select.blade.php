@@ -1,40 +1,38 @@
-
 @extends('layouts.app')
 @section('content')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('css/edit.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('css/login.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('css/select.css') }}">
-
-{{-- <img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="899px"> --}}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/edit.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/login.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/select.css') }}">
 
 
 
+    {{-- <img class="imagew" src="{{ asset('/image/wallpaper.jpg') }}" alt="" width="100%" height="899px"> --}}
 
-        <div class="col-lg-10 col-xl-9 mx-auto">
-            <div id= "shadoww" class="card flex-row my-5 border-0 rounded-3 overflow-hidden">
-              <div id="carder" class="card-body p-4 p-sm-5">
+    <div class="col-lg-10 col-xl-9 mx-auto">
+        <div id="shadoww" class="card flex-row my-5 border-0 rounded-3 overflow-hidden">
+            <div id="carder" class="card-body p-4 p-sm-5">
                 <div class="input-group mb-3">
                     <div class="virsra">
-                        <h2 style=" padding-bottom: 20px"><center>
-                            Enter your foot size to 'Save' it for future or click 'Next' to manually select it
+                        <h2 style=" padding-bottom: 20px">
+                            <center>
+                                Enter your foot size to 'Save' it for future or click 'Next' to manually select it
                             </center>
                         </h2>
                     </div>
-                        <form class="formss" action="/select" method="post">
-                            @csrf
-                            <input id="sizeinput" type="text" name="foot_size_cm" class="form-control" placeholder="Enter a number" aria-label="Cm" aria-describedby="button-addon2">
-                            <div class="butooni">
-                                <button class="btn10 btn10-one" type="submit" id="submitbutton">Save</button>
-                                <a id="nulll" href="/next" class="btn10 btn10-one" role="button"><span>Next</span></a>
-                            </div>
-                        </form>
+                    <form class="formss" action="/select" method="post">
+                        @csrf
+                        <input id="sizeinput" type="text" name="foot_size_cm" class="form-control"
+                            placeholder="Enter a number" aria-label="Cm" aria-describedby="button-addon2">
+                        <div class="butooni">
+                            <button class="btn10 btn10-one" type="submit" id="submitbutton">Save</button>
+                            <a id="nulll" href="/next" class="btn10 btn10-one" role="button"><span>Next</span></a>
+                        </div>
+                    </form>
                 </div>
-              </div>
             </div>
         </div>
-
-
+    </div>
 
 
     <div class="bak">

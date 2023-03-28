@@ -341,8 +341,6 @@ body {
   }
 
   .row {
-    padding-top: 60px;
-    padding-bottom: 30px;
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -440,8 +438,61 @@ hr {
 
   /* Style the container for inputs */
   .container {
-    padding: 20px;
+    padding-top: 135px;
+    padding-bottom: 135px;
   }
+
+  @media (min-width: 236px){
+    .container {
+        padding-top: 145px;
+        padding-bottom: 145px;
+    }}
+
+  @media (min-width: 278px){
+    .container {
+        padding-top: 155px;
+        padding-bottom: 155px;
+    }}
+
+  @media (min-width: 318px){
+    .container {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }}
+
+  @media (min-width: 391px){
+    .container {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }}
+
+  @media (min-width: 576px){
+    .container {
+        max-width: 540px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }}
+
+  @media (min-width: 768px){
+    .container {
+        max-width: 720px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }}
+
+  @media (min-width: 992px){
+    .container {
+        max-width: 960px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }}
+
+    @media (min-width: 1200px){
+    .container {
+        max-width: 1140px;
+        padding-top: 135px;
+        padding-bottom: 135px;
+    }}
 
   @media (max-width: 991px){
     .invalid-feedback {

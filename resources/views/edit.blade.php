@@ -1,38 +1,39 @@
 @extends('layouts.app')
 @section('content')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('css/edit_size.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/edit_size.css') }}">
 
-<div style="padding-top: 100px;" class="container">
+    @role('Admin')
+        <div style="padding-top: 100px;" class="container">
             <div id="kolor" class="card">
                 <div id="editcard" class="card-header">
-                    <h4 style="margin: 0;" >Edit & Update Sizes</h4>
+                    <h4 style="margin: 0;">Edit & Update Sizes</h4>
                 </div>
                 <div class="card-body">
 
-                    <form action="{{ url('update/'.$item->id.'/'.$company) }}" method="POST">
+                    <form action="{{ url('update/' . $item->id . '/' . $company) }}" method="POST">
                         @csrf
                         @method('PUT')
 
                         <div class="form-group mb-3">
                             <label for="">CM</label>
-                            <input type="text" name="CM" value="{{$item->cm}}" class="form-control">
+                            <input type="text" name="CM" value="{{ $item->cm }}" class="form-control">
                         </div>
                         <div class="form-group mb-3">
                             <label for="">EU</label>
-                            <input type="text" name="EU" value="{{$item->eu}}" class="form-control">
+                            <input type="text" name="EU" value="{{ $item->eu }}" class="form-control">
                         </div>
                         <div class="form-group mb-3">
                             <label for="">UK</label>
-                            <input type="text" name="UK" value="{{$item->uk}}" class="form-control">
+                            <input type="text" name="UK" value="{{ $item->uk }}" class="form-control">
                         </div>
                         <div class="form-group mb-3">
                             <label for="">US M</label>
-                            <input type="text" name="US_M" value="{{$item->usm}}" class="form-control">
+                            <input type="text" name="US_M" value="{{ $item->usm }}" class="form-control">
                         </div>
                         <div style="padding-bottom: 25px;" class="form-group mb-3">
                             <label for="">US W</label>
-                            <input type="text" name="US_W" value="{{$item->usw}}" class="form-control">
+                            <input type="text" name="US_W" value="{{ $item->usw }}" class="form-control">
                         </div>
                         <div style="padding-bottom: 3px;" class="formg">
                             <div class="abibtn" style=" display:flex;justify-content: space-between;">
@@ -43,9 +44,9 @@
                     </form>
                 </div>
             </div>
-</div>
+        </div>
+    @endrole
 
-<script src="{{ asset('js/darkmode.js') }}"></script>
-<script src="{{ asset('js/ajax.js') }}"></script>
-
+    <script src="{{ asset('js/darkmode.js') }}"></script>
+    <script src="{{ asset('js/ajax.js') }}"></script>
 @endsection
