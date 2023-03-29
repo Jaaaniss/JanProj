@@ -31,6 +31,10 @@ Route::get('/editsize', function () {
     return view('editsize');
 });
 
+Route::get('/user_profile', function () {
+    return view('user_profile');
+});
+
 
 Route::get('/next',[VansController::class,'vans']);
 
@@ -48,7 +52,7 @@ Route::POST('/select',[SizeController::class,'insert']);
 Route::get('view-records','StudViewController@index');
 
 
-Route::middleware(['auth','role:Admin'])->name('admin.')->prefix('admin')->group(function () {
+Route::middleware(['auth','role:Admin'])->name('admin.')->group(function () {
 
     Route::get('/manage_vans', [VansController::class, 'vans3']);
     Route::get('/manage_nike', [VansController::class, 'nike3']);
