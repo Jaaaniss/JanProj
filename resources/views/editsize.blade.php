@@ -4,10 +4,6 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
 
 
-
-    {{-- <img class="imagew" src="{{ asset('/image/wallpaper_jordan.jpg') }}" alt="" width="100%"> --}}
-
-
         <div style="display: flex;align-items: center;justify-content: center;height: 100%;" class="container">
 
             <div class="lielaiscontainer">
@@ -61,13 +57,6 @@
                 </div>
             </div>
         </div>
-
-
-    <div class="bak">
-        <div class="box-1">
-            <a id="nulll" href="/" class="btn9 btn9-one" role="button"><span>Back Home</span></a>
-        </div>
-    </div>
 
 
     <script src="{{ asset('js/ajax.js') }}"></script>

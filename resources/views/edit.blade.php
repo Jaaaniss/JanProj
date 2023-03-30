@@ -1,10 +1,10 @@
 @extends('layouts.app')
 @section('content')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/edit_size.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
 
     @role('Admin')
-        <div style="padding-top: 100px;" class="container">
+        <div class="container">
             <div id="kolor" class="card">
                 <div id="editcard" class="card-header">
                     <h4 style="margin: 0;">Edit & Update Sizes</h4>

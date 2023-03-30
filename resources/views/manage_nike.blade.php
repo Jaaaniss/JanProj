@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/manage.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
 
     @role('Admin')
         <div style="padding-top: 50px" class="container">

@@ -111,7 +111,6 @@
 
     </div>
 
-
     <main class="blade" class="py-4">
         @yield('content')
     </main>
@@ -123,6 +122,7 @@
             </div>
         </div>
     </div>
+    
 </body>
 
 </html>

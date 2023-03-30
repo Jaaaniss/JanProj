@@ -1,18 +1,15 @@
 @extends('layouts.app')
 @section('content')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/dark.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
-    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"> --}}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/next.css') }}">
 
-    {{-- <img class="imagewww" src="{{ asset('/image/wallpaper_jordan.jpg') }}" alt="" width="100%" height="1300px"> --}}
+
+
 
     <div class=lielaiss>
         <div class="container" style="display: flex;justify-content: center; flex-direction:column;">
-
-            {{-- <div style="background: #a8a8a8;border-radius: 25px;padding: 25px" class="visslielaiscontainer"> --}}
-            <div class="card mb-3"
-                style="border-radius: 15px;border: solid 1px black; box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);">
+            <div class="card mb-3" id="cardmb3">
                 <div class="row g-0" style="margin-left: 0; margin-right:0;">
                     <div style="display: flex;justify-content: center;background: black;border: 1px solid black;justify-content: center;background: black;"
                         id="goodinportrait" class="col-md-4">
@@ -49,8 +46,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card mb-3"
-                style="border-radius: 15px;border: solid 1px black; box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);">
+            <div class="card mb-3" id="cardmb3">
                 <div class="row g-0" style="margin-left: 0; margin-right:0;">
                     <div style="display: flex;justify-content: center;background: black;border: 1px solid black;justify-content: center;background: black;"
                         id="goodinportrait" class="col-md-4">
@@ -64,7 +60,7 @@
                                 <select id="ident2" class="form-control1">
                                     @foreach ($nike as $value)
                                         <option value="" disabled selected hidden>--> Select your feet size <--</option>
-                                        <option id="ident2" value="{{ $value->cm }}">{{ $value->cm }}</option>
+                                        <option class="optioncolor" id="ident2" value="{{ $value->cm }}">{{ $value->cm }}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -89,8 +85,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card mb-3"
-                style="border-radius: 15px;border: solid 1px black; box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);">
+            <div class="card mb-3" id="cardmb3">
                 <div class="row g-0" style="margin-left: 0; margin-right:0;">
                     <div style="display: flex;justify-content: center;background: black;border: 1px solid black;justify-content: center;background: black;"
                         id="goodinportrait" class="col-md-4">
@@ -103,7 +98,7 @@
                                 <select id="ident3" class="form-control1">
                                     @foreach ($adidas as $value)
                                         <option value="" disabled selected hidden>--> Select your feet size <--</option>
-                                        <option id="ident3" value="{{ $value->cm }}">{{ $value->cm }}</option>
+                                        <option class="optioncolor" id="ident3" value="{{ $value->cm }}">{{ $value->cm }}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -128,8 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card mb-3"
-                style="border-radius: 15px;border: solid 1px black; box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 50%);">
+            <div class="card mb-3" id="cardmb3">
                 <div class="row g-0" style="margin-left: 0; margin-right:0;">
                     <div style="display: flex;justify-content: center;background: black;border: 1px solid black;justify-content: center;background: black;"
                         id="goodinportrait" class="col-md-4">
@@ -142,7 +136,7 @@
                                 <select id="ident4" class="form-control1">
                                     @foreach ($newbalance as $value)
                                         <option value="" disabled selected hidden>--> Select your feet size <--</option>
-                                        <option id="ident4" value="{{ $value->cm }}">{{ $value->cm }}</option>
+                                        <option class="optioncolor" id="ident4" value="{{ $value->cm }}">{{ $value->cm }}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -171,13 +165,6 @@
     </div>
     </div>
 
-
-
-    <div class="bak">
-        <div class="box-1">
-            <a id="nulll" href="/" class="btn8 btn8-one" role="button"><span>Back Home</span></a>
-        </div>
-    </div>
 
 
     <script src="{{ asset('js/ajax.js') }}"></script>

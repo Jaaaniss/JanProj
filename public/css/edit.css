@@ -859,3 +859,12 @@ a {
 
 
 
+   @media (max-width: 575px){
+    .blade {
+        height: 910px;
+    }}
+
+    @media (min-width: 575px){
+        .blade {
+            height: 910px;
+        }}

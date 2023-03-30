@@ -139,7 +139,7 @@ select {
 
 .invert {
     color: rgb(255, 255, 255);
-    background: linear-gradient(to right, #343434, #575757);
+    background: #464646;
   }
 
 
@@ -175,7 +175,7 @@ select {
   }
 
   .invert #ir2 {
-    background-color: #555555;
+    background: #575757;
 
     float: left;
 
@@ -290,7 +290,7 @@ select {
 
 .invert {
     color: rgb(255, 255, 255);
-    background: linear-gradient(to right, #343434, #575757);
+    background: #464646;
   }
 
   .invert #dedd {
@@ -338,7 +338,7 @@ select {
 
 
   .invert #ir1 {
-    background-color: #555555;
+    background: #575757;
 
     /* border-top: 0;
     border-bottom: 0; */
@@ -348,7 +348,7 @@ select {
   }
 
   .invert #ir3 {
-    background-color: #555555;
+    background: #575757;
     /* border-top: 0;
     border-bottom: 0; */
     /* border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
@@ -360,7 +360,7 @@ select {
   min-width: 250px;
   padding: 14px 14px 0;
   overflow:hidden;
-  background: linear-gradient(to right, #343434, #575757);
+  background: #464646;
 }
 
 .invert #login-dp .bottom {

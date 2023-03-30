@@ -3,7 +3,8 @@
     border: 1px solid #000000;
     margin: auto;
     color: white;
-    background-color: #585858;
+    background: #575757;
+    border-color: #656565;
 }
 
 .invert #a1 {
@@ -24,7 +25,7 @@
     color: rgb(0, 215, 0);
     margin: 0;
   }
-  
+
 
   .invert #message {
     display: none;
@@ -50,11 +51,11 @@
     transition: all 0.3s;
     position: relative;
   }
-  
+
   .invert .btn7-one span {
     transition: all 0.3s;
   }
-  
+
   .invert .btn7-one::before {
     content: '';
     position: absolute;
@@ -73,16 +74,16 @@
     border-bottom-color: rgba(255,255,255,0.5);
     transform: scale(0.1, 1);
   }
-  
+
   .invert .btn7-one:hover span {
     letter-spacing: 2px;
   }
-  
+
   .invert .btn7-one:hover::before {
-    opacity: 1; 
-    transform: scale(1, 1); 
+    opacity: 1;
+    transform: scale(1, 1);
   }
-  
+
   .invert .btn7-one::after {
     content: '';
     position: absolute;
@@ -94,19 +95,19 @@
     transition: all 0.3s;
     background-color: rgba(255,255,255,0.1);
   }
-  
+
   .invert .btn7:hover {
     color: #ffffff;
     text-decoration: none;
   }
-  
+
   .invert .btn7-one:hover::after {
-    opacity: 0; 
+    opacity: 0;
     transform: scale(0.1, 1);
   }
 
   .invert #carder {
-    background: linear-gradient(to right, #343434, #575757);
+    background: #464646;
   }
 
   .invert hr {

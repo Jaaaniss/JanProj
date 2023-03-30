@@ -1,13 +1,11 @@
 @extends('layouts.app')
 @section('content')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/manage.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
 
     @role('Admin')
-        <div style="padding-top: 50px" class="container">
+        <div class="container">
             <div id="managee" class="row">
-                            {{-- <a href="{{ url('manage_vans') }}" class="btn btn-primary float-end">Vans</a>
-                    <a href="{{ url('manage_nike') }}" class="btn btn-primary float-end">Nike</a>
-                    <a href="{{ url('manage_nb') }}" class="btn btn-primary float-end">New balance</a> --}}
                 <div style="padding: 30px;" class="col-md-12">
                     @if (session('status'))
                         <h6 class="alert alert-success">{{ session('status') }}</h6>

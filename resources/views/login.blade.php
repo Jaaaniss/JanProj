@@ -1,18 +1,16 @@
 @extends('layouts.app')
 @section('content')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/login.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/login_dark.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
 
 
 
 
 
-    <div class=lielaiss>
-        <img class="imagew" src="{{ asset('/image/wallpaper_jordan.jpg') }}" alt="" width="100%" height="899px">
-
+    <div style="height:100%" class=lielaiss>
         <div class="container">
-            <div class="row">
+            <div style="width:100%" class="row">
                 <div class="col-lg-10 col-xl-9 mx-auto">
                     <div id="shadoww" class="card flex-row my-5 border-0 rounded-3 overflow-hidden">
 
@@ -74,16 +72,10 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 
 
-    <div class="bak">
-        <div class="box-1">
-            <a id="nulll" href="/" class="btn6 btn6-one" role="button"><span>Back Home</span></a>
-        </div>
-    </div>
 
     <script src="{{ asset('js/ajax.js') }}"></script>
     <script src="{{ asset('js/show-hide.js') }}"></script>
