@@ -21,6 +21,12 @@
                                     <label for="">Name</label>
                                     <input type="text" name="name" value="{{ $userr->name }}" class="form-control">
                                 </div>
+
+                                <div class="form-group mb-3">
+                                    <label for="">Name</label>
+                                    <input type="text" name="foot_size_cm" value="{{ $userr->foot_size_cm }}" class="form-control">
+                                </div>
+
                                 <div style="display: flex;justify-content: space-between;" class="form-group mb-3">
                                     <button type="submit" class="btn btn-primary">Update User</button>
                                     <a href="{{ url('manage_users') }}" class="btn btn-danger float-end">BACK</a>

@@ -38,4 +38,10 @@ class EditController extends Controller
         $userr = User::find($id);
         return view('edit_users', compact('userr'));
     }
+
+    // public function edit_profile($id)
+    // {
+    //     $profile = User::find($id);
+    //     return view('user_profile', compact('profile'));
+    // }
 }

@@ -51,6 +51,12 @@ Route::POST('/select',[SizeController::class,'insert']);
 
 Route::get('view-records','StudViewController@index');
 
+// Route::get('/user_profile', [EditController::class, 'edit_profile']);
+// Route::put('/user_profile', [UpdateController::class, 'update_profile']);
+
+Route::get('user_profile/{id}', [EditController::class, 'edit_user']);
+Route::put('user_profile/{id}', [UpdateController::class, 'update_user']);
+
 
 Route::middleware(['auth','role:Admin'])->name('admin.')->group(function () {
 

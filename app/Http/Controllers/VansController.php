@@ -13,7 +13,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class VansController extends Controller {
-    
+
     public function index($size)
     {
         $time = DB::table("vans")

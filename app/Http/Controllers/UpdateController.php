@@ -44,7 +44,19 @@ class UpdateController extends Controller {
     {
         $userr = User::find($id);
         $userr->name = $request->input('name');
+        $userr->foot_size_cm = $request->input('foot_size_cm');
         $userr->update();
         return redirect('manage_users')->with('status','User Updated Successfully');
     }
+
+    // public function update_profile(Request $request, $id)
+    // {
+    //     $profile = User::find($id);
+    //     $profile->name = $request->input('name');
+    //     $profile->email = $request->input('email');
+    //     $profile->password = $request->input('password');
+    //     $profile->foot_size_cm = $request->input('foot_size_cm');
+    //     $profile->update();
+    //     return redirect('user_profile')->with('status','Profile Updated Successfully');
+    // }
 }

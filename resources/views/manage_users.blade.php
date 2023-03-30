@@ -34,6 +34,7 @@
                                 <thead class="table-dark">
                                     <tr>
                                         <th>Name</th>
+                                        <th style="width: 250px !important;">Foot Size (cm)</th>
                                         <th style="width: 250px !important;">Action</th>
                                     </tr>
                                 </thead>
@@ -41,6 +42,7 @@
                                     @foreach ($userr as $itemm)
                                     <tr>
                                         <td>{{ $itemm->name }}</td>
+                                        <td>{{ $itemm->foot_size_cm }}</td>
                                         <td>
                                             <div class="stails">
                                                 <a href="{{ url('edit_users/'.$itemm->id) }}" style="width:100px; padding-left:20px; padding-right:20px;" class="btn btn-primary btn-sm">Edit user</a>
