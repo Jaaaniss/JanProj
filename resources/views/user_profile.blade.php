@@ -1,11 +1,12 @@
 @extends('layouts.app')
 @section('content')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/user_profile.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
 
     <img class="imagew" src="{{ asset('/image/wallpaper_jordan.jpg') }}" alt="" width="100%" height="899px">
 
 
-    <div style="padding-top: 195px!important;padding-bottom: 200px!important;" class="container py-5">
+    <div class="container">
         <div class="lielaiscontainer">
 
             <div class="row">
@@ -102,11 +103,11 @@
     </div>
 
 
-    <div class="bak">
+    {{-- <div class="bak">
         <div class="box-1">
             <a id="nulll" href="/" class="btn9 btn9-one" role="button"><span>Back Home</span></a>
         </div>
-    </div>
+    </div> --}}
 
 
     <script src="{{ asset('js/darkmode.js') }}"></script>

@@ -1,41 +1,66 @@
 @extends('layouts.app')
 @section('content')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/login.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/select.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/edit.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
 
 
 
-    <img class="imagew" src="{{ asset('/image/wallpaper_jordan.jpg') }}" alt="" width="100%" height="899px">
+    {{-- <img class="imagew" src="{{ asset('/image/wallpaper_jordan.jpg') }}" alt="" width="100%"> --}}
 
-    <div class="container">
-        <div style="display: flex;justify-content: center;" class="col-lg-10 col-xl-9 mx-auto">
-            <div id="shadoww" class="card flex-row my-5 border-0 rounded-3 overflow-hidden">
-                <div id="carder" class="card-body p-4 p-sm-5">
-                    <div class="input-group mb-3">
-                        <div class="virsra">
-                            <h2 style="text-align: center;">
-                                Your saved foot size is {{ auth()->user()->foot_size_cm }}cm
-                            </h2>
-                            <h2 style="padding-top: 30px; padding-bottom: 20px">
-                                <center>You can enter your new size below to 'Save' it or click 'Next' for sizing</center>
-                            </h2>
-                        </div>
-                        <form class="formss" action="/select" method="post">
-                            @csrf
-                            <input id="sizeinput" max="1000" type="number" name="foot_size_cm" class="form-control"
-                                placeholder="Enter a number" aria-label="Cm" aria-describedby="button-addon2">
-                            <div class="butooni">
-                                <button class="btn10 btn10-one" type="submit" id="submitbutton">Save</button>
-                                <a id="nulll" href="/next" class="btn10 btn10-one" role="button"><span>Next</span></a>
-                            </div>
-                        </form>
+
+        <div style="display: flex;align-items: center;justify-content: center;height: 100%;" class="container">
+
+            <div class="lielaiscontainer">
+
+                <div class="row">
+                    <div class="col">
+                        <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a id="a" href="/">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Check or edit size</li>
+                            </ol>
+                        </nav>
                     </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-8">
+                        <div id="cardpicture" class="card mb-4">
+                            <div style="display: flex;flex-direction: column;justify-content: center;" class="card-body text-center">
+                                <h3 style="text-align: center;">
+                                    Saved foot size is {{ auth()->user()->foot_size_cm }}cm
+                                </h3>
+                                <h3 style="padding-top: 40px;">
+                                    <center>You can enter your new size to 'Save' it or click 'Next' for sizing</center>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div id="cardinfo" class="card mb-4">
+                            <div style="padding-top: 38px; padding-bottom: 38px;;"class="card-body">
+                                <div style="justify-content:center" class="row">
+                                    <form class="formss" action="/select" method="post">
+                                        @csrf
+                                        <input id="sizeinput" max="1000" type="number" name="foot_size_cm" class="form-control"
+                                            placeholder="Enter a number" aria-label="Cm" aria-describedby="button-addon2">
+                                        <div style="display: flex;flex-direction: column;padding-bottom: 20p;" class="butooni">
+                                            <div style="padding-bottom: 10px; padding-top: 10px;" class="viensbuttons">
+                                                <button style="width: 100%!important;" class="btn btn-dark" type="submit" id="submitbutton">Save</button>
+                                            </div>
+                                            <a id="nulll" style="width: 100%!important;" href="/next" class="btn btn-dark" role="button"><span>Next</span></a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </div>
 
 
     <div class="bak">

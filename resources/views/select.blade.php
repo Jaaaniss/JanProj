@@ -26,8 +26,8 @@
                             <input id="sizeinput" max="1000" type="number" name="foot_size_cm" class="form-control"
                                 placeholder="Enter a number" aria-label="Cm" aria-describedby="button-addon2">
                             <div class="butooni">
-                                <button class="btn10 btn10-one" type="submit" id="submitbutton">Save</button>
-                                <a id="nulll" href="/next" class="btn10 btn10-one" role="button"><span>Next</span></a>
+                                <a class="btn btn-dark" type="submit">Save</a>
+                                <a href="/next" class="btn btn-dark" role="button"><span>Next</span></a>
                             </div>
                         </form>
                     </div>

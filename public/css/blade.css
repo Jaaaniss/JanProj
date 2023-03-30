@@ -1,0 +1,11 @@
+.blade {
+    background-image: url(/image/wallpaper_jordan.jpg)!important;
+    object-fit: cover!important;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
