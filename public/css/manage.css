@@ -133,6 +133,13 @@ body {
     justify-content: space-around;
 }
 
+.stailss {
+    display: flex;
+    justify-content: space-around;
+    max-height: 50px;
+}
+
+
 
 th {
     width: 200px;

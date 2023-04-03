@@ -5,8 +5,10 @@
 
 
     <div class="container">
+        @if (session('status'))
+            <h6 class="alert alert-success">{{ session('status') }}</h6>
+        @endif
         <div style="width: 100%;" class="lielaiscontainer">
-
             <div class="row">
                 <div class="col">
                     <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
@@ -19,10 +21,9 @@
             </div>
 
             <div class="row">
-
                 <div class="col-lg-4">
                     <div id="cardpicture" class="card mb-4">
-                        <div class="card-body text-center">
+                        <div style="display: flex;flex-direction: column;align-items: center;" id="showDiv2" class="card-body text-center">
                             <img id="profilepic"
                                 src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png" alt="avatar"
                                 class="rounded-circle img-fluid" style="width: 150px;">
@@ -30,118 +31,98 @@
                             <p id="textmuted" class="text-muted mb-4">JSneaks website user</p>
                             <div class="d-flex justify-content-center mb-2">
                                 <button onclick="showDiv()" id="readonly" type="button" class="btn btn-danger">Edit profile</button>
+                                <button value="Submit" id="saveChanges_Button" type="submit" class="btn btn-primary">Save</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
 
                 <div class="col-lg-8">
                     <div id="cardinfo" class="card mb-4">
                         <div style="padding-top: 38px; padding-bottom: 38px;;"class="card-body">
-
-                            <form action="{{ url('update/'.Auth::user()->id) }}" method="POST">
+                            <form action="{{ url('update_user/' . Auth::user()->id) }}" id="myForm" method="POST">
                                 @csrf
                                 @method('PUT')
 
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Username</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input name='name' style="background: transparent;border: none;" readonly
+                                            id="textmuted" class="text-muted mb-0"value="{{ Auth::user()->name }}">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Email</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input name='email' style="background: transparent;border: none;" readonly
+                                            id="textmuted" class="text-muted mb-0"value="{{ Auth::user()->email }}">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Current Password</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <input type='password' name='password' style="background: transparent;border: none;"
+                                            readonly id="textmuted"
+                                            class="text-muted mb-0"value="{{ Auth::user()->password }}">
+                                    </div>
+                                </div>
+
+                                <div id="showDiv"  style="display:none;">
+                                    <hr>
                                     <div class="row">
                                         <div class="col-sm-3">
-                                            <p class="mb-0">Username</p>
+                                            <p class="mb-0">New Password</p>
                                         </div>
                                         <div class="col-sm-9">
-                                            <input name='name' style="background: transparent;border: none;" readonly id="textmuted"
-                                                class="text-muted mb-0"value="{{ Auth::user()->name }}">
+                                            <input type='password' style="background: transparent;" id="textmuted" class="form-control">
                                         </div>
                                     </div>
                                     <hr>
-                                    {{-- <form action="{{ url('update/' . $userr->id) }}" method="POST">
-                                        @csrf
-                                        @method('PUT') --}}
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <p class="mb-0">Email</p>
-                                            </div>
-                                            <div class="col-sm-9">
-                                                <input name='email' style="background: transparent;border: none;" readonly id="textmuted"
-                                                    class="text-muted mb-0"value="{{ Auth::user()->email }}">
-                                                    {{-- <input  style="background: transparent;border: none;" type="text" name="name" value="{{ $userr->name }}" class="form-control"> --}}
-                                            </div>
-                                        </div>
-                                    {{-- </form> --}}
-                                    <hr>
                                     <div class="row">
                                         <div class="col-sm-3">
-                                            <p class="mb-0">Password</p>
+                                            <p class="mb-0">Confirm New Password</p>
                                         </div>
                                         <div class="col-sm-9">
-                                            <input name='password' style="background: transparent;border: none;" readonly id="textmuted"
-                                                class="text-muted mb-0"value="{{ Auth::user()->password }}">
+                                            <input type='password' style="background: transparent;" id="textmuted" class="form-control">
                                         </div>
                                     </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <p class="mb-0">Foot size (cm)</p>
-                                        </div>
-                                        <div class="col-sm-9">
-                                            <input name='foot_size_cm' style="background: transparent;border: none;" readonly id="textmuted"
-                                                class="text-muted mb-0"value="{{ auth()->user()->foot_size_cm }}">
-                                        </div>
+                                </div>
+
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Foot size (cm)</p>
                                     </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <p class="mb-0">Role</p>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <p id="textmuted" class="text-muted mb-0">User</p>
-                                        </div>
-                                        <div id="showdiv" class="col-sm-6" style="display:none;">
-                                            <button style="max-width: 100px" type="submit" class="btn btn-primary">Save</button>
-                                        </div>
+                                    <div class="col-sm-9">
+                                        <input name='foot_size_cm' style="background: transparent;border: none;" readonly
+                                            id="textmuted"
+                                            class="text-muted mb-0"value="{{ auth()->user()->foot_size_cm }}">
                                     </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Role</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p id="textmuted" class="text-muted mb-0">User</p>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
-
-
-
-
             </div>
-
         </div>
     </div>
-
-
-    {{-- <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div id="kolor" class="card">
-                    <div id="editcard" class="card-header">
-                        <h4 style="margin: 0;">Edit & Update Users</h4>
-                    </div>
-                    <div class="card-body">
-
-                        <form action="{{ url('update/' . $userr->id) }}" method="POST">
-                            @csrf
-                            @method('PUT')
-
-                            <div class="form-group mb-3">
-                                <label for="">Name</label>
-                                <input type="text" name="name" value="{{ $userr->name }}" class="form-control">
-                            </div>
-                            <div style="display: flex;justify-content: space-between;" class="form-group mb-3">
-                                <button type="submit" class="btn btn-primary">Update User</button>
-                                <a href="{{ url('manage_users') }}" class="btn btn-danger float-end">BACK</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-
 
     <script src="{{ asset('js/darkmode.js') }}"></script>
     <script src="{{ asset('js/ajax.js') }}"></script>

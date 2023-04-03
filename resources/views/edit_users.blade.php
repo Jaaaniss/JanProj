@@ -5,7 +5,7 @@
 
     @role('Admin')
         <div class="container">
-            <div class="row">
+            <div style="width: 100%;" class="row">
                 <div class="col-md-12">
                     <div id="kolor" class="card">
                         <div id="editcard" class="card-header">
@@ -23,7 +23,7 @@
                                 </div>
 
                                 <div class="form-group mb-3">
-                                    <label for="">Name</label>
+                                    <label for="">Foot size (cm)</label>
                                     <input type="text" name="foot_size_cm" value="{{ $userr->foot_size_cm }}" class="form-control">
                                 </div>
 

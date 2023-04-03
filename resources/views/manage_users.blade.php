@@ -44,7 +44,7 @@
                                         <td>{{ $itemm->name }}</td>
                                         <td>{{ $itemm->foot_size_cm }}</td>
                                         <td>
-                                            <div class="stails">
+                                            <div class="stailss">
                                                 <a href="{{ url('edit_users/'.$itemm->id) }}" style="width:100px; padding-left:20px; padding-right:20px;" class="btn btn-primary btn-sm">Edit user</a>
                                                 <form action="{{ url('delete/'.$itemm->id) }}" method="POST">
                                                     @csrf

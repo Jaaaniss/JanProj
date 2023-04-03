@@ -61,6 +61,24 @@
     color: #9a9a9a;
 }
 
+.alert {
+    width: inherit;
+}
+
+#saveChanges_Button {
+    display: none;
+}
+
+#readonly {
+    display: block;
+}
+
+.invert #textmuted {
+    border-color: #656565;
+    color: white;
+}
+
+
 a {
     color: #000000;
     text-decoration: none;
