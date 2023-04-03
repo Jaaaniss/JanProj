@@ -53,7 +53,7 @@ body {
     border-top-left-radius: 20px;
 }
 
-.btn {
+.btn_edit_size {
     line-height: 35px;
     height: 50px;
     text-align: center;
@@ -62,7 +62,7 @@ body {
     cursor: pointer;
   }
 
-  .invert .btn {
+  .invert .btn_edit_size {
     line-height: 35px;
     height: 50px;
     text-align: center;

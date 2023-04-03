@@ -30,8 +30,8 @@
                             <h5 class="my-3">{{ Auth::user()->name }}</h5>
                             <p id="textmuted" class="text-muted mb-4">JSneaks website user</p>
                             <div class="d-flex justify-content-center mb-2">
-                                <button onclick="showDiv()" id="readonly" type="button" class="btn btn-danger">Edit profile</button>
-                                <button value="Submit" id="saveChanges_Button" type="submit" class="btn btn-primary">Save</button>
+                                <button onclick="showDiv()" id="readonly" type="button" class="btn btnneed btn-danger">Edit profile</button>
+                                <button value="Submit" id="saveChanges_Button" type="submit" class="btn btnneed btn-primary">Save</button>
                             </div>
                         </div>
                     </div>
@@ -71,13 +71,11 @@
                                     <div class="col-sm-9">
                                         <input type='password' name='password' style="background: transparent;border: none;"
                                             readonly id="textmuted"
-                                            class="text-muted mb-0"value="{{ Auth::user()->password }}">
+                                            class="form-control text-muted mb-0" value="{{ Auth::user()->password }}">
                                     </div>
                                 </div>
-
                                 <div id="showDiv"  style="display:none;">
-                                    <hr>
-                                    <div class="row">
+                                    <div style="padding-bottom: 10px;padding-top: 20px;" class="row">
                                         <div class="col-sm-3">
                                             <p class="mb-0">New Password</p>
                                         </div>
@@ -85,8 +83,7 @@
                                             <input type='password' style="background: transparent;" id="textmuted" class="form-control">
                                         </div>
                                     </div>
-                                    <hr>
-                                    <div class="row">
+                                    <div style="padding-top: 10px;" class="row">
                                         <div class="col-sm-3">
                                             <p class="mb-0">Confirm New Password</p>
                                         </div>

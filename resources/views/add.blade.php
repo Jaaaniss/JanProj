@@ -55,11 +55,10 @@
                                     {{-- <input type="text" name="company" value="" class="form-control"> --}}
                                 </div>
                                 <div style="display: flex; justify-content: space-between;" class="form-group mb-3">
-                                    <button type="submit" class="btn btn-primary">Add Size</button>
+                                    <button type="submit" class="btn btn_edit_size btn-primary">Add Size</button>
                                     <a href="{{ url('manage_vans') }}" style="
                                     line-height: 35px;
-                                " class="btn btn-danger float-end">BACK</a>
-                                    {{-- <a href="{{ url("manage_$company") }}" class="btn btn-danger float-end">BACK</a> --}}
+                                " class="btn btn_edit_size btn-danger float-end">BACK</a>
                                 </div>
 
                             </form>

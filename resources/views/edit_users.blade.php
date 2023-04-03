@@ -28,8 +28,8 @@
                                 </div>
 
                                 <div style="display: flex;justify-content: space-between;" class="form-group mb-3">
-                                    <button type="submit" class="btn btn-primary">Update User</button>
-                                    <a href="{{ url('manage_users') }}" class="btn btn-danger float-end">BACK</a>
+                                    <button type="submit" class="btn btn_edit_size  btn-primary">Update User</button>
+                                    <a href="{{ url('manage_users') }}" class="btn btn_edit_size btn-danger float-end">BACK</a>
                                 </div>
                             </form>
                         </div>

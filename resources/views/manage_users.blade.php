@@ -45,11 +45,11 @@
                                         <td>{{ $itemm->foot_size_cm }}</td>
                                         <td>
                                             <div class="stailss">
-                                                <a href="{{ url('edit_users/'.$itemm->id) }}" style="width:100px; padding-left:20px; padding-right:20px;" class="btn btn-primary btn-sm">Edit user</a>
+                                                <a href="{{ url('edit_users/'.$itemm->id) }}" style="width:100px; padding-left:20px; padding-right:20px;" class="btn btnneed btn-primary btn-sm">Edit user</a>
                                                 <form action="{{ url('delete/'.$itemm->id) }}" method="POST">
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" style="width:100px; padding-left:20px; padding-right:20px;" class="btn btn-danger btn-sm">Delete</button>
+                                                    <button type="submit" style="width:100px; padding-left:20px; padding-right:20px;" class="btn btnneed btn-danger btn-sm">Delete</button>
                                                 </form>
                                             </div>
                                         </td>

@@ -23,8 +23,8 @@ $(document).ready(function()
     if( window.getComputedStyle( el2 ).display === "flex" ) {
         el.style.display = "flex";
         el.style.flexDirection = "column";
-        el2.style.paddingTop = "82px";
-        el2.style.paddingBottom = "82px";
+        el2.style.paddingTop = "81px";
+        el2.style.paddingBottom = "81px";
     } else {
         el2.style.display = "flex"
     }

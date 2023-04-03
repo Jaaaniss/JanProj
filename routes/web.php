@@ -52,8 +52,10 @@ Route::POST('/select',[SizeController::class,'insert']);
 Route::get('view-records','StudViewController@index');
 
 
+
 // Updates users data in profile page
     Route::put('update_user/{id}', [UpdateController::class, 'update_profile']);
+
 
 
 Route::middleware(['auth','role:Admin'])->name('admin.')->group(function () {

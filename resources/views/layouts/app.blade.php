@@ -82,11 +82,11 @@
                                     </a>
                                 @endif
 
-                                @if (Auth::user()->id != 1)
+                               {{--  @if (Auth::user()->id != 1)--}}
                                     <a class="dropdown-item" href="/user_profile">
                                         {{ __('My profile') }}
                                     </a>
-                                @endif
+                                {{--  @endif--}}
 
                                 <a class="dropdown-item" href="/editsize">
                                     {{ __('Check or edit size') }}
@@ -122,7 +122,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 
 </html>

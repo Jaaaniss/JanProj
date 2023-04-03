@@ -43,9 +43,9 @@
                                             placeholder="Enter a number" aria-label="Cm" aria-describedby="button-addon2">
                                         <div style="display: flex;flex-direction: column;padding-bottom: 20p;" class="butooni">
                                             <div style="padding-bottom: 10px; padding-top: 10px;" class="viensbuttons">
-                                                <button style="width: 100%!important;" class="btn btn-dark" type="submit" id="submitbutton">Save</button>
+                                                <button style="width: 100%!important;" class="btn btnneed btn-dark" type="submit" id="submitbutton">Save</button>
                                             </div>
-                                            <a id="nulll" style="width: 100%!important;" href="/next" class="btn btn-dark" role="button"><span>Next</span></a>
+                                            <a id="nulll" style="width: 100%!important;" href="/next" class="btn btnneed btn-dark" role="button"><span>Next</span></a>
                                         </div>
                                     </form>
                                 </div>

@@ -80,11 +80,11 @@
                                     </a>
                                 @endif
 
-                                @if (Auth::user()->id != 1)
+                                 {{--  @if (Auth::user()->id != 1)--}}
                                     <a class="dropdown-item" href="/user_profile">
                                         {{ __('My profile') }}
                                     </a>
-                                @endif
+                                {{--  @endif--}}
 
                                 <a class="dropdown-item" href="/editsize">
                                     {{ __('Check or edit size') }}
@@ -168,7 +168,7 @@
 
     <div class="beigaas">
         <div class="box-1">
-            <a id="nulll" href="/next" class="btn btn-one" role="button"><span>Next</span></a>
+            <a id="nulll" href="/next" class="btn btnneed btn-one" role="button"><span>Next</span></a>
         </div>
         <a id="dark2" href="#collapse3" class="nav-link" id="toggle">Get converter</a>
     </div>
