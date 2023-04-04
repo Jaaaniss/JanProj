@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/edit.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/search.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
 
 
@@ -26,7 +26,7 @@
                             <div style="display: flex;flex-direction: column;justify-content: center;" class="card-body text-center">
                                 <h3>
                                     <center>
-                                        Enter your foot size to 'Save' it for future or click 'Next' to manually select it
+                                        Te var ierakstit izmeru tikai lai to saglabatu, bet var arii meklet internetaa kurpes pec taa izmera
                                     </center>
                                 </h3>
                             </div>
@@ -37,7 +37,7 @@
                         <div id="cardinfo" class="card mb-4">
                             <div style="padding-top: 38px; padding-bottom: 38px;;"class="card-body">
                                 <div style="justify-content:center" class="row">
-                                    <form class="formss" action="/select" method="post">
+                                    <form class="formss" action="/enter_size" method="post">
                                         @csrf
                                         <input id="sizeinput" max="1000" type="number" name="foot_size_cm" class="form-control"
                                             placeholder="Enter a number" aria-label="Cm" aria-describedby="button-addon2">
@@ -45,7 +45,7 @@
                                             <div style="padding-bottom: 10px; padding-top: 10px;" class="viensbuttons">
                                                 <button style="width: 100%!important;" class="btn btnneed btn-dark" type="submit" id="submitbutton">Save</button>
                                             </div>
-                                            <a id="nulll" style="width: 100%!important;" href="/next" class="btn btnneed btn-dark" role="button"><span>Next</span></a>
+                                            <a id="nulll" style="width: 100%!important;" href="/start_pages/size_converter" class="btn btnneed btn-dark" role="button"><span>Next</span></a>
                                         </div>
                                     </form>
                                 </div>

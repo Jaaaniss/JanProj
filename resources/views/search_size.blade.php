@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/edit.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/search.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
 
 
@@ -13,7 +13,7 @@
                         <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item"><a id="a" href="/">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Check or edit size</li>
+                                <li class="breadcrumb-item active" aria-current="page">Search your size</li>
                             </ol>
                         </nav>
                     </div>
@@ -28,7 +28,7 @@
                                     Saved foot size is {{ auth()->user()->foot_size_cm }}cm
                                 </h3>
                                 <h3 style="padding-top: 40px;">
-                                    <center>You can enter your new size to 'Save' it or click 'Next' for sizing</center>
+                                    <center>Seit varetu ievadit savu izmeru, dzimti, zimolu un meklet veikalus kados ir tas izmers</center>
                                 </h3>
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                         <div id="cardinfo" class="card mb-4">
                             <div style="padding-top: 38px; padding-bottom: 38px;;"class="card-body">
                                 <div style="justify-content:center" class="row">
-                                    <form class="formss" action="/select" method="post">
+                                    <form class="formss" action="/enter_size" method="post">
                                         @csrf
                                         <input id="sizeinput" max="1000" type="number" name="foot_size_cm" class="form-control"
                                             placeholder="Enter a number" aria-label="Cm" aria-describedby="button-addon2">
@@ -46,7 +46,7 @@
                                             <div style="padding-bottom: 10px; padding-top: 10px;" class="viensbuttons">
                                                 <button style="width: 100%!important;" class="btn btnneed btn-dark" type="submit" id="submitbutton">Save</button>
                                             </div>
-                                            <a id="nulll" style="width: 100%!important;" href="/next" class="btn btnneed btn-dark" role="button"><span>Next</span></a>
+                                            <a id="nulll" style="width: 100%!important;" href="/start_pages/size_converter" class="btn btnneed btn-dark" role="button"><span>Next</span></a>
                                         </div>
                                     </form>
                                 </div>

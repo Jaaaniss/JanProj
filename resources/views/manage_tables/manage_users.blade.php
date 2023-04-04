@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/manage.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/manage_tables/manage.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
 
     @role('Admin')
@@ -18,10 +18,10 @@
                                     Users
                                     </a>
                                     <div style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 50px, 0px);" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="{{ url('manage_vans') }}">Vans</a>
-                                    <a class="dropdown-item" href="{{ url('manage_nike') }}">Nike</a>
-                                    <a class="dropdown-item" href="{{ url('manage_nb') }}">New balance</a>
-                                    <a class="dropdown-item" href="{{ url('manage_adidas') }}">Adidas</a>
+                                    <a class="dropdown-item" href="{{ url('manage_tables/manage_vans') }}">Vans</a>
+                                    <a class="dropdown-item" href="{{ url('manage_tables/manage_nike') }}">Nike</a>
+                                    <a class="dropdown-item" href="{{ url('manage_tables/manage_nb') }}">New balance</a>
+                                    <a class="dropdown-item" href="{{ url('manage_tables/manage_adidas') }}">Adidas</a>
                                     </div>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                                         <td>{{ $itemm->foot_size_cm }}</td>
                                         <td>
                                             <div class="stailss">
-                                                <a href="{{ url('edit_users/'.$itemm->id) }}" style="width:100px; padding-left:20px; padding-right:20px;" class="btn btnneed btn-primary btn-sm">Edit user</a>
+                                                <a href="{{ url('manage_tables/edit/edit_users/'.$itemm->id) }}" style="width:100px; padding-left:20px; padding-right:20px;" class="btn btnneed btn-primary btn-sm">Edit user</a>
                                                 <form action="{{ url('delete/'.$itemm->id) }}" method="POST">
                                                     @csrf
                                                     @method('DELETE')

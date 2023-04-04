@@ -14,10 +14,10 @@ class AddController extends Controller
 {
     public function create()
     {
-        return view('add');
+        return view('manage_tables/add/add');
     }
 
-    
+
     public function storeAnything(Request $request)
     {
         $item = null;
@@ -42,6 +42,6 @@ class AddController extends Controller
         $item->usm = $request->input('US_M');
         $item->usw = $request->input('US_W');
         $item->save();
-        return redirect("manage_$request->company")->with('status','Size Added Successfully');
+        return redirect("manage_tables/manage_$request->company")->with('status','Size Added Successfully');
     }
 }

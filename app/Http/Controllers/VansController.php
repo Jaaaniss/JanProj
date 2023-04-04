@@ -29,9 +29,9 @@ class VansController extends Controller {
         $newbalance = newbalance::all();
 
         if (Auth::user()->foot_size_cm == null) {
-            return view('select',['vans'=>$vans,'nike'=>$nike,'adidas'=>$adidas, 'newbalance'=>$newbalance]);
+            return view('enter_size',['vans'=>$vans,'nike'=>$nike,'adidas'=>$adidas, 'newbalance'=>$newbalance]);
         } else {
-           return redirect("/editsize");
+           return redirect("/search_size");
         }
     }
 
@@ -42,42 +42,42 @@ class VansController extends Controller {
         $nike = nike::all();
         $adidas = adidas::all();
         $newbalance = newbalance::all();
-        return view('next',['vans'=>$vans,'nike'=>$nike,'adidas'=>$adidas, 'newbalance'=>$newbalance]);
+        return view('start_pages/size_converter',['vans'=>$vans,'nike'=>$nike,'adidas'=>$adidas, 'newbalance'=>$newbalance]);
     }
 
 
     public function vans3()
     {
         $vans = vans::all();
-        return view('manage_vans',['vans'=>$vans]);
+        return view('manage_tables/manage_vans',['vans'=>$vans]);
     }
 
 
     public function nike3()
     {
         $nike = nike::all();
-        return view('manage_nike',['nike'=>$nike]);
+        return view('manage_tables/manage_nike',['nike'=>$nike]);
     }
 
 
     public function adidas3()
     {
         $adidas = adidas::all();
-        return view('manage_adidas',['adidas'=>$adidas]);
+        return view('manage_tables/manage_adidas',['adidas'=>$adidas]);
     }
 
 
     public function newbalance3()
     {
         $newbalance = NewBalance::all();
-        return view('manage_nb',['newbalance'=>$newbalance]);
+        return view('manage_tables/manage_nb',['newbalance'=>$newbalance]);
     }
 
 
     public function users3()
     {
         $userr = User::all();
-        return view('manage_users',['userr'=>$userr]);
+        return view('manage_tables/manage_users',['userr'=>$userr]);
     }
 
 }

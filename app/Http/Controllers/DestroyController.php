@@ -30,7 +30,7 @@ class DestroyController extends Controller
         }
 
         $item->delete();
-        return redirect("manage_$company")->with('status', 'Size Deleted Successfully');
+        return redirect("manage_tables/manage_$company")->with('status', 'Size Deleted Successfully');
     }
 
 
@@ -38,6 +38,6 @@ class DestroyController extends Controller
     {
         $userr = User::find($id);
         $userr->delete();
-        return redirect('manage_users')->with('status','User Deleted Successfully');
+        return redirect('manage_tables/manage_users')->with('status','User Deleted Successfully');
     }
 }

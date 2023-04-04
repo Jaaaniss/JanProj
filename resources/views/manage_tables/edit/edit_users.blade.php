@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/edit_size.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/manage_tables/edit/edit_size.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
 
     @role('Admin')
@@ -29,7 +29,7 @@
 
                                 <div style="display: flex;justify-content: space-between;" class="form-group mb-3">
                                     <button type="submit" class="btn btn_edit_size  btn-primary">Update User</button>
-                                    <a href="{{ url('manage_users') }}" class="btn btn_edit_size btn-danger float-end">BACK</a>
+                                    <a href="{{ url('manage_tables/manage_users') }}" class="btn btn_edit_size btn-danger float-end">BACK</a>
                                 </div>
                             </form>
                         </div>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/edit_size.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/manage_tables/edit/edit_size.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
 
     @role('Admin')
@@ -38,7 +38,7 @@
                         <div style="padding-bottom: 3px;" class="formg">
                             <div class="abibtn" style=" display:flex;justify-content: space-between;">
                                 <button type="submit" class="btn btn_edit_size btn-primary">Update Sizes</button>
-                                <a href="{{ url("manage_$company") }}" class="btn btn_edit_size btn-danger float-end">BACK</a>
+                                <a href="{{ url("manage_tables/manage_$company") }}" class="btn btn_edit_size btn-danger float-end">BACK</a>
                             </div>
                         </div>
                     </form>

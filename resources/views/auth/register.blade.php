@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/register.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/register_dark.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/auth/register/register.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/auth/register/register_dark.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
 
 

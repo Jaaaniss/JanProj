@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/dark.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/darkmode/dark.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/next.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/start_pages/next.css') }}">
 
 
 
@@ -90,7 +90,7 @@
                     <div style="display: flex;justify-content: center;background: black;border: 1px solid black;justify-content: center;background: black;"
                         id="goodinportrait" class="col-md-4">
                         <img src="https://seeklogo.com/images/A/adidas-logo-49D5BEBA90-seeklogo.com.png"
-                            class="img-fluid rounded-start" alt="...">
+                            class="img-fluid rounded-start cardimg1" alt="...">
                     </div>
                     <div id="cardteksts" class="col-md-8">
                         <div class="card-body">

@@ -77,19 +77,19 @@
                             <div style="position:absolute" class="dropdown-menu dropdown-menu-right"
                                 aria-labelledby="navbarDropdown">
                                 @if (Auth::user()->id == 1)
-                                    <a class="dropdown-item" href="/manage_vans">
+                                    <a class="dropdown-item" href="/manage_tables/manage_vans">
                                         {{ __('Manage sizes') }}
                                     </a>
                                 @endif
 
                                {{--  @if (Auth::user()->id != 1)--}}
-                                    <a class="dropdown-item" href="/user_profile">
+                                    <a class="dropdown-item" href="/auth/user/user_profile">
                                         {{ __('My profile') }}
                                     </a>
                                 {{--  @endif--}}
 
-                                <a class="dropdown-item" href="/editsize">
-                                    {{ __('Check or edit size') }}
+                                <a class="dropdown-item" href="/search_size">
+                                    {{ __('Search your size') }}
                                 </a>
 
                                 <a class="dropdown-item" href="{{ route('logout') }}"

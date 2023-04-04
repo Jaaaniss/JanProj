@@ -24,21 +24,21 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-    return view('sakums');
+    return view('/start_pages/sakums');
 });
 
-Route::get('/editsize', function () {
-    return view('editsize');
+Route::get('/search_size', function () {
+    return view('search_size');
 });
 
-Route::get('/user_profile', function () {
-    return view('user_profile');
+Route::get('/auth/user/user_profile', function () {
+    return view('/auth/user/user_profile');
 });
 
 
-Route::get('/next',[VansController::class,'vans']);
+Route::get('/start_pages/size_converter',[VansController::class,'vans']);
 
-Route::get('/select',[VansController::class,'vans2']);
+Route::get('/enter_size',[VansController::class,'vans2']);
 
 Route::get('/vanssize/{size}',[VansController::class,'index']);
 Route::get('/nikesize/{size}',[NikeController::class,'index']);
@@ -46,7 +46,7 @@ Route::get('/adidassize/{size}',[AdidasController::class,'index']);
 Route::get('/nbsize/{size}',[NBController::class,'index']);
 
 
-Route::POST('/select',[SizeController::class,'insert']);
+Route::POST('/enter_size',[SizeController::class,'insert']);
 
 
 Route::get('view-records','StudViewController@index');
@@ -60,18 +60,18 @@ Route::get('view-records','StudViewController@index');
 
 Route::middleware(['auth','role:Admin'])->name('admin.')->group(function () {
 
-    Route::get('/manage_vans', [VansController::class, 'vans3']);
-    Route::get('/manage_nike', [VansController::class, 'nike3']);
-    Route::get('/manage_adidas', [VansController::class, 'adidas3']);
-    Route::get('/manage_nb', [VansController::class, 'newbalance3']);
-    Route::get('/manage_users', [VansController::class, 'users3']);
+    Route::get('/manage_tables/manage_vans', [VansController::class, 'vans3']);
+    Route::get('/manage_tables/manage_nike', [VansController::class, 'nike3']);
+    Route::get('/manage_tables/manage_adidas', [VansController::class, 'adidas3']);
+    Route::get('/manage_tables/manage_nb', [VansController::class, 'newbalance3']);
+    Route::get('/manage_tables/manage_users', [VansController::class, 'users3']);
 
-    Route::get('/add', [AddController::class, 'create']);
-    Route::post('/add', [AddController::class, 'storeAnything']);
+    Route::get('/manage_tables/add/add', [AddController::class, 'create']);
+    Route::post('/manage_tables/add/add', [AddController::class, 'storeAnything']);
 
 
-    Route::get('edit/{id}/{company}', [EditController::class, 'editAnything']);
-    Route::get('edit_users/{id}', [EditController::class, 'edit_user']);
+    Route::get('manage_tables/edit/edit/{id}/{company}', [EditController::class, 'editAnything']);
+    Route::get('manage_tables/edit/edit_users/{id}', [EditController::class, 'edit_user']);
 
 
     Route::put('update/{id}/{company}', [UpdateController::class, 'updateAnything']);

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/edit_size.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/add.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/manage_tables/edit/edit_size.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/manage_tables/add/add.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -21,7 +21,7 @@
                         </div>
                         <div class="card-body">
 
-                            <form action="{{ url('add') }}" method="POST">
+                            <form action="{{ url('/manage_tables/add/add') }}" method="POST">
                                 @csrf
 
                                 <div class="form-group mb-3">
@@ -56,7 +56,7 @@
                                 </div>
                                 <div style="display: flex; justify-content: space-between;" class="form-group mb-3">
                                     <button type="submit" class="btn btn_edit_size btn-primary">Add Size</button>
-                                    <a href="{{ url('manage_vans') }}" style="
+                                    <a href="{{ url('manage_tables/manage_vans') }}" style="
                                     line-height: 35px;
                                 " class="btn btn_edit_size btn-danger float-end">BACK</a>
                                 </div>

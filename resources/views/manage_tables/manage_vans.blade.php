@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/manage.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/manage_tables/manage.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
 
     @role('Admin')
@@ -21,15 +21,15 @@
                                         Vans
                                         </a>
                                         <div style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 50px, 0px);" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="{{ url('manage_adidas') }}">Adidas</a>
-                                        <a class="dropdown-item" href="{{ url('manage_nike') }}">Nike</a>
-                                        <a class="dropdown-item" href="{{ url('manage_nb') }}">New balance</a>
-                                        <a class="dropdown-item" href="{{ url('manage_users') }}">Users</a>
+                                        <a class="dropdown-item" href="{{ url('manage_tables/manage_adidas') }}">Adidas</a>
+                                        <a class="dropdown-item" href="{{ url('manage_tables/manage_nike') }}">Nike</a>
+                                        <a class="dropdown-item" href="{{ url('manage_tables/manage_nb') }}">New balance</a>
+                                        <a class="dropdown-item" href="{{ url('manage_tables/manage_users') }}">Users</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="poga-add">
-                                    <a href="{{ url('add') }}" class="btn btnneed btn-primary float-end">Add Size</a>
+                                    <a href="{{ url('/manage_tables/add/add') }}" class="btn btnneed btn-primary float-end">Add Size</a>
                                 </div>
                             </div>
                             <div class="card-body">
@@ -55,7 +55,7 @@
                                             <td>{{ $item->usw }}</td>
                                             <td>
                                                 <div class="stails">
-                                                    <a href="{{ url('edit/'.$item->id.'/vans') }}" style="width:100px; padding-left:20px; padding-right:20px;" class="btn btnneed btn-primary btn-sm">Edit size</a>
+                                                    <a href="{{ url('manage_tables/edit/edit/'.$item->id.'/vans') }}" style="width:100px; padding-left:20px; padding-right:20px;" class="btn btnneed btn-primary btn-sm">Edit size</a>
                                                     <form action="{{ url('delete/'.$item->id.'/vans') }}" method="POST">
                                                         @csrf
                                                         @method('DELETE')

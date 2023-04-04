@@ -29,14 +29,14 @@ class EditController extends Controller
                 break;
         }
 
-        return view('edit', compact('item', 'company'));
+        return view('manage_tables/edit/edit', compact('item', 'company'));
     }
 
 
     public function edit_user($id)
     {
         $userr = User::find($id);
-        return view('edit_users', compact('userr'));
+        return view('manage_tables/edit/edit_users', compact('userr'));
     }
-    
+
 }

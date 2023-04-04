@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/login.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/login_dark.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/auth/login/login.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/auth/login/login_dark.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/blade.css') }}">
 
 

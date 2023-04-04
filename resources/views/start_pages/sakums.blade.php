@@ -23,8 +23,8 @@
 
     <meta name="color-scheme" content="dark light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/sakums.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/dark.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/start_pages/sakums.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/darkmode/dark.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}">
     <title>JSneaks</title>
 </head>
@@ -75,19 +75,19 @@
                             <div style="position:absolute" class="dropdown-menu dropdown-menu-right"
                                 aria-labelledby="navbarDropdown">
                                 @if (Auth::user()->id == 1)
-                                    <a class="dropdown-item" href="/manage_vans">
+                                    <a class="dropdown-item" href="/manage_tables/manage_vans">
                                         {{ __('Manage sizes') }}
                                     </a>
                                 @endif
 
                                  {{--  @if (Auth::user()->id != 1)--}}
-                                    <a class="dropdown-item" href="/user_profile">
+                                    <a class="dropdown-item" href="/auth/user/user_profile">
                                         {{ __('My profile') }}
                                     </a>
                                 {{--  @endif--}}
 
-                                <a class="dropdown-item" href="/editsize">
-                                    {{ __('Check or edit size') }}
+                                <a class="dropdown-item" href="/search_size">
+                                    {{ __('Search your size') }}
                                 </a>
 
                                 <a class="dropdown-item" href="{{ route('logout') }}"
@@ -168,7 +168,7 @@
 
     <div class="beigaas">
         <div class="box-1">
-            <a id="nulll" href="/next" class="btn btnneed btn-one" role="button"><span>Next</span></a>
+            <a id="nulll" href="/start_pages/size_converter" class="btn btnneed btn-one" role="button"><span>Next</span></a>
         </div>
         <a id="dark2" href="#collapse3" class="nav-link" id="toggle">Get converter</a>
     </div>
