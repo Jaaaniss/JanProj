@@ -36,7 +36,7 @@ Route::get('/auth/user/user_profile', function () {
     return view('/auth/user/user_profile');
 });
 
-
+// Paroles mainisanai
 Route::get('auth/user/change-password', [HomeController::class, 'changePassword'])->name('change-password');
 Route::post('auth/user/change-password', [HomeController::class, 'updatePassword'])->name('update-password');
 
@@ -57,10 +57,8 @@ Route::POST('/enter_size',[SizeController::class,'insert']);
 Route::get('view-records','StudViewController@index');
 
 
-
 // Updates users data in profile page
     Route::put('update_user/{id}', [UpdateController::class, 'update_profile']);
-
 
 
 Route::middleware(['auth','role:Admin'])->name('admin.')->group(function () {
