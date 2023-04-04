@@ -13,7 +13,7 @@
                 <div class="col">
                     <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
                         <ol class="breadcrumb mb-0">
-                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item"><a id="a" href="/">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">User Profile</li>
                         </ol>
                     </nav>
@@ -29,9 +29,14 @@
                                 class="rounded-circle img-fluid" style="width: 150px;">
                             <h5 class="my-3">{{ Auth::user()->name }}</h5>
                             <p id="textmuted" class="text-muted mb-4">JSneaks website user</p>
-                            <div class="d-flex justify-content-center mb-2">
-                                <button onclick="showDiv()" id="readonly" type="button" class="btn btnneed btn-danger">Edit profile</button>
-                                <button value="Submit" id="saveChanges_Button" type="submit" class="btn btnneed btn-primary">Save</button>
+                            <div class="d-flex justify-content-center mb-2" style="width: 100%">
+
+                                <div class="btn-group" role="group" aria-label="Basic example" style="width: 100%">
+                                    <button style="height: 50px;" id="readonly" type="button" class="btn btn-danger">Edit profile</button>
+                                    <button style="height: 50px;" value="Submit" id="saveChanges_Button" type="submit" class="btn btn-primary">Save</button>
+                                    <a style="height: 50px; display: flex; justify-content: center; align-items: center;" href="/auth/user/change-password" type="button" class="btn btn-primary">Change password</a>
+
+                                </div>
                             </div>
                         </div>
                     </div>

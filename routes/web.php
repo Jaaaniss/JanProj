@@ -6,6 +6,7 @@ use App\Http\Controllers\NikeController;
 use App\Http\Controllers\AdidasController;
 use App\Http\Controllers\DestroyController;
 use App\Http\Controllers\EditController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NBController;
 use App\Http\Controllers\SizeController;
 use App\Http\Controllers\UpdateController;
@@ -34,6 +35,10 @@ Route::get('/search_size', function () {
 Route::get('/auth/user/user_profile', function () {
     return view('/auth/user/user_profile');
 });
+
+
+Route::get('auth/user/change-password', [HomeController::class, 'changePassword'])->name('change-password');
+Route::post('auth/user/change-password', [HomeController::class, 'updatePassword'])->name('update-password');
 
 
 Route::get('/start_pages/size_converter',[VansController::class,'vans']);

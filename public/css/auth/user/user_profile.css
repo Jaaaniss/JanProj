@@ -51,7 +51,7 @@
     color: #ffffff92!important;
 }
 
-.invert a {
+.invert #a {
     color: #ffffff;
     text-decoration: none;
     background-color: transparent;
@@ -79,7 +79,7 @@
 }
 
 
-a {
+#a {
     color: #000000;
     text-decoration: none;
     background-color: transparent;
